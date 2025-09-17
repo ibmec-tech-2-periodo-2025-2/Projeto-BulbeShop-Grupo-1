@@ -1,7 +1,7 @@
 # Projeto-BulbeShop-Grupo-1
 Componentes: Bruno Miguel ,Gabriel Manata , Marcus Carvalho , Miguel Lacerda , Itallo Ferreira , Cauã Caldeira
 
-# Documetações Necessárias:
+# Documentações Necessárias:
 Documentação: 
 gestão de código, 
 apresentação do projeto, 
@@ -47,47 +47,6 @@ Estrutura inicial do HTML e scripts parciais.
 - PB-8 - Estrutura inicial de HTML
 
 ---------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Sprint 1
-- PB-1 - Definir identidade visual
-- PB-2 - Definir mapa do usuário
-- PB-3 - Definir design Home
-- PB-4 - Definir design pag2
-- PB-5 - Definir design pag3
-- PB-6 - Definir design pag4
-- PB-7 - Criar wireframes de baixa fidelidade no Figma
-- PB-8 - Estrutura inicial de HTML
-
-----------------------------------------------------------------
-
-# Sprint 2
-- PB-9 - Criar layout responsivo inicial mobile first
-- PB-10 - Implementar navegação entre telas
-- PB-11 - Criar página de listagem de produto
-- PB-12 - Criar página de detalhes de produto
-- PB-13 - Criar página de carrinho
-- PB-14 - Criar página de checkout
-- PB-15 - Permitir adicionar/remover produtos no carrinho
-- PB-16 - Implementar busca de produto
-- PB-17 - Criar tela de confirmação de pedido
-- PB-18 - Definir integração com o app
-- PB-19 - Testar
-- PB-20 - Ajustar design e fluxo com base no feedback
-- PB-21 - Preparar apresentação final
-
 
 # Link Dos Protótipos De Baixa Fidelidade No Figma:
 
