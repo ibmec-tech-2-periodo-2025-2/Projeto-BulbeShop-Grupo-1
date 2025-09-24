@@ -59,16 +59,18 @@ Duração: 35 minutos
 Presenças: Bruno, Gabriel, Marcus, Miguel, Itallo, Cauã (todos presentes)
 Objetivo: Consolidar decisões visuais e dividir entregáveis do Sprint 1.
 
-Agenda rápida
+O que cada um fará ate a proxima Daily?
 
-Revisão do escopo da Sprint 1.
+- Bruno: Realizar a documentação.
+- Gabriel: Contribuir para a criação do BackLog.
+- Marcus: Contribuir para a criação do BackLog.
+- Miguel: Montar desing no figma.
+- Itallo: Realizar a documentação.
+- Caua: Montar desing no figma.
 
-Apresentação de propostas de identidade visual.
+Interdependência:
 
-Distribuição de responsabilidades para wireframes e HTML inicial.
-
-Identificação de riscos e bloqueios iniciais.
-
+- Documentação com desing e backlog.
 ---------------------------------------------------------------
 
 # Daily 2 — Revisão e alinhamento antes de finalizar Sprint 1
@@ -78,15 +80,34 @@ Duração: 30 minutos
 Presenças: Bruno, Gabriel, Marcus, Miguel, Itallo, Cauã (todos presentes)
 Objetivo: Revisar entregas parciais, validar wireframes e fechar estrutura HTML para deploy inicial.
 
-Agenda rápida
 
-Revisão das tarefas da Daily 1.
+O que cada um fez até agora?
 
-Demonstração Figma.
+- Bruno: Realizou quase toda documentação.
+- Gabriel: Terminou o BackLog.
+- Marcus: Terminou  BackLog.
+- Miguel: Montou desing no figma.
+- Itallo: Realizou quase toda documentação.
+- Caua: Montou desing no figma.
 
-Revisão do esqueleto HTML.
 
-Priorização de ajustes para encerrar a Sprint 1.
-    
+O que cada um fará ate a proxima Daily?
 
+- Bruno: Criação de projetos de baixa fidelidade.
+- Gabriel: Criação de projetos de baixa fidelidade.
+- Marcus: Atualização wireframes.
+- Miguel: Atualização wireframes.
+- Itallo: Criação de projetos de baixa fidelidade.
+- Caua: Atualização wireframes.
+
+
+Impedimentos:
+
+- Bruno: Falta de conteúdo pronto
+- Gabriel: Nenhum
+- Marcus: Nenhum
+- Miguel: Nenhum
+- Itallo: Falta de conteúdo pronto
+- Caua: Nenhum 
+---------------------------------------------------------------
 
