@@ -50,4 +50,43 @@ Estrutura inicial do HTML e scripts parciais.
 
 # Link Dos Protótipos De Baixa Fidelidade No Figma:
 
+---------------------------------------------------------------
+
+# Daily 1 — Kickoff operacional da Sprint 1
+
+Data / Hora: 2025-09-10 — 14:00 (BRT)
+Duração: 35 minutos
+Presenças: Bruno, Gabriel, Marcus, Miguel, Itallo, Cauã (todos presentes)
+Objetivo: Consolidar decisões visuais e dividir entregáveis do Sprint 1.
+
+Agenda rápida
+
+Revisão do escopo da Sprint 1.
+
+Apresentação de propostas de identidade visual.
+
+Distribuição de responsabilidades para wireframes e HTML inicial.
+
+Identificação de riscos e bloqueios iniciais.
+
+---------------------------------------------------------------
+
+# Daily 2 — Revisão e alinhamento antes de finalizar Sprint 1
+
+Data / Hora: 2025-09-17 — 15:00 (BRT)
+Duração: 30 minutos
+Presenças: Bruno, Gabriel, Marcus, Miguel, Itallo, Cauã (todos presentes)
+Objetivo: Revisar entregas parciais, validar wireframes e fechar estrutura HTML para deploy inicial.
+
+Agenda rápida
+
+Revisão das tarefas da Daily 1.
+
+Demonstração Figma.
+
+Revisão do esqueleto HTML.
+
+Priorização de ajustes para encerrar a Sprint 1.
+    
+
 
