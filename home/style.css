@@ -5,43 +5,135 @@
         box-sizing: border-box;
     }
     :root{
-        --cor_padrao: #023083;
-        --cor_main: #E9E8E8;
-        
+        --cor_fundo: #E9E8E8;
     }
     body{
-        background-color: var(--cor_padrao);
+        background-color: var(--cor_fundo);
     }
-    header{
+    #pesq_carrinho{
         height: 7vh;
-        width: 100vw;
+        display: flex;
+        align-items:center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    #pesq{
+        width: 300px;
+        height: 35px;
+        margin-left: 34px;
+        background-image: url("./asets/Pesq.png");
+        background-size: 350px 80px;
+        background-position: center;
+    }
+    #carrinho{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        background-image: url("./asets/Carri.png");
+        background-size: 78px 78px;
+        background-position: center;
+        
+    }
+    #catego{
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #p_categoria{
+        margin-left: 34px;
+    }
+    .img_categorias{
+        border: 1px solid rgb(0, 0, 0);
+        height: 40px;
+        width: 40px;
+        margin-top: -15px;
+        border-radius: 5px;
+        background-color: white;
+
+    }
+    #p_ofertas{
+        margin-left: 34px;
+        font-size: larger;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+    #ofertas{
+        height: 25vh;
+        display: flex;
+    }
+    #banner{
+        border: 1px solid black;
+        width: 100%;
+        margin-top: 5px;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        margin: 3px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    hr{
+        margin-top: 20px;
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    #resto{
+        height: auto;
+    }
+    .padrao{
+        height:180px;
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        position: relative;
+
+    }
+    #resto p{
+    font-size: large;
+    margin-bottom:3px;
+    margin-left: 34px;
+
+    }
+    .img_padrao{
+        height: 18vh;
+        width: 95%;
+        border: 1px solid rgb(0, 0, 0);
+        margin-left: 6px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        
-    }
-    .outros{
-        height: 35px;
-        width: 35px;
-    }
-    #logo{
-        width: 100px;
-        height: 75px;
-    }
-    main{
-        height: 53vh;
-        background-color:var(--cor_main) ;
-        width: 100vw;
-        border-radius: 10px 10px 0 0;
-        
-    }
-    footer{
-        height: 7vh;
+        border-radius: 5px;
         background-color: white;
-        position: fixed;
-        width: 100vw;
+        z-index: 0;
+        
     }
+    .seta{
+        background-image: url("./asets/seta.png");
+        background-position: center;
+        background-size: 75px 75px;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 10px;
+    }
+    #parceiro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #parceiro button{
+        margin-bottom: 15px;
+        border-radius: 5px;
+        background-color: white;
+        width: 60vw;
+        height: 4vh;
+    }
+
+
+
 }
 
 
