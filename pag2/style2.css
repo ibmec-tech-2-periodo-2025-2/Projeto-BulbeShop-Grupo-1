@@ -1,0 +1,125 @@
+@media screen and (max-width: 430px) {
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+/* Main container */
+main {
+  width: 100%;
+  max-width: 400px; /* tamanho de celular */
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Nome do item + carrinho */
+.conteiner-nome-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nome-item {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.conteiner-nome-carrinho img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Nome da loja */
+.conteiner-nome-loja {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Imagem produto */
+.conteiner-img {
+  width: 100%;
+  height: 220px;
+  margin: 15px 0;
+  background-color: #eee;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteiner-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Estrelas */
+.conteiner-avaliacao img {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+
+/* Informações */
+.conteiner-informacoes {
+  margin-top: 15px;
+}
+
+/* Caixa descrição */
+.conteiner-descricao {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Avaliações botão */
+.conteiner-informacoes .conteiner-avaliacao {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Botões */
+.conteiner-botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-carrinho {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.comprar-agora {
+  background-color: #023083;
+  color: #fff;
+}
+
+}
