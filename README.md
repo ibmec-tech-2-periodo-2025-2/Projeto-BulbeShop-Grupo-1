@@ -49,6 +49,7 @@ Estrutura inicial do HTML e scripts parciais.
 ---------------------------------------------------------------
 
 # Link Dos Protótipos De Baixa Fidelidade No Figma:
+- https://www.figma.com/board/1Zf85f4Zu1yDNEIICk16cT/Trabalho-App-Bulbe---Grupo-1?node-id=0-1&t=Q1o8bV3jkx7eAhH8-1
 
 ---------------------------------------------------------------
 
