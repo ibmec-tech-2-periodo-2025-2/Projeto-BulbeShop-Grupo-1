@@ -37,7 +37,7 @@ Estrutura inicial do HTML e scripts parciais.
 ---------------------------------------------------------------
 
 # Sprint 1
-- PB-1 - Definir identidade visual
+- PB-1 - Verificar identidade visual
 - PB-2 - Definir mapa do usuário
 - PB-3 - Definir design Home
 - PB-4 - Definir design pag2
