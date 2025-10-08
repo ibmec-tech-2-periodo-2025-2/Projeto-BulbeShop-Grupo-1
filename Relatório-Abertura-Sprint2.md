@@ -1,4 +1,4 @@
-# 🏁 Relatório de Abertura - Sprint 1
+# 🏁 Relatório de Abertura - Sprint 2
 
 **Scrum Master**: Bruno Primo 
 
