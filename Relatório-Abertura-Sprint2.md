@@ -3,28 +3,27 @@
 **Scrum Master**: Bruno Primo 
 
 ## 🎯 Objetivos da Sprint
-- [ ] Criar layout responsivo inicial mobile first
-- [ ] Implementar navegação entre telas
-- [ ] Criar página de listagem de produto
-- [ ] Criar página de detalhes de produto
-- [ ] Criar página de carrinho
-- [ ] Criar página de checkout
+- [ ] Criar layout inicial mobile das páginas first no figma (alta fidelidade)
+- [ ] Criar Home
+- [ ] Criar página de detalhe do prod.
+- [ ] Criar página de checkout 1
+- [ ] Criar parte de carrinho
+- [ ] Criar página de checkout 2
 
 ## 👥 Distribuição de Tarefas
 | Integrante | Tarefa | Prazo |
 |------------|--------|-------|
-| Cauã Caldeira | Criar página de checkout | 30/05 |
-| Gabriel Manata | Config. Dependências | 01/05 |
-| Bruno Primo | Testes Unitários | 07/05 |
-| Miguel Lacerda | Construção da API | 16/05 |
-| Marcus Carvalho | Ler Slide | 12/10 |
-| Itallo Ferreira | Projetar | 15/10 | 
+| Cauã Caldeira | Criar parte de carrinho + Figma| 22/10 |
+| Gabriel Manata | Criar Home + Figma | 22/10 |
+| Bruno Primo | Criar página de detalhe do produto + Figma | 22/10 |
+| Miguel Lacerda | Criar página de checkout 1 + Figma | 22/10 |
+| Marcus Carvalho | Criar parte de carrinho + Figma | 22/10 |
+| Itallo Ferreira |  Criar página de checkout 2 + Figma | 22/10 | 
 
 ## 🛠️ Ferramentas e Tecnologias Previstas
-- Jest
-- Express
-- TypeScript
+- Figma
+- HTML
+- CSS
 
 ## 📌 Critérios de Entrega
-- Tarefa de configuração de dependências depende da finalização da estrutura.
-- Testes unitários e construção da API dependem da configuração de dependências.
+- Estrutura completa depende 
