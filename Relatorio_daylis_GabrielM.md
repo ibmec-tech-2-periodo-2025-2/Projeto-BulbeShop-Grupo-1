@@ -21,6 +21,7 @@
 - Tarefa próxima
 
 --------------------------------------------------------------------------------
+
 # 📆 Relatório de Acompanhamento - Semana 0-1
 
 ## Dayli 2:
@@ -44,6 +45,7 @@
 - Tarefa próxima
 
 --------------------------------------------------------------------------------
+
 # 📆 Relatório de Acompanhamento - Semana 1-2
 
 ## Dayli 3:
@@ -67,6 +69,7 @@
 - Tarefa próxima
 
 --------------------------------------------------------------------------------
+
 # 📆 Relatório de Acompanhamento - Semana 1-2
 
 ## Dayli 4:
@@ -90,6 +93,7 @@
 - Tarefa próxima
 
 --------------------------------------------------------------------------------
+
 # 📆 Relatório de Acompanhamento - Semana 2-3
 
 ## Dayli 5:
@@ -113,6 +117,7 @@
 - Tarefa próxima
 
 --------------------------------------------------------------------------------
+
 # 📆 Relatório de Acompanhamento - Semana 2-3
 
 ## Dayli 6:
@@ -136,6 +141,7 @@
 - Tarefa próxima
 
 --------------------------------------------------------------------------------
+
 # 📆 Relatório de Acompanhamento - Semana 3-4
 
 ## Dayli 7:
@@ -159,7 +165,8 @@
 - Tarefa próxima
 
 --------------------------------------------------------------------------------
-# 📆 Relatório de Acompanhamento - Semana 3-
+
+# 📆 Relatório de Acompanhamento - Semana 3-4
 
 ## Dayli 8:
 
