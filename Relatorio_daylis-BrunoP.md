@@ -7,7 +7,7 @@
 
 
 ### 🚧 O que estou fazendo agora?
-- Inicializando Documentações DO Github
+- Inicializando Documentações Do Github
 
 ### 🧱 Quais dificuldades encontrei?
 - Nenhuma Até o Momento
