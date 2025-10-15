@@ -1,72 +1,65 @@
 # 📆 Relatório de Acompanhamento - Semana 0-1
 
-## Dayli 1:
+## Daily 1:
 
 ### 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Wireframes De Baixa Fidelidade No Figma
+
 
 ### 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Inicializando Documentações DO Github
 
 ### 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Nenhuma Até o Momento
 
 ### 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Realizar Protótipos No FigJam
 
 ### 🗓️ Próximo passo
-- Tarefa próxima
+- FInalizar Documentações Do Github
 
 --------------------------------------------------------------------------------
 
 # 📆 Relatório de Acompanhamento - Semana 0-1
 
-## Dayli 2:
+## Daily 2:
 
-## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+### 🙋 O que eu fiz desde o último relatório?
+- [ ] Documentação Github
 
-## 🚧 O que estou fazendo agora?
-- Tarefa atual
 
-## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+### 🚧 O que estou fazendo agora?
+- Design De Alta Fidelidade No Figma
 
-## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+### 🧱 Quais dificuldades encontrei?
+- Nenhuma
 
-## 🗓️ Próximo passo
-- Tarefa próxima
+### 🧠 O que aprendi até agora?
+- Organizar e Detalhar Documentações no Github
+
+### 🗓️ Próximo passo
+- Realizar Figma De Alta Fidelidade
 
 --------------------------------------------------------------------------------
 
 # 📆 Relatório de Acompanhamento - Semana 1-2
 
-## Dayli 3:
+## Daily 3:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Inicializado o Wireframe de Alta Definição No Figma
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Finalizando o Figma De Alta Definição Na Página 2
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Nenhuma até o momento
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Design's em ALta Fidelidade
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- A Definir
 
 --------------------------------------------------------------------------------
 
