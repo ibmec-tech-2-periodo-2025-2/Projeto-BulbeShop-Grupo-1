@@ -34,3 +34,6 @@ Estrutura inicial do HTML e scripts parciais.
 - PB-20 - Testar
 - PB-21 - Ajustar design e fluxo com base no feedback
 - PB-22 - Preparar apresentação final
+
+# Protótipos de Alta Fidelidade No Figma
+- https://www.figma.com/design/Nn1YOYvqXTQGdAcMQCtuwR/App-Bulbe-E-comerce?node-id=4-3&t=3uWgAciqVJlQCmG0-1
