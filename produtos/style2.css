@@ -1,125 +1,243 @@
 @media screen and (max-width: 430px) {
-    /* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  :root {
+    --blue: #003092;
+    --light-blue: #003092;
+    --bg: #f8f9fb;
+    --white: #fff;
+    --text: #111;
+    --gray: #666;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --radius: 16px;
+    --transition: 0.2s ease-in-out;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg);
+  }
+  
+  .app {
+    max-width: 420px;
+    margin: auto;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-shadow: var(--shadow);
+  }
+  
+  /* HEADER */
+  header {
+    width: 400px;
+    height: 12vh;
+    background-color: #003092;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-body {
-  background-color: #f2f2f2;
-}
+  }
 
-/* Main container */
-main {
-  width: 100%;
-  max-width: 400px; /* tamanho de celular */
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 15px 15px 0 0;
-}
+  #conser {
+    width: 80px;
+    padding-left: 10px;
+  }
 
-/* Nome do item + carrinho */
-.conteiner-nome-carrinho {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .menu-hamburguer{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.nome-item {
-  font-size: 20px;
-  font-weight: bold;
-}
 
-.conteiner-nome-carrinho img {
-  width: 25px;
-  height: 25px;
-}
+  .logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Nome da loja */
-.conteiner-nome-loja {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #555;
-}
 
-/* Imagem produto */
-.conteiner-img {
-  width: 100%;
-  height: 220px;
-  margin: 15px 0;
-  background-color: #eee;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .conteiner-icones{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+  }
+  .logo {
+    width: 80px;
+    height: 25px;
+    border-radius: 6px;
+  }
+  .icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    border: none;
+  }
+  
+  /* PRODUCT */
+  .product-page {
+    padding: 16px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #f8f8ff;
+    position: relative;
+    z-index: 1;
+    top: -10px;
 
-.conteiner-img img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
+  }
+  .product-title {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 500;
+    margin: 0;
+  }
+  .store-link {
+    color: #0066ff;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .product-image {
+    margin: 12px 0;
+    text-align: center;
+  }
+  .main-img {
+    width: 100%;
+    height: 200px;
+    background: white;
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+  }
 
-/* Estrelas */
-.conteiner-avaliacao img {
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
-}
+  #acertar {
+    height: 98%;
+  }
+  .thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  .thumb {
+    width: 50px;
+    height: 50px;
+    background: #d9d9d9;
+    border-radius: 8px;
+  }
 
-/* Informações */
-.conteiner-informacoes {
-  margin-top: 15px;
-}
+  p {
+    display: flex;
+    justify-content: space-between;
+  }
 
-/* Caixa descrição */
-.conteiner-descricao {
-  background: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-
-/* Avaliações botão */
-.conteiner-informacoes .conteiner-avaliacao {
-  background: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-
-/* Botões */
-.conteiner-botoes {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-}
-
-button {
-  flex: 1;
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.add-carrinho {
-  background-color: #e6e6e6;
-  color: #333;
-}
-
-.comprar-agora {
-  background-color: #023083;
-  color: #fff;
-}
-
+  .acertos {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* PRICE */
+  .price-section {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .old-price {
+    color: var(--gray);
+    text-decoration: line-through;
+    font-size: 14px;
+  }
+  .new-price {
+    color: #16a34a;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  /* RATING */
+  .rating {
+    margin: 6px 0;
+  }
+  .star {
+    color: #ffcc00;
+    font-size: 20px;
+  }
+  .star.off {
+    color: #ddd;
+  }
+  
+  /* DETAILS */
+  .details {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 16px 0;
+    font-size: 13px;
+    color: var(--text);
+  }
+  .details li {
+    margin-bottom: 4px;
+  }
+  
+  /* BUTTONS */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .btn.primary {
+    background: var(--blue);
+    color: white;
+    width: 100%;
+  }
+  .btn.primary:hover {
+    background: var(--light-blue);
+  }
+  .btn.outline {
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    background: transparent;
+  }
+  .btn-row {
+    display: flex;
+    gap: 6px;
+  }
+  
+  /* NAV */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0;
+    background: var(--white);
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+  }
+  .nav-item {
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: var(--gray);
+  }
+  .nav-item.active {
+    color: var(--blue);
+    font-weight: 600;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 420px) {
+    .app {
+      border-radius: 0;
+    }
+  }
+  
 }
