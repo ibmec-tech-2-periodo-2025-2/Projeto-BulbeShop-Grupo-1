@@ -5,7 +5,7 @@
 
 
 ## 🚧 O que estou fazendo agora?
-- wireframes de alta fidelidade
+- wireframes de alta fidelidade(Criar página de checkout 1 + Figma)
 
 ## 🧱 Quais dificuldades encontrei?
 - 
