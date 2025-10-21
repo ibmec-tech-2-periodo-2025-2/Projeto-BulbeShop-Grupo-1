@@ -55,7 +55,7 @@
 - Mexer com o Figma
 
 ## 🗓️ Próximo passo
-- 	Criar em codigo a primeira parte do checkout
+- 	Criar em codigo da primeira parte do checkout
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 1-2
@@ -63,19 +63,19 @@
 ## Dayli 4:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Criar em codigo a primeira parte do checkout
+- [ ] Criar em codigo da primeira parte do checkout
 
 ## 🚧 O que estou fazendo agora?
-- Criar em codigo a primeira parte do checkout
+- Criar em codigo da primeira parte do checkout
 
 ## 🧱 Quais dificuldades encontrei?
-- ???
+- Nenhuma
 
 ## 🧠 O que aprendi até agora?
-- ???
+- Como funciona a sobreposição de elementos do app da bulbe
 
 ## 🗓️ Próximo passo
-- ???
+- Fazer os ultimos ajustes
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 2-3
