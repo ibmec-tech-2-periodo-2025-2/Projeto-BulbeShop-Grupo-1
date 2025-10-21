@@ -1,109 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - Bulbe</title>
+    <title>Checkout Bulbe</title>
     <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-
-    <!-- Cabeçalho -->
+    <!-- HEADER COM PESQUISA -->
     <header>
-      <div class="menu-hamburguer">
-          <img src="./asets/menu-01.png" alt="">
-      </div>
-      <div class="logo">
-          <img src="./asets/logo-base.png" alt="">
-      </div>
-      <div class="conteiner-icones">
-          <img src="./asets/bell-01.png" alt="">
-          <img src="./asets/user-circle.png" alt="">
-      </div>
-  </header>
-
-    <!-- Endereço -->
-    <section class="endereco">
-        <div class="endereco-icone">
-           
-            <img src="./asets/marker-pin-01.png" alt="localização">
+        <div class="header-top">
+            <div class="menu-hamburguer">
+                <img src="./asets/menu-01.png" alt="menu">
+            </div>
+            <div class="logo">
+                <img src="./asets/logo-base.png" alt="logo bulbe">
+            </div>
+            <div class="conteiner-icones">
+                <img src="./asets/shopping-cart-01.png" alt="carrinho">
+                <img src="./asets/user-circle.png" alt="usuário">
+            </div>
         </div>
-        <div class="endereco-info">
-            <p class="nome">NOME DO CARA <span>(+55) 31 0000 0000</span></p>
-            <p class="rua">Rua, bairro, número, bloco, Apartamento</p>
-            <p class="cidade">Cidade, Estado, Cep</p>
-        </div>
-    </section>
 
-    <!-- Produto -->
-    <section class="produto">
-        <div class="produto-img">
-            
-            <img src="./asets/shopping 1.jpg" alt="produto">
+        <!-- PESQUISA NO HEADER -->
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisa...">
+            <button><img src="./asets/Icon.png" alt="pesquisar"></button>
         </div>
-        <div class="produto-info">
-            <p class="produto-nome">Nome do produto completo</p>
-            <p class="produto-modelo">Modelo do produto</p>
-            <p class="produto-preco">
-                <span class="atual">R$ 200,00</span> 
-                <span class="antigo">R$ 250,00</span>
-            </p>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL COM FUNDO BRANCO -->
+    <div class="conteudo">
+        <!-- ENDEREÇO DE ENTREGA -->
+        <div class="endereco">
+            <img src="./asets/marker-pin-01.png" alt="endereço">
+            <div class="endereco-info">
+                <div class="endereco-texto">
+                    <p class="nome">Endereço de Entrega</p>
+                </div>
+                <select>
+                    <option value="00000-000">00000-000</option>
+                </select>
+            </div>
         </div>
-    </section>
 
-    <!-- Cupom -->
-    <section class="cupom">
-        <label for="cupom">Cupom da loja</label>
-        <input type="text" id="cupom" placeholder="Selecione ou insira o cupom">
-    </section>
-
-    <!-- Envio -->
-    <section class="envio">
-        <div class="envio-header">
-            <p>Opção de Envio</p>
-            <a href="#">Ver mais ></a>
+        <!-- PRODUTO -->
+        <div class="produto">
+            <div class="produto-img">
+                <img src="./asets/shopping 1.jpg" alt="produto">
+            </div>
+            <div>
+                <p class="produto-nome">Nome do produto completo</p>
+                <p class="produto-modelo">Modelo do produto</p>
+                <p class="produto-preco"><span class="atual">R$ 200,00</span></p>
+            </div>
         </div>
-        <div class="envio-box"></div>
-        <div class="envio-valores">
-            <p>ICMS <span>R$ 0,00</span></p>
-            <p>Total da 1 item <span>R$ 200,00</span></p>
+
+        <!-- CUPOM -->
+        <div class="cupom">
+            <label for="cupom">Cupom Promocional</label>
+            <input type="text" id="cupom" placeholder="Insira seu cupom aqui">
         </div>
-    </section>
 
-    <!-- Métodos de pagamento -->
-    <section class="pagamento">
-        <h3>Métodos de pagamento</h3>
+        <!-- LINHA DIVISÓRIA -->
+        <div class="divisor"></div>
 
-        <div class="metodo">
-            <p class="titulo">Seus cartões</p>
-            <div class="cartao">
-                
+        <!-- OPÇÃO DE ENVIO -->
+        <div class="envio">
+            <div class="envio-header">
+                <p>Opção de Envio</p>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="envio-box"></div>
+            <div class="envio-valores">
+                <p>ICMS <span>R$ 0,00</span></p>
+                <p>Total de itens <span>R$ 200,00</span></p>
+            </div>
+        </div>
+
+        <!-- MÉTODOS DE PAGAMENTO -->
+        <div class="pagamento">
+            <h3>Métodos de pagamento</h3>
+            <div class="metodo cartao">
                 <img src="./asets/credit-card-02.svg" alt="cartão">
-                <a href="#">Adicionar um cartão de crédito</a>
+                <p>Pagar com Cartão</p>
             </div>
-        </div>
-
-        <div class="metodo">
-            <p class="titulo">Pix</p>
-            <div class="pix">
-                
+            <div class="metodo pix">
                 <img src="./asets/Pix.png" alt="pix">
-                <p>O código Pix gerado para o pagamento é válido por 30 minutos após a finalização do pedido</p>
+                <p>Pagar com PIX</p>
+            </div>
+            <div class="metodo boleto">
+                <img src="./asets/Vector.png" alt="boleto">
+                <p>Pagar com Boleto</p>
             </div>
         </div>
 
-        <div class="metodo">
-            <p class="titulo">Boleto</p>
-            <div class="boleto">
-                
-                <img src="./asets/Barcode.png" alt="boleto">
-                <p>Vencimento em 1 dia útil</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Botão Finalizar -->
-    <button class="finalizar">Finalizar compra</button>
+        <!-- BOTÃO FINALIZAR -->
+        <button class="finalizar">Finalizar Compra</button>
+    </div>
 
 </body>
 </html>
