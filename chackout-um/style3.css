@@ -178,45 +178,4 @@
     font-size: 12px;
     cursor: pointer;
   }
-
-  /*footer*/
-  footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 430px;
-    height: 8vh;
-    background-color: #FFFFFF;
-    position: relative;
-    bottom: 20px;
-  }
-
-  .conteiner-icones-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 25%;
-    height: 100%;
-  }
-
-  footer p{
-    color:#C2CCD6;
-  }
-
-  footer img{
-    width: 24px;
-    height: 24px;
-  }
-
-  #essa-pag{
-    border-top: #003092 solid 2px;
-  }
-
-  .esse-txt{
-    color: #003092;
-  }
-
 }
