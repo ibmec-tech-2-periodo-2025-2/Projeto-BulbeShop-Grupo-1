@@ -65,7 +65,7 @@
 
 # 📆 Relatório de Acompanhamento - Semana 1-2
 
-## Dayli 4:
+## Daily 4:
 
 ## 🙋 O que eu fiz desde o último relatório?
 - [ ] Inicializado o Desenvolvimento Da Página Do Produto
@@ -88,7 +88,7 @@
 
 # 📆 Relatório de Acompanhamento - Semana 2-3
 
-## Dayli 5:
+## Daily 5:
 
 ## 🙋 O que eu fiz desde o último relatório?
 - [ ] Tarefa 1
@@ -112,7 +112,7 @@
 
 # 📆 Relatório de Acompanhamento - Semana 2-3
 
-## Dayli 6:
+## Daily 6:
 
 ## 🙋 O que eu fiz desde o último relatório?
 - [ ] Tarefa 1
@@ -136,7 +136,7 @@
 
 # 📆 Relatório de Acompanhamento - Semana 3-4
 
-## Dayli 7:
+## Daily 7:
 
 ## 🙋 O que eu fiz desde o último relatório?
 - [ ] Tarefa 1
@@ -160,7 +160,7 @@
 
 # 📆 Relatório de Acompanhamento - Semana 3-4
 
-## Dayli 8:
+## Daily 8:
 
 ## 🙋 O que eu fiz desde o último relatório?
 - [ ] Tarefa 1
