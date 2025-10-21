@@ -9,34 +9,34 @@
 /* ===== ESTILO MOBILE ===== */
 @media (max-width: 768px) {
     body {
-        background-color: #F6F9F9;
-        color: #333;
-        padding: 10px;
+        background-color: #08068D;
+        color: #536679;
+        padding: 0;
     }
 
-    /* ===== HEADER (mantém cor fixa) ===== */
+    /* ===== HEADER COM PESQUISA INTEGRADA ===== */
     header {
-        width: 430px;
-        height: 12vh;
-        background-color: #003092;
+        width: 100%;
+        background-color: #08068D;
+        padding: 15px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .header-top {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        border-radius: 10px;
-        margin: 0 auto;
+        margin-bottom: 15px;
     }
 
     .menu-hamburguer {
-        width: 25%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .logo {
-        width: 50%;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,51 +44,137 @@
 
     .conteiner-icones {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        width: 25%;
-        height: 100%;
+        gap: 15px;
     }
 
     .menu-hamburguer img,
     .conteiner-icones img {
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
         filter: brightness(0) invert(1);
     }
 
     .logo img {
-        width: 80px;
+        width: 70px;
+        /* REMOVIDO O FILTER PARA MANTER A COR ORIGINAL */
+    }
+
+    /* ===== PESQUISA NO HEADER ===== */
+    .pesquisa {
+        display: flex;
+        gap: 5px;
+    }
+
+    .pesquisa input {
+        flex: 1;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 14px;
+        color: #536679;
+        background: #fff;
+        outline: none;
+    }
+
+    .pesquisa input:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .pesquisa input::placeholder {
+        color: #536679;
+        opacity: 0.7;
+    }
+
+    .pesquisa button {
+        background: #FF9B00;
+        border: none;
+        padding: 12px 15px;
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pesquisa button img {
+        width: 18px;
+        height: 18px;
+        filter: brightness(0) invert(1);
+    }
+
+    /* ===== CONTEÚDO PRINCIPAL COM FUNDO BRANCO ===== */
+    .conteudo {
+        background: #fff;
+        border-radius: 30px 30px 0 0;
+        margin-top: -20px;
+        position: relative;
+        z-index: 5;
+        padding: 30px 15px 15px;
+        min-height: calc(100vh - 120px);
     }
 
     /* ===== ENDEREÇO ===== */
     .endereco {
         display: flex;
         background: #fff;
-        margin-top: 15px;
-        padding: 12px;
+        padding: 15px;
         border-radius: 10px;
-        gap: 10px;
+        gap: 12px;
+        align-items: flex-start;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
     }
 
     .endereco img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
+        margin-top: 2px;
     }
 
-    .endereco-info p {
-        font-size: 12px;
-        line-height: 16px;
+    .endereco-info {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .endereco-texto {
+        display: flex;
+        flex-direction: column;
     }
 
     .endereco-info .nome {
         font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #536679;
     }
 
-    .endereco-info span {
-        color: gray;
-        font-weight: normal;
-        margin-left: 5px;
+    .endereco-info select {
+        width: 120px;
+        background: #08068D;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-weight: bold;
+        font-size: 14px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        text-align: center;
+    }
+
+    .endereco-info select:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
     }
 
     /* ===== PRODUTO ===== */
@@ -96,170 +182,242 @@
         display: flex;
         align-items: center;
         background: #fff;
-        margin-top: 15px;
-        padding: 12px;
+        padding: 15px;
         border-radius: 10px;
-        gap: 10px;
+        gap: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
     }
 
     .produto-img img {
         width: 60px;
         height: 60px;
         border-radius: 8px;
+        object-fit: cover;
     }
 
     .produto-nome {
         font-weight: bold;
         font-size: 14px;
+        margin-bottom: 4px;
+        color: #536679;
     }
 
     .produto-modelo {
         font-size: 12px;
-        color: gray;
-    }
-
-    .produto-preco {
-        margin-top: 5px;
+        color: #536679;
+        margin-bottom: 8px;
+        opacity: 0.8;
     }
 
     .produto-preco .atual {
-        color: #3E3BF7;
+        color: #08068D;
         font-weight: bold;
-    }
-
-    .produto-preco .antigo {
-        color: #bbb;
-        text-decoration: line-through;
-        margin-left: 8px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     /* ===== CUPOM ===== */
     .cupom {
         background: #fff;
-        padding: 12px;
-        margin-top: 15px;
+        padding: 15px;
         border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
     }
 
     .cupom label {
-        font-size: 12px;
-        color: #555;
+        font-size: 14px;
+        font-weight: bold;
+        color: #536679;
+        display: block;
+        margin-bottom: 8px;
     }
 
     .cupom input {
         width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 13px;
+        padding: 12px;
+        border: 2px solid #536679;
+        border-radius: 8px;
+        font-size: 14px;
+        background: #f9f9f9;
+        color: #536679;
+        outline: none;
+    }
+
+    .cupom input:focus {
+        outline: none;
+        border: 2px solid #536679;
+    }
+
+    .cupom input::placeholder {
+        color: #536679;
+        opacity: 0.7;
+    }
+
+    /* ===== LINHA DIVISÓRIA ===== */
+    .divisor {
+        height: 1px;
+        background: #eee;
+        margin: 15px 0;
     }
 
     /* ===== ENVIO ===== */
     .envio {
         background: #fff;
-        padding: 12px;
-        margin-top: 15px;
+        padding: 15px;
         border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
     }
 
     .envio-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+    }
+
+    .envio-header p {
+        font-weight: bold;
+        font-size: 14px;
+        color: #536679;
     }
 
     .envio-header a {
         font-size: 12px;
-        color: #3E3BF7;
+        color: #08068D;
         text-decoration: none;
     }
 
     .envio-box {
         width: 100%;
-        height: 60px;
-        background: #f7f7f7;
+        height: 50px;
+        background: #f0f0f0;
         border-radius: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
     }
 
     .envio-valores {
-        margin-top: 10px;
-        font-size: 13px;
+        font-size: 14px;
+        color: #536679;
+    }
+
+    .envio-valores p {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
     }
 
     .envio-valores span {
-        float: right;
+        font-weight: bold;
+        color: #536679;
     }
 
     /* ===== MÉTODOS DE PAGAMENTO ===== */
     .pagamento {
         background: #fff;
-        margin-top: 15px;
         border-radius: 10px;
-        padding: 12px;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
     }
 
     .pagamento h3 {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .metodo {
-        border-bottom: 1px solid #eee;
-        padding: 10px 0;
-    }
-
-    .metodo:last-child {
-        border-bottom: none;
-    }
-
-    .metodo .titulo {
-        font-size: 13px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #536679;
+        text-align: center;
         font-weight: bold;
-        margin-bottom: 5px;
     }
 
-    .cartao, .pix, .boleto {
+    /* MÉTODOS EM COLUNA - TEXTOS CENTRALIZADOS */
+    .metodo {
         display: flex;
         align-items: center;
-        gap: 8px;
+        justify-content: center;
+        gap: 12px;
+        padding: 15px;
+        border: 2px solid #08068D;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background: #fff;
+        transition: all 0.3s ease;
+        text-align: center;
     }
 
-    .cartao img, .pix img, .boleto img {
+    /* CARTÃO - BRANCO COM ÍCONE COLORIDO */
+    .metodo.cartao {
+        background: #fff;
+        color: #536679;
+    }
+
+    /* PIX - AZUL COM ÍCONE BRANCO */
+    .metodo.pix {
+        background: #08068D;
+        color: #fff;
+    }
+
+    /* BOLETO - BRANCO COM ÍCONE COLORIDO */
+    .metodo.boleto {
+        background: #fff;
+        color: #536679;
+    }
+
+    .metodo img {
         width: 20px;
         height: 20px;
     }
 
-    .cartao a {
-        color: #3E3BF7;
-        font-size: 13px;
-        text-decoration: none;
+    /* ÍCONE DO CARTÃO - COR #536679 */
+    .metodo.cartao img {
+        filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1000%) hue-rotate(170deg) brightness(90%) contrast(85%);
     }
 
-    .pix p, .boleto p {
-        font-size: 12px;
-        color: #555;
+    /* ÍCONE DO PIX - BRANCO */
+    .metodo.pix img {
+        filter: brightness(0) invert(1);
+    }
+
+    /* ÍCONE DO BOLETO - COR #536679 */
+    .metodo.boleto img {
+        filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1000%) hue-rotate(170deg) brightness(90%) contrast(85%);
+    }
+
+    .metodo a, .metodo p {
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        color: inherit;
+        margin: 0;
+        text-align: center;
     }
 
     /* ===== BOTÃO FINALIZAR ===== */
     .finalizar {
         width: 100%;
         background: #fff;
-        color: #3E3BF7;
-        border: 2px solid #3E3BF7;
-        padding: 12px;
+        color: #08068D;
+        border: 2px solid #08068D;
+        padding: 15px;
         border-radius: 10px;
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 20px;
         font-weight: bold;
+        cursor: pointer;
         transition: all 0.3s ease;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        outline: none;
     }
 
-    .finalizar:hover,
-    .finalizar:active {
-        background: #3E3BF7;
+    .finalizar:focus {
+        outline: none;
+        border: 2px solid #08068D;
+    }
+
+    .finalizar:hover {
+        background: #08068D;
         color: #fff;
     }
 }
