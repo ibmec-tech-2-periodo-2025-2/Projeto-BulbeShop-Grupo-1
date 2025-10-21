@@ -1,26 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>checkout-2</title>
+    <title>Checkout - Bulbe</title>
     <link rel="stylesheet" href="style4.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 </head>
 <body>
-  <main>
-    <div id="endereço">
-        <H2>RUA ANTONIO LEITE DE BRITO, 180</H2>
-        <P>35529-000</P>
-        <img src="./asets/marker-pin-01.png" alt="">
-    </div>
-    <div id="produto"></div>
-    <div id="pagamento"></div>
-  </main> 
 
-   
+    <!-- Cabeçalho -->
+    <header>
+      <div class="menu-hamburguer">
+          <img src="./asets/menu-01.png" alt="">
+      </div>
+      <div class="logo">
+          <img src="./asets/logo-base.png" alt="">
+      </div>
+      <div class="conteiner-icones">
+          <img src="./asets/bell-01.png" alt="">
+          <img src="./asets/user-circle.png" alt="">
+      </div>
+  </header>
+
+    <!-- Endereço -->
+    <section class="endereco">
+        <div class="endereco-icone">
+           
+            <img src="./asets/marker-pin-01.png" alt="localização">
+        </div>
+        <div class="endereco-info">
+            <p class="nome">NOME DO CARA <span>(+55) 31 0000 0000</span></p>
+            <p class="rua">Rua, bairro, número, bloco, Apartamento</p>
+            <p class="cidade">Cidade, Estado, Cep</p>
+        </div>
+    </section>
+
+    <!-- Produto -->
+    <section class="produto">
+        <div class="produto-img">
+            
+            <img src="./asets/shopping 1.jpg" alt="produto">
+        </div>
+        <div class="produto-info">
+            <p class="produto-nome">Nome do produto completo</p>
+            <p class="produto-modelo">Modelo do produto</p>
+            <p class="produto-preco">
+                <span class="atual">R$ 200,00</span> 
+                <span class="antigo">R$ 250,00</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Cupom -->
+    <section class="cupom">
+        <label for="cupom">Cupom da loja</label>
+        <input type="text" id="cupom" placeholder="Selecione ou insira o cupom">
+    </section>
+
+    <!-- Envio -->
+    <section class="envio">
+        <div class="envio-header">
+            <p>Opção de Envio</p>
+            <a href="#">Ver mais ></a>
+        </div>
+        <div class="envio-box"></div>
+        <div class="envio-valores">
+            <p>ICMS <span>R$ 0,00</span></p>
+            <p>Total da 1 item <span>R$ 200,00</span></p>
+        </div>
+    </section>
+
+    <!-- Métodos de pagamento -->
+    <section class="pagamento">
+        <h3>Métodos de pagamento</h3>
+
+        <div class="metodo">
+            <p class="titulo">Seus cartões</p>
+            <div class="cartao">
+                
+                <img src="./asets/credit-card-02.svg" alt="cartão">
+                <a href="#">Adicionar um cartão de crédito</a>
+            </div>
+        </div>
+
+        <div class="metodo">
+            <p class="titulo">Pix</p>
+            <div class="pix">
+                
+                <img src="./asets/Pix.png" alt="pix">
+                <p>O código Pix gerado para o pagamento é válido por 30 minutos após a finalização do pedido</p>
+            </div>
+        </div>
+
+        <div class="metodo">
+            <p class="titulo">Boleto</p>
+            <div class="boleto">
+                <
+                <img src="./asets/Barcode.png" alt="boleto">
+                <p>Vencimento em 1 dia útil</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão Finalizar -->
+    <button class="finalizar">Finalizar compra</button>
+
 </body>
 </html>
