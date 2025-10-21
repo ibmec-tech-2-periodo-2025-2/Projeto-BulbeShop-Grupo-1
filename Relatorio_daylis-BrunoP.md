@@ -68,22 +68,21 @@
 ## Dayli 4:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Inicializado o Desenvolvimento Da Página Do Produto
+
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Finalizando a Página Do Produto
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Nenhuma Até o Momento  
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Utilizar Recursos HTML
+- Utilizar Recursos CSS
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- A Definir
 
 --------------------------------------------------------------------------------
 
