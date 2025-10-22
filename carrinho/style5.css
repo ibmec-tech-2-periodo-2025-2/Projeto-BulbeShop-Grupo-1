@@ -73,3 +73,239 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* TÍTULO */
+#titulo-carrinho {
+  background-color: #5b4ee7;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  border-radius: 0 0 20px 20px;
+}
+
+#titulo-carrinho h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* SUBTOTAL */
+#resumo-carrinho {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* LISTA DE PRODUTOS */
+#lista-produtos {
+  padding: 10px 15px;
+}
+
+.produto {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.imagem-produto {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.info-produto {
+  flex: 1;
+}
+
+.linha-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nome-produto {
+  font-size: 13px;
+  margin: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.remover {
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #888;
+  cursor: pointer;
+}
+
+.economia {
+  display: inline-block;
+  background: #d5f5dc;
+  color: #0f7c2e;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-top: 3px;
+}
+
+.controle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.btn-menor, .btn-maior {
+  border: none;
+  background: none;
+  font-size: 16px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.input-quantidade {
+  width: 35px;
+  text-align: center;
+  border: none;
+  background: none;
+  font-size: 13px;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+}
+
+/* FRETE */
+#frete {
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.campo-frete {
+  display: flex;
+  margin-top: 4px;
+}
+
+#cep-frete {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  font-size: 13px;
+}
+
+#btn-calcular {
+  background-color: #ddd;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.aviso {
+  font-size: 11px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* TOTAL */
+#total-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-top: 1px solid #eee;
+}
+
+/* BOTÕES */
+#acoes-carrinho {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+
+#btn-iniciar-compra {
+  background-color: #0e5a3a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#btn-primeiro-acesso {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* BANNER FINAL */
+#banner-indique {
+  background: linear-gradient(180deg, #eef2ff 0%, #dce1ff 100%);
+  border-radius: 16px;
+  margin: 10px 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  gap: 10px;
+}
+
+.texto-banner {
+  font-size: 13px;
+  color: #333;
+}
+
+.texto-banner p {
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+
+.link-indique {
+  color: #4b63ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.imagem-banner {
+  width: 80px;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding-bottom: 40px;
+  }
+}
