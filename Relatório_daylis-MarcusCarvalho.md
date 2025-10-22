@@ -56,7 +56,7 @@ Nenhuma Até o Momento
 - - Design's em Alta Fidelidade
 
 ## 🗓️ Próximo passo
-- A Definir*-
+- A Definir
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 1-2
