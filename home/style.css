@@ -15,7 +15,7 @@
     }
     /* HEADER */
     header {
-        width: 430px;
+        width: 100%;
         height: 26vh;
         background-color: #08068D;
         display: flex;
@@ -190,6 +190,12 @@
         align-items: center;
         border-radius: 6px;
         background-color: var(--fundo_cupom);
+    }
+    #Lampada .cupom{
+        margin-top: 29px ;
+    }
+    #Lampada h3{
+        margin-bottom: -33px;
     }
     .cupom p{
         margin-top: -2.5px;
