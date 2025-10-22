@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style5.css">
 </head>
 <body>
-    <header>
+ <header>
         <div class="conteiener-top">
             <div class="menu-e-logo">
                 <img src="./assets/menu.png" alt="">
@@ -24,12 +24,109 @@
             <div><img src="./assets/lupa.png" alt=""></div>
         </div>  
     </header>
-    <main>
-        
-        
+    <!-- TÍTULO -->
+  <div id="titulo-carrinho">
+    <h2>Carrinho de Compras</h2>
+  </div>
 
+  <!-- SUBTOTAL -->
+  <div id="resumo-carrinho">
+    <p>Subtotal (sem frete):</p>
+    <span class="valor">R$ 522,00</span>
+  </div>
 
+  <!-- LISTA DE PRODUTOS -->
+  <div id="lista-produtos">
 
-    </main>
+    <!-- PRODUTO 1 -->
+    <div class="produto">
+      <img src="imagens/lampada.png" alt="Lâmpada Super Bulbo" class="imagem-produto">
+      <div class="info-produto">
+        <div class="linha-topo">
+          <h3 class="nome-produto">Lâmpada Super Bulbo...</h3>
+          <button class="remover">Remover</button>
+        </div>
+        <span class="economia">você economizou 19,40 R$</span>
+        <div class="controle">
+          <div class="quantidade">
+            <button class="btn-menor">-</button>
+            <input type="number" value="1" min="1" class="input-quantidade">
+            <button class="btn-maior">+</button>
+          </div>
+          <span class="preco">R$ 109,50</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUTO 2 -->
+    <div class="produto">
+      <img src="imagens/abajour.png" alt="Abajour Led Para Quarto" class="imagem-produto">
+      <div class="info-produto">
+        <div class="linha-topo">
+          <h3 class="nome-produto">Abajour Led Para Qua...</h3>
+          <button class="remover">Remover</button>
+        </div>
+        <div class="controle">
+          <div class="quantidade">
+            <button class="btn-menor">-</button>
+            <input type="number" value="1" min="1" class="input-quantidade">
+            <button class="btn-maior">+</button>
+          </div>
+          <span class="preco">R$ 199,50</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUTO 3 -->
+    <div class="produto">
+      <img src="imagens/pilha.png" alt="Pilha Duracell AA" class="imagem-produto">
+      <div class="info-produto">
+        <div class="linha-topo">
+          <h3 class="nome-produto">Pilha Duracell AA</h3>
+          <button class="remover">Remover</button>
+        </div>
+        <span class="economia">você economizou 10,15 R$</span>
+        <div class="controle">
+          <div class="quantidade">
+            <button class="btn-menor">-</button>
+            <input type="number" value="1" min="1" class="input-quantidade">
+            <button class="btn-maior">+</button>
+          </div>
+          <span class="preco">R$ 18,75</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FRETE -->
+  <div id="frete">
+    <label for="cep-frete">Meios de envio</label>
+    <div class="campo-frete">
+      <input type="text" id="cep-frete" placeholder="Digite seu CEP">
+      <button id="btn-calcular">Calcular</button>
+    </div>
+    <p class="aviso">Não sei meu CEP</p>
+  </div>
+
+  <!-- TOTAL -->
+  <div id="total-carrinho">
+    <p>Total:</p>
+    <span class="valor-total">R$ 327,75</span>
+  </div>
+
+  <!-- BOTÕES -->
+  <div id="acoes-carrinho">
+    <button id="btn-iniciar-compra">Iniciar Compra</button>
+    <button id="btn-primeiro-acesso">Primeiro acesso</button>
+  </div>
+
+  <!-- BANNER FINAL -->
+  <div id="banner-indique">
+    <div class="texto-banner">
+      <p>Seus amigos merecem essa economia!</p>
+      <a href="#" class="link-indique">Indique ></a>
+    </div>
+    <img src="imagens/banner-indique.png" alt="Indique e ganhe" class="imagem-banner">
+  </div>
 </body>
 </html>

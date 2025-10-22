@@ -1,4 +1,3 @@
-/* ===== RESET GLOBAL ===== */
 * {
   margin: 0;
   padding: 0;
@@ -6,107 +5,110 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* ===== ESTILO MOBILE ===== */
 @media (max-width: 768px) {
     body {
         background-color: #08068D;
         color: #536679;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* ===== HEADER COM PESQUISA INTEGRADA ===== */
     header {
-        width: 100%;
+        width: 430px;
+        height: 26vh;
         background-color: #08068D;
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiener-top{
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-e-logo{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        width: 45%;
+        height: 100%;
+    }
+
+    .conteiner-icones{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+        width: 45%;
+        height: 100%;
+    }
+
+    .conteiner-pesquisa{
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteiner-pesquisa input{
         position: relative;
-        z-index: 10;
+        padding: 10px;
+        left:5%;
+        width: 90%;
+        height: 80%;
+        border-radius: 8px;
+        font-weight: 300;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #536679;
     }
 
-    .header-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
+    .conteiner-pesquisa input::placeholder {
+        color: #536679;
+        opacity: 0.7;
     }
 
-    .menu-hamburguer {
+    .conteiner-pesquisa div{
+        position: relative;
+        right:5%;
+        width: 10%;
+        height: 75%;
+        border-radius: 8px;
+        background-color: #FF9E1B;
         display: flex;
-        align-items: center;
         justify-content: center;
-    }
-
-    .logo {
-        display: flex;
         align-items: center;
-        justify-content: center;
+        cursor: pointer;
     }
 
-    .conteiner-icones {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 15px;
+    .conteiner-pesquisa div img {
+        width: 18px;
+        height: 18px;
+        filter: brightness(0) invert(1);
     }
 
-    .menu-hamburguer img,
+    .menu-e-logo img,
     .conteiner-icones img {
         width: 20px;
         height: 20px;
         filter: brightness(0) invert(1);
     }
 
-    .logo img {
+    .menu-e-logo img:nth-child(2) {
         width: 70px;
-        /* REMOVIDO O FILTER PARA MANTER A COR ORIGINAL */
+        filter: none;
     }
 
-    /* ===== PESQUISA NO HEADER ===== */
-    .pesquisa {
-        display: flex;
-        gap: 5px;
-    }
-
-    .pesquisa input {
-        flex: 1;
-        padding: 12px;
-        border-radius: 8px;
-        border: none;
-        font-size: 14px;
-        color: #536679;
-        background: #fff;
-        outline: none;
-    }
-
-    .pesquisa input:focus {
-        outline: none;
-        border: none;
-        box-shadow: none;
-    }
-
-    .pesquisa input::placeholder {
-        color: #536679;
-        opacity: 0.7;
-    }
-
-    .pesquisa button {
-        background: #FF9B00;
-        border: none;
-        padding: 12px 15px;
-        border-radius: 8px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .pesquisa button img {
-        width: 18px;
-        height: 18px;
-        filter: brightness(0) invert(1);
-    }
-
-    /* ===== CONTEÚDO PRINCIPAL COM FUNDO BRANCO ===== */
     .conteudo {
         background: #fff;
         border-radius: 30px 30px 0 0;
@@ -115,9 +117,9 @@
         z-index: 5;
         padding: 30px 15px 15px;
         min-height: calc(100vh - 120px);
+        width: 430px;
     }
 
-    /* ===== ENDEREÇO ===== */
     .endereco {
         display: flex;
         background: #fff;
@@ -177,7 +179,6 @@
         box-shadow: none;
     }
 
-    /* ===== PRODUTO ===== */
     .produto {
         display: flex;
         align-items: center;
@@ -216,7 +217,6 @@
         font-size: 14px;
     }
 
-    /* ===== CUPOM ===== */
     .cupom {
         background: #fff;
         padding: 15px;
@@ -254,14 +254,12 @@
         opacity: 0.7;
     }
 
-    /* ===== LINHA DIVISÓRIA ===== */
     .divisor {
         height: 1px;
         background: #eee;
         margin: 15px 0;
     }
 
-    /* ===== ENVIO ===== */
     .envio {
         background: #fff;
         padding: 15px;
@@ -314,7 +312,6 @@
         color: #536679;
     }
 
-    /* ===== MÉTODOS DE PAGAMENTO ===== */
     .pagamento {
         background: #fff;
         border-radius: 10px;
@@ -331,7 +328,6 @@
         font-weight: bold;
     }
 
-    /* MÉTODOS EM COLUNA - TEXTOS CENTRALIZADOS */
     .metodo {
         display: flex;
         align-items: center;
@@ -346,19 +342,16 @@
         text-align: center;
     }
 
-    /* CARTÃO - BRANCO COM ÍCONE COLORIDO */
     .metodo.cartao {
         background: #fff;
         color: #536679;
     }
 
-    /* PIX - AZUL COM ÍCONE BRANCO */
     .metodo.pix {
         background: #08068D;
         color: #fff;
     }
 
-    /* BOLETO - BRANCO COM ÍCONE COLORIDO */
     .metodo.boleto {
         background: #fff;
         color: #536679;
@@ -369,17 +362,14 @@
         height: 20px;
     }
 
-    /* ÍCONE DO CARTÃO - COR #536679 */
     .metodo.cartao img {
         filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1000%) hue-rotate(170deg) brightness(90%) contrast(85%);
     }
 
-    /* ÍCONE DO PIX - BRANCO */
     .metodo.pix img {
         filter: brightness(0) invert(1);
     }
 
-    /* ÍCONE DO BOLETO - COR #536679 */
     .metodo.boleto img {
         filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1000%) hue-rotate(170deg) brightness(90%) contrast(85%);
     }
@@ -393,7 +383,6 @@
         text-align: center;
     }
 
-    /* ===== BOTÃO FINALIZAR ===== */
     .finalizar {
         width: 100%;
         background: #fff;
