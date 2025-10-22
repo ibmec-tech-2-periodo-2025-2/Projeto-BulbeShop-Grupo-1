@@ -7,37 +7,109 @@
     <link rel="stylesheet" href="carrinho.css/">
 </head>
 <body>
-    <main>
-        <div>
-            <div class="painel">
-                <img class="car" src="" alt="">
-                <h1>Carrinho de Compras</h1>
-                <img class="x" src="" alt="">
-            </div>
-            <div class="lampada">
-                <img class="imagem-lampada" src="" alt="">
-            </div>
-            <div class="titulo-carrinho">
-                <h3>Lâmpada Super Bulbo LED...</h3>
-                <p>você economizou 12,00 R$</p>
-                <a href="">Remover</a>
-                <h5>-15%</h5>
-                <h5>R$ 128,90</h5>
-                <h5>R$ 99,50</h5>
-                <h5> -   1   + </h5>
-            </div>
+    <!-- TÍTULO -->
+  <div id="titulo-carrinho">
+    <h2>Carrinho de Compras</h2>
+  </div>
+
+  <!-- SUBTOTAL -->
+  <div id="resumo-carrinho">
+    <p>Subtotal (sem frete):</p>
+    <span class="valor">R$ 522,00</span>
+  </div>
+
+  <!-- LISTA DE PRODUTOS -->
+  <div id="lista-produtos">
+
+    <!-- PRODUTO 1 -->
+    <div class="produto">
+      <img src="imagens/lampada.png" alt="Lâmpada Super Bulbo" class="imagem-produto">
+      <div class="info-produto">
+        <div class="linha-topo">
+          <h3 class="nome-produto">Lâmpada Super Bulbo...</h3>
+          <button class="remover">Remover</button>
         </div>
-        <div class="subtotal">
-            <h3>Subtotal (sem frete):</h3>
-            <h3>R$ 99,50</h3>
-            <h5>Meios de envio</h5>
-            <p>Digite seu CEP</p>
-            <p>Calcular</p>
-            <h5>Não sei meu CEP</h5>
-        </div>    
+        <span class="economia">você economizou 19,40 R$</span>
+        <div class="controle">
+          <div class="quantidade">
+            <button class="btn-menor">-</button>
+            <input type="number" value="1" min="1" class="input-quantidade">
+            <button class="btn-maior">+</button>
+          </div>
+          <span class="preco">R$ 109,50</span>
+        </div>
+      </div>
+    </div>
 
+    <!-- PRODUTO 2 -->
+    <div class="produto">
+      <img src="imagens/abajour.png" alt="Abajour Led Para Quarto" class="imagem-produto">
+      <div class="info-produto">
+        <div class="linha-topo">
+          <h3 class="nome-produto">Abajour Led Para Qua...</h3>
+          <button class="remover">Remover</button>
+        </div>
+        <div class="controle">
+          <div class="quantidade">
+            <button class="btn-menor">-</button>
+            <input type="number" value="1" min="1" class="input-quantidade">
+            <button class="btn-maior">+</button>
+          </div>
+          <span class="preco">R$ 199,50</span>
+        </div>
+      </div>
+    </div>
 
+    <!-- PRODUTO 3 -->
+    <div class="produto">
+      <img src="imagens/pilha.png" alt="Pilha Duracell AA" class="imagem-produto">
+      <div class="info-produto">
+        <div class="linha-topo">
+          <h3 class="nome-produto">Pilha Duracell AA</h3>
+          <button class="remover">Remover</button>
+        </div>
+        <span class="economia">você economizou 10,15 R$</span>
+        <div class="controle">
+          <div class="quantidade">
+            <button class="btn-menor">-</button>
+            <input type="number" value="1" min="1" class="input-quantidade">
+            <button class="btn-maior">+</button>
+          </div>
+          <span class="preco">R$ 18,75</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    </main>
+  <!-- FRETE -->
+  <div id="frete">
+    <label for="cep-frete">Meios de envio</label>
+    <div class="campo-frete">
+      <input type="text" id="cep-frete" placeholder="Digite seu CEP">
+      <button id="btn-calcular">Calcular</button>
+    </div>
+    <p class="aviso">Não sei meu CEP</p>
+  </div>
+
+  <!-- TOTAL -->
+  <div id="total-carrinho">
+    <p>Total:</p>
+    <span class="valor-total">R$ 327,75</span>
+  </div>
+
+  <!-- BOTÕES -->
+  <div id="acoes-carrinho">
+    <button id="btn-iniciar-compra">Iniciar Compra</button>
+    <button id="btn-primeiro-acesso">Primeiro acesso</button>
+  </div>
+
+  <!-- BANNER FINAL -->
+  <div id="banner-indique">
+    <div class="texto-banner">
+      <p>Seus amigos merecem essa economia!</p>
+      <a href="#" class="link-indique">Indique ></a>
+    </div>
+    <img src="imagens/banner-indique.png" alt="Indique e ganhe" class="imagem-banner">
+  </div>
 </body>
 </html>
