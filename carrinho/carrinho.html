@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="carrinho.css/">
 </head>
 <body>
-    <!-- TÍTULO -->
+     <!-- TÍTULO -->
   <div id="titulo-carrinho">
     <h2>Carrinho de Compras</h2>
   </div>
@@ -24,19 +24,31 @@
     <!-- PRODUTO 1 -->
     <div class="produto">
       <img src="imagens/lampada.png" alt="Lâmpada Super Bulbo" class="imagem-produto">
+
       <div class="info-produto">
         <div class="linha-topo">
           <h3 class="nome-produto">Lâmpada Super Bulbo...</h3>
           <button class="remover">Remover</button>
         </div>
-        <span class="economia">você economizou 19,40 R$</span>
+
+        <div class="faixa-economia">
+          você economizou <strong>R$ 19,40</strong>
+        </div>
+
         <div class="controle">
           <div class="quantidade">
             <button class="btn-menor">-</button>
             <input type="number" value="1" min="1" class="input-quantidade">
             <button class="btn-maior">+</button>
           </div>
-          <span class="preco">R$ 109,50</span>
+
+          <div class="preco-area">
+            <span class="badge-desconto">-20%</span>
+            <div class="valores">
+              <span class="preco-atual">R$ 109,50</span>
+              <span class="preco-antigo">R$ 128,90</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -44,18 +56,29 @@
     <!-- PRODUTO 2 -->
     <div class="produto">
       <img src="imagens/abajour.png" alt="Abajour Led Para Quarto" class="imagem-produto">
+
       <div class="info-produto">
         <div class="linha-topo">
           <h3 class="nome-produto">Abajour Led Para Qua...</h3>
           <button class="remover">Remover</button>
         </div>
+
+        <div class="faixa-economia ocultar-em-branco"></div>
+
         <div class="controle">
           <div class="quantidade">
             <button class="btn-menor">-</button>
             <input type="number" value="1" min="1" class="input-quantidade">
             <button class="btn-maior">+</button>
           </div>
-          <span class="preco">R$ 199,50</span>
+
+          <div class="preco-area">
+            <span class="badge-desconto">-10%</span>
+            <div class="valores">
+              <span class="preco-atual">R$ 199,50</span>
+              <span class="preco-antigo">R$ 221,70</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -63,19 +86,31 @@
     <!-- PRODUTO 3 -->
     <div class="produto">
       <img src="imagens/pilha.png" alt="Pilha Duracell AA" class="imagem-produto">
+
       <div class="info-produto">
         <div class="linha-topo">
           <h3 class="nome-produto">Pilha Duracell AA</h3>
           <button class="remover">Remover</button>
         </div>
-        <span class="economia">você economizou 10,15 R$</span>
+
+        <div class="faixa-economia">
+          você economizou <strong>R$ 10,15</strong>
+        </div>
+
         <div class="controle">
           <div class="quantidade">
             <button class="btn-menor">-</button>
             <input type="number" value="1" min="1" class="input-quantidade">
             <button class="btn-maior">+</button>
           </div>
-          <span class="preco">R$ 18,75</span>
+
+          <div class="preco-area">
+            <span class="badge-desconto">-35%</span>
+            <div class="valores">
+              <span class="preco-atual">R$ 18,75</span>
+              <span class="preco-antigo">R$ 28,90</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
