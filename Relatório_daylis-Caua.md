@@ -3,7 +3,7 @@
 ## Dayli 1:
 
 ### 🙋 O que eu fiz desde o último relatório?
-- [ ] Criar o wireframe de baixa fidelidade
+- [x] Criar o wireframe de baixa fidelidade
 
 ### 🚧 O que estou fazendo agora?
 -  Criando a página do carrinho
@@ -12,7 +12,8 @@
 - Nenhuma
 
 ### 🧠 O que aprendi até agora?
-- Mexer com Figjan
+- Mexer com Figjam
+
 
 ### 🗓️ Próximo passo
 - Estrutura inicial de HTML
@@ -23,19 +24,19 @@
 ## Dayli 2:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Estrutura inicial de HTML
+- [x] Estrutura inicial de HTML
 
 ## 🚧 O que estou fazendo agora?
 - Estrutura inicial de HTML
 
 ## 🧱 Quais dificuldades encontrei?
-- As outras paginas do site ainda não estavam prontas
+- Nenhuma
 
 ## 🧠 O que aprendi até agora?
-- Criar um projeto em baixa fidelidade 
+- Criar a estrutura inicial do HTML
 
 ## 🗓️ Próximo passo
-- Esperar finaliza a sprint para ver os proximos passos
+- Melhorar o HTML
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 1-2
@@ -43,19 +44,19 @@
 ## Dayli 3:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Criação do figma em auta fidelidade da primeira pagina do checkout
+- [x] Criação do figma em auta fidelidade da primeira pagina do carrinho
 
 ## 🚧 O que estou fazendo agora?
-- Criação do figma em auta fidelidade da primeira pagina do checkout
+- Criação do figma em auta fidelidade da primeira pagina do carrinho
 
 ## 🧱 Quais dificuldades encontrei?
 - Seguir os padrões inpostos pela Boulbe
 
 ## 🧠 O que aprendi até agora?
-- Mexer com o Figma
+- Mexer com o Figma pro
 
 ## 🗓️ Próximo passo
-- 	Criar em codigo da primeira parte do checkout
+- 	Criar em codigo da primeira parte do carrinho
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 1-2
@@ -63,16 +64,16 @@
 ## Dayli 4:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Criar em codigo da primeira parte do checkout
+- [x] Criar a primeira parte do HTML
 
 ## 🚧 O que estou fazendo agora?
-- Criar em codigo da primeira parte do checkout
+- Finalizando CSS e HTML do carrinho
 
 ## 🧱 Quais dificuldades encontrei?
 - Nenhuma
 
 ## 🧠 O que aprendi até agora?
-- Como funciona a sobreposição de elementos do app da bulbe
+- CSS e HTML avançados
 
 ## 🗓️ Próximo passo
 - Fazer os ultimos ajustes
