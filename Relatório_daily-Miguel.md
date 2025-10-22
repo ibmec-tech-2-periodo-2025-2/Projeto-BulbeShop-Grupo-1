@@ -1,7 +1,7 @@
 # 📆 Relatório de Acompanhamento - Semana 0/1
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] wireframes baixa fidelidade
+- [x] wireframes baixa fidelidade
 
 
 ## 🚧 O que estou fazendo agora?
@@ -58,8 +58,7 @@
 - não sabia algumas estilizações em css
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- otimização de tempo para programar em css
 
 ## 🗓️ Próximo passo
 - finalizar o html e css
