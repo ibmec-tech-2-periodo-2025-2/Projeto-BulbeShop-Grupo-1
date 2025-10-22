@@ -1,79 +1,3 @@
-* { 
-
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-    
-}
-
-header {
-    width: 430px;
-    height: 26vh;
-    background-color: #08068D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.conteiener-top{
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-e-logo{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-    width: 45%;
-    height: 100%;
-}
-
-.conteiner-icones{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 20px;
-    width: 45%;
-    height: 100%;
-}
-
-.conteiner-pesquisa{
-    
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.conteiner-pesquisa input{
-    position: relative;
-    padding: 10px;
-    left:5%;
-    width: 90%;
-    height: 80%;
-    border-radius: 8px;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.conteiner-pesquisa div{
-    position: relative;
-    right:5%;
-    width: 10%;
-    height: 75%;
-    border-radius: 8px;
-    background-color: #FF9E1B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f5f6fa;
@@ -122,8 +46,8 @@ body {
 }
 
 .imagem-produto {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
   margin-right: 10px;
 }
@@ -153,15 +77,18 @@ body {
   cursor: pointer;
 }
 
-.economia {
+.faixa-economia {
   display: inline-block;
-  background: #d5f5dc;
-  color: #0f7c2e;
+  background: #d6f4df;
+  color: #0b7a39;
   font-size: 11px;
-  padding: 3px 6px;
-  border-radius: 4px;
-  margin-top: 3px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin: 6px 0 2px;
+  font-weight: 500;
 }
+.faixa-economia strong { font-weight: 700; }
+.faixa-economia.ocultar-em-branco { visibility: hidden; height: 22px; }
 
 .controle {
   display: flex;
@@ -170,6 +97,7 @@ body {
   margin-top: 6px;
 }
 
+/* QUANTIDADE */
 .quantidade {
   display: flex;
   align-items: center;
@@ -194,10 +122,40 @@ body {
   font-size: 13px;
 }
 
-.preco {
-  font-weight: bold;
+/* PREÇOS E DESCONTOS */
+.preco-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-desconto {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: #ece9ff;
+  color: #4f46e5;
+}
+
+.valores {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.1;
+}
+
+.preco-atual {
+  font-weight: 700;
   font-size: 13px;
-  color: #333;
+  color: #222;
+}
+
+.preco-antigo {
+  font-size: 11px;
+  color: #9b9b9b;
+  text-decoration: line-through;
 }
 
 /* FRETE */
@@ -306,6 +264,6 @@ body {
 
 @media (max-width: 400px) {
   body {
-    padding-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
