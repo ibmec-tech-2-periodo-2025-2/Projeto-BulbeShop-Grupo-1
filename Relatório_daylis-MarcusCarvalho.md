@@ -53,7 +53,7 @@ Nenhuma Até o Momento
 Nenhuma Até o Momento
 
 ## 🧠 O que aprendi até agora?
-- - Design's em ALta Fidelidade
+- - Design's em Alta Fidelidade
 
 ## 🗓️ Próximo passo
 - A Definir*-
