@@ -3,22 +3,22 @@
 ## Dayli 1:
 
 ### 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Estudei Identidade visual Bulbe
+- [ ] Estudei Figma
 
 ### 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Wireframe alta fidelidade
 
 ### 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Demora para liberar identidade visual Bulbe
+- Dificuldade no Figma
 
 ### 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Habilidades no figma
+- Métodos no CSS e HTML
 
 ### 🗓️ Próximo passo
-- Tarefa próxima
+- Evoluir no Wireframe 
 
 --------------------------------------------------------------------------------
 
@@ -27,22 +27,22 @@
 ## Dayli 2:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Atualizei WireFrame
+- [ ] Padronizei Header
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Finalizando WireFrame
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Dificuldade com criatividade
+- Dificuldade no Figma
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Habilidades no figma
+- Métodos no CSS e HTML
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Iniciar HTML e CSS
 
 --------------------------------------------------------------------------------
 
@@ -51,22 +51,23 @@
 ## Dayli 3:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Recomecei Wireframes no figma
+- [ ] Finalizei Wireframes no figma
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- HTML e CSS dos WireFrames
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Dificuldade no Figma
+- Dificuldade criativa
+- Dificuldade em achar imagens de qualidade
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Habilidades no figma
+- Métodos no CSS e HTML
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Finalizar Telas
 
 --------------------------------------------------------------------------------
 
@@ -75,22 +76,21 @@
 ## Dayli 4:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Montei imagens de qualidade
+- [ ] Finalizei tela
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Ajustando toques finais no CSS
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Home muito extensa
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Criação de imagens com prompts específicos
+- Métodos HTML e CSS
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Começar responsividade
 
 --------------------------------------------------------------------------------
 
