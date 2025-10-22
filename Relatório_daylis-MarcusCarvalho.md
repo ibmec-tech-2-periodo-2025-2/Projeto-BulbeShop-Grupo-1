@@ -24,7 +24,7 @@
 
 ## 🙋 O que eu fiz desde o último relatório?
 - [ ] Revisão de todo o desing das páginas
-- [ ] 
+      
 ## 🚧 O que estou fazendo agora?
 - Design De Alta Fidelidade No Figma
 
