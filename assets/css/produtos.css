@@ -207,10 +207,11 @@ body {
   border-radius: var(--radius);
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ 
 }
 
 .main-image img {
-  width: 100%;
+  width: 60%;
   max-width: 240px;
   height: auto;
   border-radius: var(--radius-sm);
@@ -386,7 +387,7 @@ body {
 
 .promo-card {
   margin: 20px 0;
-  background: linear-gradient(135deg, var(--success), #13c78a);
+  background-image: url("../img/banner/economize.png");
   border-radius: var(--radius);
   padding: 20px;
   color: white;
@@ -396,7 +397,10 @@ body {
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
+
 
 .promo-card::before {
   content: '';
@@ -407,11 +411,6 @@ body {
   height: 150px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
-
-.promo-card .promo-inner {
-  flex: 1;
-  z-index: 1;
 }
 
 .promo-card p {
