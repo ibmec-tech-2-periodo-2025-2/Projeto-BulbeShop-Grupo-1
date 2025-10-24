@@ -1,90 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Bulbe</title>
-    <link rel="stylesheet" href="../assets/css/checkout.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Bulbe</title>
+  <link rel="stylesheet" href="../assets/css/checkout.css">
 </head>
+
 <body>
-    <header>
-        <div class="conteiener-top">
-            <div class="menu-e-logo">
-                <img src="../assets/img/icons/menu.png" alt="">
-                <img src="../assets/img/logo.png" alt="">
-            </div>
-            <div class="conteiner-icones">
-                <img src="../assets/img/icons/sino.png" alt="">
-                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
-                <img src="../assets/img/icons/user.png" alt="">
-            </div>
-        </div>
-        <div class="conteiner-pesquisa">
-            <input type="search" placeholder="Pesquisa...">
-            <div><img src="../assets/img/icons/lupa.png" alt=""></div>
-        </div>  
-    </header>
-
-    <div class="conteudo">
-        <div class="endereco">
-            <img src="../assets/img/icons/localizacao.png" alt="endereço">
-            <div class="endereco-info">
-                <div class="endereco-texto">
-                    <p class="nome">Endereço de Entrega</p>
-                </div>
-                <select>
-                    <option value="00000-000">00000-000</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="produto">
-            <div class="produto-img">
-                <img src="../assets/img/produtos/lampada.png" alt="produto">
-            </div>
-            <div>
-                <p class="produto-nome">Nome do produto completo</p>
-                <p class="produto-modelo">Modelo do produto</p>
-                <p class="produto-preco"><span class="atual">R$ 200,00</span></p>
-            </div>
-        </div>
-
-        <div class="cupom">
-            <label for="cupom">Cupom Promocional</label>
-            <input type="text" id="cupom" placeholder="Insira seu cupom aqui">
-        </div>
-
-        <div class="divisor"></div>
-
-        <div class="envio">
-            <div class="envio-header">
-                <p>Opção de Envio</p>
-                <a href="#">Ver mais</a>
-            </div>
-            <div class="envio-box"></div>
-            <div class="envio-valores">
-                <p>ICMS <span>R$ 0,00</span></p>
-                <p>Total de itens <span>R$ 200,00</span></p>
-            </div>
-        </div>
-
-        <div class="pagamento">
-            <h3>Métodos de pagamento</h3>
-            <div class="metodo cartao">
-                <img src="../assets/img/icons/cartao.png" alt="cartão">
-                <p>Pagar com Cartão</p>
-            </div>
-            <div class="metodo pix">
-                <img src="../assets/img/icons/pix.png" alt="pix">
-                <p>Pagar com PIX</p>
-            </div>
-            <div class="metodo boleto">
-                <img src="../assets/img/icons/boleto.png" alt="boleto">
-                <p>Pagar com Boleto</p>
-            </div>
-        </div>
-
-        <button class="finalizar">Finalizar Compra</button>
+  <header>
+    <div class="conteiener-top">
+      <div class="menu-e-logo">
+        <img src="../assets/img/icons/menu.png" alt="">
+        <img src="../assets/img/logo.png" alt="">
+      </div>
+      <div class="conteiner-icones">
+        <img src="../assets/img/icons/sino.png" alt="">
+        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
+        <img src="../assets/img/icons/user.png" alt="">
+      </div>
     </div>
+    <div class="conteiner-pesquisa">
+      <input type="search" placeholder="Pesquisa...">
+      <div><img src="../assets/img/icons/lupa.png" alt=""></div>
+    </div>
+  </header>
+
+
+  <div class="overlay"></div>
+
+  <nav id="menu-lateral" class="menu-lateral">
+    <div class="menu-top">
+      <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+      <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+    </div>
+
+    <ul class="menu-lista">
+      <li>
+        <a href="./home.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+      </li>
+
+      <li class="categoria">
+        <div class="categoria-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="../assets/img/icons/categoria.png" alt="">
+            <span>Categorias</span>
+          </div>
+          <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
+        </div>
+
+        <ul class="submenu">
+          <li><a href="./casa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+          <li><a href="./eletrodomestico.html"><img src="../assets/img/icons/eletrodomestico.png"
+                alt="">Eletrodoméstico</a></li>
+          <li><a href="./eletronico.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
+          <li><a href="./ofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+      </li>
+
+      <li>
+        <a href="./minha-conta.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+      </li>
+    </ul>
+  </nav>
+ 
+ 
+
+  <div class="conteudo">
+    <div class="endereco">
+      <img src="../assets/img/icons/localizacao.png" alt="endereço">
+      <div class="endereco-info">
+        <div class="endereco-texto">
+          <p class="nome">Endereço de Entrega</p>
+        </div>
+        <select>
+          <option value="00000-000">00000-000</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="produto">
+      <div class="produto-img">
+        <img src="../assets/img/produtos/lampada.png" alt="produto">
+      </div>
+      <div>
+        <p class="produto-nome">Nome do produto completo</p>
+        <p class="produto-modelo">Modelo do produto</p>
+        <p class="produto-preco"><span class="atual">R$ 200,00</span></p>
+      </div>
+    </div>
+
+    <div class="cupom">
+      <label for="cupom">Cupom Promocional</label>
+      <input type="text" id="cupom" placeholder="Insira seu cupom aqui">
+    </div>
+
+    <div class="divisor"></div>
+
+    <div class="envio">
+      <div class="envio-header">
+        <p>Opção de Envio</p>
+        <a href="#">Ver mais</a>
+      </div>
+      <div class="envio-box"></div>
+      <div class="envio-valores">
+        <p>ICMS <span>R$ 0,00</span></p>
+        <p>Total de itens <span>R$ 200,00</span></p>
+      </div>
+    </div>
+
+    <div class="pagamento">
+      <h3>Métodos de pagamento</h3>
+      <div class="metodo cartao">
+        <img src="../assets/img/icons/cartao.png" alt="cartão">
+        <p>Pagar com Cartão</p>
+      </div>
+      <div class="metodo pix">
+        <img src="../assets/img/icons/pix.png" alt="pix">
+        <p>Pagar com PIX</p>
+      </div>
+      <div class="metodo boleto">
+        <img src="../assets/img/icons/boleto.png" alt="boleto">
+        <p>Pagar com Boleto</p>
+      </div>
+    </div>
+
+    <button class="finalizar">Finalizar Compra</button>
+  </div>
+
+  <script src="../assets/js/menu.js"></script>
 </body>
+
 </html>

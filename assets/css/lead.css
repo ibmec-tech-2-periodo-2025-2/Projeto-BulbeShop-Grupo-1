@@ -1,19 +1,18 @@
 @media screen and (max-width: 430px) {
 
-  /* Reset básico */
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins";
-    }
+  }
 
   body {
     width: 430px;
     height: 100%;
   }
 
-  /*header*/
+
   header {
     width: 430px;
     height: 26vh;
@@ -24,7 +23,7 @@
     align-items: center;
   }
 
-  .conteiener-top{
+  .conteiener-top {
     width: 100%;
     height: 8vh;
     display: flex;
@@ -32,7 +31,7 @@
     align-items: center;
   }
 
-  .menu-e-logo{
+  .menu-e-logo {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -41,7 +40,7 @@
     height: 100%;
   }
 
-  .conteiner-icones{
+  .conteiner-icones {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -50,8 +49,8 @@
     height: 100%;
   }
 
-  .conteiner-pesquisa{
-    
+  .conteiner-pesquisa {
+
     width: 100%;
     height: 8vh;
     display: flex;
@@ -59,10 +58,10 @@
     justify-content: center;
   }
 
-  .conteiner-pesquisa input{
+  .conteiner-pesquisa input {
     position: relative;
     padding: 10px;
-    left:5%;
+    left: 5%;
     width: 90%;
     height: 80%;
     border-radius: 8px;
@@ -70,9 +69,9 @@
     font-size: 16px;
   }
 
-  .conteiner-pesquisa div{
+  .conteiner-pesquisa div {
     position: relative;
-    right:5%;
+    right: 5%;
     width: 10%;
     height: 75%;
     border-radius: 8px;
@@ -82,7 +81,7 @@
     align-items: center;
   }
 
-  /* Container principal */
+
   main {
     position: relative;
     bottom: 20px;
@@ -96,14 +95,14 @@
     height: 100%;
   }
 
-  .conteiner-txt{
+  .conteiner-txt {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height:20vh;
-    gap:10px;
+    height: 20vh;
+    gap: 10px;
 
   }
 
@@ -117,7 +116,7 @@
     font-weight: 500;
   }
 
-  .sub-titulo{
+  .sub-titulo {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -146,7 +145,7 @@
     height: 100%;
   }
 
-  .conteiner-forms label{
+  .conteiner-forms label {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -156,7 +155,7 @@
     font-size: 14px;
   }
 
-  .conteiner-forms label p{
+  .conteiner-forms label p {
     color: red;
   }
 
@@ -181,4 +180,148 @@
     cursor: pointer;
     font-size: 18px;
   }
+
+
+  .menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 270px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
+    transition: left 0.3s ease;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+  .menu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+  }
+
+  .logo-menu {
+    width: 90px;
+    height: auto;
+  }
+
+  .btn-fechar {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .btn-fechar:hover {
+    transform: rotate(90deg);
+  }
+
+
+  .menu-lateral.ativo {
+    left: 0;
+  }
+
+  .menu-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 4px;
+  }
+
+  
+  .menu-lista>li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-lista>li>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .menu-lista>li>a:hover {
+    background-color: #e8e8ff;
+    color: #08068D;
+  }
+
+
+  .categoria-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .categoria-header:hover {
+    background-color: #08068D;
+    color: #fff;
+  }
+
+  .categoria.ativo>.categoria-header {
+    background-color: #08068D;
+    color: #fff;
+  }
+
+
+  .submenu {
+    display: none;
+    flex-direction: column;
+    background-color: #f3f2ff;
+    margin: 5px 0 0 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .categoria.ativo .submenu {
+    display: flex;
+  }
+
+
+  .submenu li {
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .submenu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .submenu li:hover {
+    background-color: #dfdcff;
+  }
+
+
+  .seta {
+    width: 14px;
+    transition: transform 0.3s ease;
+  }
+
+  .categoria.ativo .seta {
+    transform: rotate(90deg);
+  }
+
+
 }

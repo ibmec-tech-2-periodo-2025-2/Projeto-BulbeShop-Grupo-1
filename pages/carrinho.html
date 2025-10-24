@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho Bulbe</title>
-    <link rel="stylesheet" href="../assets/css/carrinho.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho Bulbe</title>
+  <link rel="stylesheet" href="../assets/css/carrinho.css">
 </head>
+
 <body>
   <header>
-        <div class="conteiener-top">
-            <div class="menu-e-logo">
-                <img src="../assets/img/icons/menu.png" alt="">
-                <img src="../assets/img/logo.png" alt="">
-            </div>
-            <div class="conteiner-icones">
-                <img src="../assets/img/icons/sino.png" alt="">
-                <img src="../assets/img/icons/carrinho.png" alt="">
-                <img src="../assets/img/icons/user.png" alt="">
-            </div>
+    <div class="conteiener-top">
+      <div class="menu-e-logo">
+        <img src="../assets/img/icons/menu.png" alt="">
+        <img src="../assets/img/logo.png" alt="">
+      </div>
+      <div class="conteiner-icones">
+        <img src="../assets/img/icons/sino.png" alt="">
+        <img src="../assets/img/icons/carrinho.png" alt="">
+        <img src="../assets/img/icons/user.png" alt="">
+      </div>
+    </div>
+    <div class="conteiner-pesquisa">
+      <input type="search" placeholder="Pesquisa...">
+      <div><img src="../assets/img/icons/lupa.png" alt=""></div>
+    </div>
+    <div id="cep_completo">
+      <div id="cep">
+        <img src="../assets/img/icons/localizacao.png" alt="">
+        <p>Informe seu CEP</p>
+      </div>
+      <img src="../assets/img/icons/seta.png" alt="">
+    </div>
+  </header>
+
+
+  <div class="overlay"></div>
+
+  <nav id="menu-lateral" class="menu-lateral">
+    <div class="menu-top">
+      <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+      <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+    </div>
+
+    <ul class="menu-lista">
+      <li>
+        <a href="./home.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+      </li>
+
+      <li class="categoria">
+        <div class="categoria-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="../assets/img/icons/categoria.png" alt="">
+            <span>Categorias</span>
+          </div>
+          <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
         </div>
-        <div class="conteiner-pesquisa">
-            <input type="search" placeholder="Pesquisa...">
-            <div><img src="../assets/img/icons/lupa.png" alt=""></div>
-        </div>
-        <div id="cep_completo">
-            <div id="cep">
-                <img src="../assets/img/icons/localizacao.png" alt=""> 
-                <p>Informe seu CEP</p>
-            </div>
-            <img src="../assets/img/icons/seta.png" alt="">
-        </div>
-    </header>
+
+        <ul class="submenu">
+          <li><a href="./casa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+          <li><a href="./eletrodomestico.html"><img src="../assets/img/icons/eletrodomestico.png"
+                alt="">Eletrodoméstico</a></li>
+          <li><a href="./eletronico.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
+          <li><a href="./ofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+      </li>
+
+      <li>
+        <a href="./minha-conta.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+      </li>
+    </ul>
+  </nav>
+
   <main>
-        <!-- TÍTULO -->
+    
     <div id="titulo-carrinho">
       <h2>Carrinho de Compras</h2>
     </div>
 
-    <!-- SUBTOTAL -->
+   
     <div id="resumo-carrinho">
       <p class="total">Subtotal (sem frete):</p>
       <p class="total">R$ 522,00</p>
     </div>
 
-    <!-- LISTA DE PRODUTOS -->
+    
     <div id="lista-produtos">
 
-      <!-- PRODUTO 1 -->
       <div class="produto">
         <img src="../assets/img/produtos/lampada.png" alt="Lâmpada Super Bulbo" class="imagem-produto">
 
@@ -78,7 +122,6 @@
         </div>
       </div>
 
-      <!-- PRODUTO 2 -->
       <div class="produto">
         <img src="../assets/img/produtos/abajur.png" alt="Abajour Led Para Quarto" class="imagem-produto">
 
@@ -108,7 +151,7 @@
         </div>
       </div>
 
-      <!-- PRODUTO 3 -->
+  
       <div class="produto">
         <img src="../assets/img/produtos/bolsa.png" alt="Pilha Duracell AA" class="imagem-produto">
 
@@ -141,7 +184,7 @@
       </div>
     </div>
 
-    <!-- FRETE -->
+ 
     <div id="frete">
       <label for="cep-frete">Meios de envio</label>
       <div class="campo-frete">
@@ -151,23 +194,26 @@
       <p class="aviso">Não sei meu CEP</p>
     </div>
 
-    <!-- TOTAL -->
+ 
     <div id="total-carrinho">
       <p>Total:</p>
       <p class="valor-total">R$ 327,75</p>
     </div>
 
-    <!-- BOTÕES -->
+ 
     <div id="acoes-carrinho">
       <a href="./lead.html"><button id="btn-iniciar-compra">Iniciar Compra</button></a>
       <a href="./lead.html"><button id="btn-primeiro-acesso">Primeiro acesso</button></a>
     </div>
 
-    <!-- BANNER FINAL -->
+
     <div class="indique">
-    
+
     </div>
-    
+
   </main>
+  <script src="../assets/js/menu.js"></script>
+
 </body>
+
 </html>
