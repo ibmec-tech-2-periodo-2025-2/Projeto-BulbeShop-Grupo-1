@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -25,7 +25,7 @@
         align-items: center;
     }
 
-    .conteiener-top{
+    .conteiener-top {
         width: 100%;
         height: 8vh;
         display: flex;
@@ -33,7 +33,7 @@
         align-items: center;
     }
 
-    .menu-e-logo{
+    .menu-e-logo {
         display: flex;
         justify-content: start;
         align-items: center;
@@ -42,7 +42,7 @@
         height: 100%;
     }
 
-    .conteiner-icones{
+    .conteiner-icones {
         display: flex;
         justify-content: end;
         align-items: center;
@@ -51,7 +51,7 @@
         height: 100%;
     }
 
-    .conteiner-pesquisa{
+    .conteiner-pesquisa {
         width: 100%;
         height: 8vh;
         display: flex;
@@ -59,10 +59,10 @@
         justify-content: center;
     }
 
-    .conteiner-pesquisa input{
+    .conteiner-pesquisa input {
         position: relative;
         padding: 10px;
-        left:5%;
+        left: 5%;
         width: 90%;
         height: 80%;
         border-radius: 8px;
@@ -78,9 +78,9 @@
         opacity: 0.7;
     }
 
-    .conteiner-pesquisa div{
+    .conteiner-pesquisa div {
         position: relative;
-        right:5%;
+        right: 5%;
         width: 10%;
         height: 75%;
         border-radius: 8px;
@@ -94,7 +94,7 @@
     .conteiner-pesquisa div img {
         width: 18px;
         height: 18px;
-        
+
     }
 
     .menu-e-logo img,
@@ -127,7 +127,7 @@
         border-radius: 10px;
         gap: 12px;
         align-items: flex-start;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
     }
 
@@ -186,7 +186,7 @@
         padding: 15px;
         border-radius: 10px;
         gap: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
     }
 
@@ -221,7 +221,7 @@
         background: #fff;
         padding: 15px;
         border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
     }
 
@@ -264,7 +264,7 @@
         background: #fff;
         padding: 15px;
         border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
     }
 
@@ -316,7 +316,7 @@
         background: #fff;
         border-radius: 10px;
         padding: 15px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
     }
 
@@ -374,7 +374,8 @@
         filter: brightness(0) saturate(100%) invert(33%) sepia(15%) saturate(1000%) hue-rotate(170deg) brightness(90%) contrast(85%);
     }
 
-    .metodo a, .metodo p {
+    .metodo a,
+    .metodo p {
         font-weight: bold;
         font-size: 14px;
         text-decoration: none;
@@ -396,7 +397,7 @@
         cursor: pointer;
         transition: all 0.3s ease;
         text-align: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         outline: none;
     }
 
@@ -408,5 +409,147 @@
     .finalizar:hover {
         background: #08068D;
         color: #fff;
+    }
+
+
+    .menu-lateral {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 270px;
+        height: 100vh;
+        background: #fff;
+        box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
+        transition: left 0.3s ease;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .menu-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 18px;
+        border-bottom: 1px solid #f0f0f0;
+        background-color: #fff;
+    }
+
+    .logo-menu {
+        width: 90px;
+        height: auto;
+    }
+
+    .btn-fechar {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .btn-fechar:hover {
+        transform: rotate(90deg);
+    }
+
+
+    .menu-lateral.ativo {
+        left: 0;
+    }
+
+    .menu-lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 4px;
+    }
+
+
+    .menu-lista>li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-lista>li>a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #000;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .menu-lista>li>a:hover {
+        background-color: #e8e8ff;
+        color: #08068D;
+    }
+
+
+    .categoria-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .categoria-header:hover {
+        background-color: #08068D;
+        color: #fff;
+    }
+
+    .categoria.ativo>.categoria-header {
+        background-color: #08068D;
+        color: #fff;
+    }
+
+
+    .submenu {
+        display: none;
+        flex-direction: column;
+        background-color: #f3f2ff;
+        margin: 5px 0 0 20px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .categoria.ativo .submenu {
+        display: flex;
+    }
+
+
+    .submenu li {
+        padding: 8px 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .submenu li a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .submenu li:hover {
+        background-color: #dfdcff;
+    }
+
+
+    .seta {
+        width: 14px;
+        transition: transform 0.3s ease;
+    }
+
+    .categoria.ativo .seta {
+        transform: rotate(90deg);
     }
 }

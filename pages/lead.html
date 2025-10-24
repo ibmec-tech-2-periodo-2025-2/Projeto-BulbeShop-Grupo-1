@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/lead.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Checkout - BulbeShop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/lead.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Checkout - BulbeShop</title>
 </head>
+
 <body>
-    <header>
-        <div class="conteiener-top">
-            <div class="menu-e-logo">
-                <img src="../assets/img/icons/menu.png" alt="">
-                <img src="../assets/img/logo.png" alt="">
-            </div>
-            <div class="conteiner-icones">
-                <img src="../assets/img/icons/sino.png" alt="">
-                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
-                <img src="../assets/img/icons/user.png" alt="">
-            </div>
+  <header>
+    <div class="conteiener-top">
+      <div class="menu-e-logo">
+        <img src="../assets/img/icons/menu.png" alt="">
+        <img src="../assets/img/logo.png" alt="">
+      </div>
+      <div class="conteiner-icones">
+        <img src="../assets/img/icons/sino.png" alt="">
+        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
+        <img src="../assets/img/icons/user.png" alt="">
+      </div>
+    </div>
+    <div class="conteiner-pesquisa">
+      <input type="search" placeholder="Pesquisa...">
+      <div><img src="../assets/img/icons/lupa.png" alt=""></div>
+    </div>
+  </header>
+
+
+  <div class="overlay"></div>
+
+  <nav id="menu-lateral" class="menu-lateral">
+    <div class="menu-top">
+      <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+      <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+    </div>
+
+    <ul class="menu-lista">
+      <li>
+        <a href="./home.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+      </li>
+
+      <li class="categoria">
+        <div class="categoria-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="../assets/img/icons/categoria.png" alt="">
+            <span>Categorias</span>
+          </div>
+          <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
         </div>
-        <div class="conteiner-pesquisa">
-            <input type="search" placeholder="Pesquisa...">
-            <div><img src="../assets/img/icons/lupa.png" alt=""></div>
-        </div>  
-    </header>
-    <main>
-        <div class="conteiner-txt">
-                <h2 class="titulo">Checkout</h2>
-    
-                <p class="sub-titulo">Economize com segurança!</p>
-        </div>
 
-        <div class="conteiner-forms">
-            <form>
-                <label for="nome">Nome completo <p>*</p> </label>
-                <input type="text" name="nome" id="" placeholder="Seu nome e sobrenome">
+        <ul class="submenu">
+          <li><a href="./casa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+          <li><a href="./eletrodomestico.html"><img src="../assets/img/icons/eletrodomestico.png"
+                alt="">Eletrodoméstico</a></li>
+          <li><a href="./eletronico.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
+          <li><a href="./ofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+        </ul>
+      </li>
 
-                <label for="endereço">Endereço <p>*</p> </label>
-                <input type="text" name="endereço" id="" placeholder="Bairro, rua, numero">
+      <li>
+        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+      </li>
 
-                <label for="cep">CEP <p>*</p> </label>
-                <input type="text" name="cep" id="" placeholder="00000-000">
+      <li>
+        <a href="./minha-conta.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+      </li>
+    </ul>
+  </nav>
 
-                <label for="cpf">CPF <p>*</p> </label>
-                <input type="text" name="cpf" id="" placeholder="000.000.000-00">
 
-                <label for="celular">Celular <p>*</p> </label>
-                <input type="number" name="celular" id="" placeholder="(00)00000-0000">
 
-                <label for="email">E-mail <p>*</p> </label>
-                <input type="email" name="email" id="" placeholder="nome@email.com">
 
-            </form>
+  <main>
+    <div class="conteiner-txt">
+      <h2 class="titulo">Checkout</h2>
 
-            <a href="./checkout.html"><button type="submit" class="btn-finalizar">Finalizar compra</button></a>
-        </div>
-    </main>
+      <p class="sub-titulo">Economize com segurança!</p>
+    </div>
+
+    <div class="conteiner-forms">
+      <form>
+        <label for="nome">Nome completo <p>*</p> </label>
+        <input type="text" name="nome" id="" placeholder="Seu nome e sobrenome">
+
+        <label for="endereço">Endereço <p>*</p> </label>
+        <input type="text" name="endereço" id="" placeholder="Bairro, rua, numero">
+
+        <label for="cep">CEP <p>*</p> </label>
+        <input type="text" name="cep" id="" placeholder="00000-000">
+
+        <label for="cpf">CPF <p>*</p> </label>
+        <input type="text" name="cpf" id="" placeholder="000.000.000-00">
+
+        <label for="celular">Celular <p>*</p> </label>
+        <input type="number" name="celular" id="" placeholder="(00)00000-0000">
+
+        <label for="email">E-mail <p>*</p> </label>
+        <input type="email" name="email" id="" placeholder="nome@email.com">
+
+      </form>
+
+      <a href="./checkout.html"><button type="submit" class="btn-finalizar">Finalizar compra</button></a>
+    </div>
+  </main>
+  <script src="../assets/js/menu.js"></script>
 </body>
+
 </html>
