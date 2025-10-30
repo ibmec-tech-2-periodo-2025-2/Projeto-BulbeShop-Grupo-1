@@ -83,22 +83,19 @@
 ## Dayli 5:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Criar tela de menu
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Criar tela de menu
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Apender como se usa JS para fazer animação
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Apender como se usa JS para fazer animação
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Desenvolver aramazenamento dos dados
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 2-3
@@ -106,22 +103,19 @@
 ## Dayli 6:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Desenvolver aramazenamento dos dados
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Desenvolver aramazenamento dos dados
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- ??
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- ??
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- ??
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 3-4
