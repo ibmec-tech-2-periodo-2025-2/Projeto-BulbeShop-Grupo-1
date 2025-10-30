@@ -28,12 +28,15 @@ Estrutura inicial do HTML e scripts parciais.
 - PB-14 - Criar parte de carrinho
 - PB-15 - Criar página de checkout 2
 - PB-16 - Permitir adicionar/remover produtos no carrinho
-- PB-17 - Implementar busca de produto
-- PB-18 - Criar tela de confirmação de pedido
-- PB-19 - Definir integração com o app
-- PB-20 - Testar
-- PB-21 - Ajustar design e fluxo com base no feedback
-- PB-22 - Preparar apresentação final
+- PB-17 - Criar tela de notificação
+- PB-19 - Criar tela de menu
+- PB-20 - Criar tela de ver o perfil
+- PB-21 - Criar tela das categorias "casa,eletronicos,eletrodomesticos,ofertas"
+- PB-22 - Criar uma footer
+- PB-24 - Desenvolver aramazenamento dos dados
+- PB-25 - Testar
+- PB-26 - Ajustar design e fluxo com base no feedback
+- PB-27 - Preparar apresentação final
 
 # Protótipos de Alta Fidelidade No Figma
 - https://www.figma.com/design/Nn1YOYvqXTQGdAcMQCtuwR/App-Bulbe-E-comerce?node-id=4-3&t=3uWgAciqVJlQCmG0-1
