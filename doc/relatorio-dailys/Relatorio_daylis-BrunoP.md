@@ -91,22 +91,19 @@
 ## Daily 5:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Refatorei Códigos Do Projeto
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Documentando Daily's , Informações no GitHub e etc.
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- nenhuma até o momento
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Organizar Documentos e Informções
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Refatorar Página Do Produto e Finaliza-la
 
 --------------------------------------------------------------------------------
 
@@ -115,22 +112,19 @@
 ## Daily 6:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Refatorei e Novamente Finalizei a Página de Produto
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Encarregado De Continuar Fazendo Toda a Documentação
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Dificuldade em reunir todas as informações e dados do grupo
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Analisar Erros em Códigos e Refatorá=los
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- A definir
 
 --------------------------------------------------------------------------------
 
