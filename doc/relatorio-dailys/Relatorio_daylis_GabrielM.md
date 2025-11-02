@@ -99,22 +99,19 @@
 ## Dayli 5:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Atualizei wireframe figma home
+- [ ] Atualizei wireframe figma pagina do usuário 
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Ajustando ambas as telas
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Nenhuma
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Finalizar home e começar pagina do usuário
 
 --------------------------------------------------------------------------------
 
@@ -123,22 +120,19 @@
 ## Dayli 6:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Finalizei Home 
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Página do usuário
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Nenhuma
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Implementar JS básico
 
 --------------------------------------------------------------------------------
 
@@ -147,22 +141,19 @@
 ## Dayli 7:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Implementei JS básico home
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Implementar JS básico pag-Usuário
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Dificuldade no JS como um todo
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Melhorei no DOM 
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Finalizar JS básico em ambas as páginas
 
 --------------------------------------------------------------------------------
 
@@ -171,21 +162,19 @@
 ## Dayli 8:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Finalizei JS em todas as minhas páginas
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Revisando e discutindo com colegas
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- JS
+- Carrosel de imagens
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
+- JS e melhora significativa em front-end
 - Aprendizado 2
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
 
 --------------------------------------------------------------------------------
