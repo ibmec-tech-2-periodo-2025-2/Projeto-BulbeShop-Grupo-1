@@ -10,9 +10,8 @@ enviar.addEventListener("click", () =>{
         email: document.getElementById("email").value
     };
 
-    localStorage.setItem('dadosEntrega', JSON.stringify(dados));
+    const dadosJSON = JSON.stringify(dados);
 
-    console.log('Dados salvos:', dados);
-
+    localStorage.setItem('dadosEntrega', dadosJSON);
 
 })
