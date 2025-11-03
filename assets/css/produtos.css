@@ -953,3 +953,161 @@
   .reviews-section {
     animation-delay: 0.4s;
   }
+
+  /* Footer Styles - Versão E-commerce Simples */
+.site-footer {
+  background: var(--blue-dark);
+  color: white;
+  padding: 30px 16px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.footer-brand {
+  text-align: center;
+}
+
+.footer-logo {
+  height: 35px;
+  margin-bottom: 8px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+}
+
+.footer-column a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 12px;
+  transition: var(--transition);
+}
+
+.footer-column a:hover {
+  color: var(--accent);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+.payment-security {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.payment-methods, .security-seal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.payment-methods span, .security-seal span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  white-space: nowrap;
+}
+
+.payment-icons, .security-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.payment-icons img {
+  width: 32px;
+  height: 20px;
+  background: white;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.security-icons img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-copyright {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-copyright small {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 700px) {
+  .footer-container {
+    max-width: 900px;
+  }
+  
+  .footer-main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-brand {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .footer-links {
+    flex: 2;
+    justify-content: flex-end;
+  }
+  
+  .payment-security {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer-copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
