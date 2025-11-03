@@ -15,7 +15,7 @@
 
   header {
     width: 430px;
-    height: 26vh;
+    height: 18vh;
     background-color: #08068D;
     display: flex;
     flex-direction: column;
@@ -47,38 +47,6 @@
     gap: 20px;
     width: 45%;
     height: 100%;
-  }
-
-  .conteiner-pesquisa {
-
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .conteiner-pesquisa input {
-    position: relative;
-    padding: 10px;
-    left: 5%;
-    width: 90%;
-    height: 80%;
-    border-radius: 8px;
-    font-weight: 300;
-    font-size: 16px;
-  }
-
-  .conteiner-pesquisa div {
-    position: relative;
-    right: 5%;
-    width: 10%;
-    height: 75%;
-    border-radius: 8px;
-    background-color: #FF9E1B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
 
@@ -167,6 +135,10 @@
     font-size: 18px;
     font-weight: 200;
   }
+
+    .conteiner-forms a{
+      width: 90%;
+    }
 
   .btn-finalizar {
     width: 100%;
