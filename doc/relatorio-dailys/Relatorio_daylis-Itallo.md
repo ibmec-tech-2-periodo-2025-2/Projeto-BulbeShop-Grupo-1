@@ -109,13 +109,13 @@
 - Desenvolver aramazenamento dos dados
 
 ## 🧱 Quais dificuldades encontrei?
-- ??
+- Como que faz armazenamento usando localstorege
 
 ## 🧠 O que aprendi até agora?
-- ??
+- como faz o aramzenamento no localsytorage e capturar os dados 
 
 ## 🗓️ Próximo passo
-- ??
+- a definir 
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 3-4
