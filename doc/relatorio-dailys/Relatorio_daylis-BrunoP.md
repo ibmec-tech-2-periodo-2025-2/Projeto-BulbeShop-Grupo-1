@@ -124,7 +124,7 @@
 - Analisar Erros em Códigos e Refatorá=los
 
 ## 🗓️ Próximo passo
-- A definir
+- Realizar Direcionamento entre as Páginas Do App
 
 --------------------------------------------------------------------------------
 
