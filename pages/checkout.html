@@ -12,8 +12,8 @@
   <header>
     <div class="conteiener-top">
       <div class="menu-e-logo">
-        <img src="../assets/img/icons/menu.png" alt="">
-        <img src="../assets/img/logo.png" alt="">
+        <img src="../assets/img/icons/menu.png" alt="" class="btn-abrir-menu">
+        <img src="../assets/img/logo.png" alt="" class="logo-header">
       </div>
       <div class="conteiner-icones">
         <img src="../assets/img/icons/sino.png" alt="">
@@ -21,12 +21,7 @@
         <img src="../assets/img/icons/user.png" alt="">
       </div>
     </div>
-    <div class="conteiner-pesquisa">
-      <input type="search" placeholder="Pesquisa...">
-      <div><img src="../assets/img/icons/lupa.png" alt=""></div>
-    </div>
   </header>
-
 
   <div class="overlay"></div>
 
@@ -68,72 +63,158 @@
       </li>
     </ul>
   </nav>
- 
- 
+
+  <!-- BARRA DE PROGRESSO -->
+  <div class="barra-progresso">
+    <div class="etapas">
+      <div class="etapa etapa-concluida">
+        <div class="numero">1</div>
+        <div class="texto-etapa">Carrinho</div>
+      </div>
+      <div class="linha linha-concluida"></div>
+      <div class="etapa etapa-atual">
+        <div class="numero">2</div>
+        <div class="texto-etapa">Entrega</div>
+      </div>
+      <div class="linha"></div>
+      <div class="etapa">
+        <div class="numero">3</div>
+        <div class="texto-etapa">Finalizado</div>
+      </div>
+    </div>
+  </div>
 
   <div class="conteudo">
-    <div class="endereco">
-      <img src="../assets/img/icons/localizacao.png" alt="endereço">
-      <div class="endereco-info">
-        <div class="endereco-texto">
-          <p class="nome">Endereço de Entrega</p>
+    <!-- ENDEREÇO DE ENTREGA -->
+    <div class="endereco-section">
+      <div class="endereco-header-centralizado">
+        <span class="endereco-titulo">Endereço de Entrega</span>
+        <div class="seletor-cep">
+          <select class="select-cep">
+            <option value="00000-000">00000-000</option>
+            <option value="11111-111">11111-111</option>
+            <option value="22222-222">22222-222</option>
+            <option value="33333-333">33333-333</option>
+          </select>
+          <div class="seta-select">▼</div>
         </div>
-        <select>
-          <option value="00000-000">00000-000</option>
-        </select>
       </div>
-    </div>
-
-    <div class="produto">
-      <div class="produto-img">
-        <img src="../assets/img/produtos/lampada.png" alt="produto">
-      </div>
-      <div>
-        <p class="produto-nome">Nome do produto completo</p>
-        <p class="produto-modelo">Modelo do produto</p>
-        <p class="produto-preco"><span class="atual">R$ 200,00</span></p>
-      </div>
-    </div>
-
-    <div class="cupom">
-      <label for="cupom">Cupom Promocional</label>
-      <input type="text" id="cupom" placeholder="Insira seu cupom aqui">
     </div>
 
     <div class="divisor"></div>
 
-    <div class="envio">
-      <div class="envio-header">
-        <p>Opção de Envio</p>
-        <a href="#">Ver mais</a>
-      </div>
-      <div class="envio-box"></div>
-      <div class="envio-valores">
-        <p>ICMS <span>R$ 0,00</span></p>
-        <p>Total de itens <span>R$ 200,00</span></p>
+    <!-- PRODUTO COM FOTO -->
+    <div class="produto-section">
+      <div class="produto-completo">
+        <div class="produto-imagem">
+          <img src="../assets/img/produtos/lampada4.png" alt="Lâmpada Super Bulbo" class="foto-produto">
+        </div>
+        <div class="produto-info">
+          <div class="produto-header">
+            <h1>Lâmpada Super Bulbo</h1>
+            <p class="produto-descricao">Elgin Silveri Luz Branco Fife</p>
+            <div class="produto-preco-marca">
+              <span class="preco-atual">R$ 99,90</span>
+              <span class="marca-produto">R$281,93</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="pagamento">
+    <div class="divisor"></div>
+
+    <!-- CUPOM PROMOCIONAL -->
+    <div class="cupom-section">
+      <h3>Cupom Promocional</h3>
+      
+      <div class="cupom-input-container">
+        <input type="text" id="cupom" placeholder="Adicione seu cupom">
+        <button class="btn-aplicar-cupom">Aplicar Cupom</button>
+      </div>
+    </div>
+
+    <div class="divisor"></div>
+
+    <!-- OPÇÕES DE ENVIO -->
+    <div class="envio-section">
+      <h3>Opções de envio</h3>
+      
+      <div class="envio-opcoes-container">
+        <div class="envio-opcao" data-envio="padrao">
+          <div class="opcao-radio">
+            <div class="radio-circle"></div>
+          </div>
+          <div class="opcao-info">
+            <div class="opcao-titulo">Entrega Padrão</div>
+            <div class="opcao-prazo">5-7 dias úteis</div>
+          </div>
+          <div class="opcao-preco">Grátis</div>
+        </div>
+
+        <div class="envio-opcao" data-envio="expresso">
+          <div class="opcao-radio">
+            <div class="radio-circle"></div>
+          </div>
+          <div class="opcao-info">
+            <div class="opcao-titulo">Entrega Expressa</div>
+            <div class="opcao-prazo">1-2 dias úteis</div>
+          </div>
+          <div class="opcao-preco">R$ 15,90</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divisor"></div>
+
+    <!-- RESUMO DO PEDIDO -->
+    <div class="resumo-section">
+      <h3>Resumo do Pedido</h3>
+      <div class="resumo-linhas">
+        <div class="resumo-linha">
+          <span>Subtotal</span>
+          <span class="valor-subtotal">R$ 99,90</span>
+        </div>
+        <div class="resumo-linha">
+          <span>Frete</span>
+          <span class="valor-frete">R$ 0,00</span>
+        </div>
+        <div class="resumo-linha desconto-linha" style="display: none;">
+          <span>Desconto</span>
+          <span class="valor-desconto">-R$ 18,00</span>
+        </div>
+        <div class="resumo-linha total-geral">
+          <span>Total</span>
+          <span class="valor-total">R$ 99,90</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divisor"></div>
+
+    <!-- MÉTODOS DE PAGAMENTO -->
+    <div class="pagamento-section">
       <h3>Métodos de pagamento</h3>
-      <div class="metodo cartao">
+      <div class="metodo cartao" data-metodo="cartao">
         <img src="../assets/img/icons/cartao.png" alt="cartão">
         <p>Pagar com Cartão</p>
       </div>
-      <div class="metodo pix">
+      <div class="metodo pix" data-metodo="pix">
         <img src="../assets/img/icons/pix.png" alt="pix">
         <p>Pagar com PIX</p>
       </div>
-      <div class="metodo boleto">
+      <div class="metodo boleto" data-metodo="boleto">
         <img src="../assets/img/icons/boleto.png" alt="boleto">
         <p>Pagar com Boleto</p>
       </div>
     </div>
 
-    <button class="finalizar">Finalizar Compra</button>
+    <!-- BOTÃO FINALIZAR COMPRA -->
+    <button class="finalizar-compra-btn">Finalizar compra</button>
   </div>
 
   <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/checkout.js"></script>
 </body>
 
 </html>
