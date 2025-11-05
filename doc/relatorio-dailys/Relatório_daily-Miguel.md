@@ -102,5 +102,46 @@
 - algumas estilizações de css
 
 ## 🗓️ Próximo passo
-- a definir
+- começar os scripts
+--------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento - Semana 5-6
+
+
+
+## 🙋 O que eu fiz desde o último relatório?
+- revisei a pagina completa
+
+## 🚧 O que estou fazendo agora?
+- iniciei os processos de script
+
+## 🧱 Quais dificuldades encontrei?
+- ainda estou com muita dificuldade em javascript
+
+## 🧠 O que aprendi até agora?
+- o basico do javascript
+
+## 🗓️ Próximo passo
+- terminar e refinar a pagina com javascript
+- --------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento - Semana 6-7
+
+
+
+## 🙋 O que eu fiz desde o último relatório?
+- iniciei os processos de script
+
+## 🚧 O que estou fazendo agora?
+- terminar e refinar a pagina com javascript
+
+## 🧱 Quais dificuldades encontrei?
+- ainda estou com muita dificuldade em javascript
+
+## 🧠 O que aprendi até agora?
+- o basico do javascript
+
+## 🗓️ Próximo passo
+- revisar todo o site
+
 
