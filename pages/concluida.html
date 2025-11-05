@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Concluída - Bulbe</title>
+    <link rel="stylesheet" href="../assets/css/concluida.css">
+</head>
+<body>
+    <header>
+        <div class="conteiener-top">
+            <div class="menu-e-logo">
+                <img src="../assets/img/icons/menu.png" alt="" class="btn-abrir-menu">
+                <img src="../assets/img/logo.png" alt="" class="logo-header">
+            </div>
+            <div class="conteiner-icones">
+                <img src="../assets/img/icons/sino.png" alt="">
+                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
+                <img src="../assets/img/icons/user.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <nav id="menu-lateral" class="menu-lateral">
+        <div class="menu-top">
+            <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+            <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+        </div>
+
+        <ul class="menu-lista">
+            <li>
+                <a href="../index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+            </li>
+
+            <li class="categoria">
+                <div class="categoria-header">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <img src="../assets/img/icons/categoria.png" alt="">
+                        <span>Categorias</span>
+                    </div>
+                    <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
+                </div>
+
+                <ul class="submenu">
+                    <li><a href="./casa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+                    <li><a href="./eletrodomestico.html"><img src="../assets/img/icons/eletrodomestico.png" alt="">Eletrodoméstico</a></li>
+                    <li><a href="./eletronico.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
+                    <li><a href="./ofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+            </li>
+
+            <li>
+                <a href="./"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BARRA DE PROGRESSO FINALIZADA -->
+    <div class="barra-progresso">
+        <div class="etapas">
+            <div class="etapa etapa-concluida">
+                <div class="numero">1</div>
+                <div class="texto-etapa">Carrinho</div>
+            </div>
+            <div class="linha linha-concluida"></div>
+            <div class="etapa etapa-concluida">
+                <div class="numero">2</div>
+                <div class="texto-etapa">Entrega</div>
+            </div>
+            <div class="linha linha-concluida"></div>
+            <div class="etapa etapa-concluida etapa-atual">
+                <div class="numero">3</div>
+                <div class="texto-etapa">Finalizado</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo-concluida">
+        <!-- ÍCONE DE SUCESSO -->
+        <div class="sucesso-icone">
+            <div class="circulo-sucesso">
+                <img src="../assets/img/icons/check.png" alt="Sucesso">
+            </div>
+        </div>
+
+        <!-- TÍTULO PRINCIPAL -->
+        <h1 class="titulo-concluida">COMPRA CONCLUÍDA COM SUCESSO!</h1>
+
+        <!-- MENSAGEM DE CONFIRMAÇÃO -->
+        <div class="mensagem-confirmacao">
+            <p>Seu pedido foi processado com sucesso e está sendo preparado para envio.</p>
+            <p>Você receberá um e-mail de confirmação em breve.</p>
+        </div>
+
+        <!-- RESUMO DO PEDIDO -->
+        <div class="resumo-pedido">
+            <div class="info-pedido">
+                <span class="label">Número do Pedido:</span>
+                <span class="valor">#BULBE-${Date.now().toString().slice(-6)}</span>
+            </div>
+            <div class="info-pedido">
+                <span class="label">Data da Compra:</span>
+                <span class="valor">${new Date().toLocaleDateString('pt-BR')}</span>
+            </div>
+            <div class="info-pedido">
+                <span class="label">Forma de Pagamento:</span>
+                <span class="valor">PIX</span>
+            </div>
+            <div class="info-pedido">
+                <span class="label">Previsão de Entrega:</span>
+                <span class="valor">5-7 dias úteis</span>
+            </div>
+        </div>
+
+        <!-- BOTÕES DE AÇÃO -->
+        <div class="botoes-acao">
+            <button class="btn-voltar-home" onclick="window.location.href='../index.html'">
+                Voltar para a página principal
+            </button>
+            <button class="btn-acompanhar-pedido" onclick="acompanharPedido()">
+                Acompanhar Pedido
+            </button>
+        </div>
+
+        <!-- INFORMAÇÕES ADICIONAIS -->
+        <div class="informacoes-adicionais">
+            <h3>Próximos Passos</h3>
+            <div class="passos">
+                <div class="passo">
+                    <div class="numero-passo">1</div>
+                    <div class="texto-passo">
+                        <strong>Preparação do pedido</strong>
+                        <p>Seu produto está sendo separado e embalado</p>
+                    </div>
+                </div>
+                <div class="passo">
+                    <div class="numero-passo">2</div>
+                    <div class="texto-passo">
+                        <strong>Envio</strong>
+                        <p>Seu pedido será despachado em até 24h</p>
+                    </div>
+                </div>
+                <div class="passo">
+                    <div class="numero-passo">3</div>
+                    <div class="texto-passo">
+                        <strong>Entrega</strong>
+                        <p>Receba seu produto em até 7 dias úteis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/concluida.js"></script>
+</body>
+</html>
