@@ -84,22 +84,19 @@ Nenhuma Até o Momento
 ## Dayli 5:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Desenvolvimento do Carrinho + código
+- [ ] Começo da Página de Notificações
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Implementação do Código
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Dificuldades em codar e reajustar um código muito grande, sobrescrevi algumas partes no CSS.
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
-
+- Atalhos e habilidades no CSS
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Acabar de codar página de notificação.
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 2-3
@@ -107,22 +104,20 @@ Nenhuma Até o Momento
 ## Dayli 6:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- Codei boa parte das minhas páginas.
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Tive que fazer um novo carrinho (Página).
+- Estou codando boa parte desse novo Carrinho.
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
-
+- Dificuldade para estar igual no Figma.
+- 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Trbalhar em equipe é mais produtivo que trabalhar individualmente.
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Acabar de codar o carrinho, pois devido ser uma página nova e totalmente diferente... Não deu tempo.
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 3-4
