@@ -84,22 +84,19 @@
 ## Dayli 5:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [x] prótipo de alta fidelidade do figma página de destaques
+
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- iniciando HTML e CSS das páginas de destaque
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
-
+- nenhuma
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- mexer no figma pro
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- finalizar o HTML e CSS das páginas de destaque
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 2-3
@@ -107,22 +104,21 @@
 ## Dayli 6:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [x] Finalizei o HTML e CSS das páginas de destaque
+
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- discutindo os afazeres da próxima sprint
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- nenhuma
+
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- melhor manejo do HTML e CSS
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- discutir a próxima sprint
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 3-4
