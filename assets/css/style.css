@@ -307,6 +307,11 @@ main {
     color: var(--cor_fundo);
 }
 
+.img_prod{
+    height: 113px;
+    width: 113px;
+}
+
 /* FOOTER */
 .site-footer {
     text-align: center;
