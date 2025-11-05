@@ -126,7 +126,7 @@
 - Página do usuário
 
 ## 🧱 Quais dificuldades encontrei?
-- Nenhuma
+- Main sendo apertada pelo header 
 
 ## 🧠 O que aprendi até agora?
 
@@ -141,19 +141,14 @@
 ## Dayli 7:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Implementei JS básico home
 
 ## 🚧 O que estou fazendo agora?
-- Implementar JS básico pag-Usuário
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade no JS como um todo
 
 ## 🧠 O que aprendi até agora?
-- Melhorei no DOM 
 
 ## 🗓️ Próximo passo
-- Finalizar JS básico em ambas as páginas
 
 --------------------------------------------------------------------------------
 
@@ -162,18 +157,14 @@
 ## Dayli 8:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Finalizei JS em todas as minhas páginas
 
 ## 🚧 O que estou fazendo agora?
-- Revisando e discutindo com colegas
 
 ## 🧱 Quais dificuldades encontrei?
-- JS
-- Carrosel de imagens
+
 
 ## 🧠 O que aprendi até agora?
-- JS e melhora significativa em front-end
-- Aprendizado 2
+
 
 ## 🗓️ Próximo passo
 
