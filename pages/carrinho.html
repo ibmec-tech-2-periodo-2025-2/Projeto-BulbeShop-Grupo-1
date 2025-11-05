@@ -16,8 +16,8 @@
         <img src="../assets/img/logo.png" alt="">
       </div>
       <div class="conteiner-icones">
-        <img src="../assets/img/icons/sino.png" alt="">
-        <img src="../assets/img/icons/user.png" alt="">
+        <img src="../assets/img/icons/sino.png" alt="" onclick="window.location.href = './notificacao.html'">
+        <img src="../assets/img/icons/user.png" alt="" onclick="window.location.href = './usuario.html'">
       </div>
     </div>
   </header>
@@ -26,43 +26,44 @@
   <div class="overlay"></div>
 
   <nav id="menu-lateral" class="menu-lateral">
-    <div class="menu-top">
-      <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
-      <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
-    </div>
-
-    <ul class="menu-lista">
-      <li>
-        <a href="../index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
-      </li>
-
-      <li class="categoria">
-        <div class="categoria-header">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <img src="../assets/img/icons/categoria.png" alt="">
-            <span>Categorias</span>
-          </div>
-          <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
+        <div class="menu-top">
+            <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+            <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
         </div>
 
-        <ul class="submenu">
-          <li><a href="./casa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
-          <li><a href="./eletrodomestico.html"><img src="../assets/img/icons/eletrodomestico.png"
-                alt="">Eletrodoméstico</a></li>
-          <li><a href="./eletronico.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
-          <li><a href="./ofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+        <ul class="menu-lista">
+            <li>
+                <a href="../index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+            </li>
+
+            <li class="categoria">
+                <div class="categoria-header">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <img src="../assets/img/icons/categoria.png" alt="">
+                        <span>Categorias</span>
+                    </div>
+                    <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
+                </div>
+
+                <ul class="submenu">
+                    <li><a href="./destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+                    <li><a href="./destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
+                                alt="">Eletrodoméstico</a></li>
+                    <li><a href="./destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
+                    </li>
+                    <li><a href="./destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+            </li>
+
+            <li>
+                <a href="./usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+            </li>
         </ul>
-      </li>
-
-      <li>
-        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
-      </li>
-
-      <li>
-        <a href="./minha-conta.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
-      </li>
-    </ul>
-  </nav>
+    </nav>
 
   <main class="carrinho-container">
     <!-- FAIXA ROXA + AÇÃO (voltar / logo) + CARD -->
@@ -75,7 +76,7 @@
 
 <!-- 🔹Barra com botão voltar e logo no fundo branco -->
 <div class="bar-acao">
-  <button class="btn-voltar" aria-label="Voltar">
+  <button class="btn-voltar" aria-label="Voltar" onclick="window.location.href = 'produtos.html'">
     ←
   </button>
 
@@ -192,8 +193,8 @@
     </section>
 
     <div class="botoes-carrinho">
-      <button id="finalizar">Finalizar Compra</button>
-      <button id="continuar">Continuar Comprando</button>
+      <button id="finalizar" onclick="window.location.href = './lead.html'">Finalizar Compra</button>
+      <button id="continuar" onclick="window.location.href = '../index.html'">Continuar Comprando</button>
     </div>
   </main>
 
