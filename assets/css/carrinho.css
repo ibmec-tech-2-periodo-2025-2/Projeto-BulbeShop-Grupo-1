@@ -62,21 +62,88 @@
     flex-direction: column;
   }
 
-  .conteiner-titulo{
-    width: 100%;
-    height: 100%;
-    background-color: #9F9DFB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.conteiner-titulo{
+  width:100%;
+  background:#9F9DFB;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 20px 20px 0 0;
+  padding:18px 0;
+}
 
-  .titulo{
-    font-size: 30px;
-    font-weight: 600;
-    color: white;
-  }
 
+
+.titulo{
+  font-size:20px; /* menor */
+  font-weight:600;
+  color:#fff;
+  margin:6px 0;
+}
+
+
+.card-resumo{
+  width: 88%;
+  background: #fff;
+  border: 2px solid #E4E8F0;
+  border-radius: 16px;
+  padding: 12px 14px 0;
+  margin: 12px auto 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  position: relative;
+}
+
+
+/* Linha superior do card */
+.top-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-carrinho{
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.status-carrinho{
+  background: #e0e7ff;
+  color: #1d3b8b;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+/* Preços */
+.preco-antigo{
+  font-size: 12px;
+  color: #777;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.preco-novo{
+  font-size: 24px;
+  font-weight: 700;
+  color: #08068D;
+  margin: 2px 0 2px;
+}
+
+
+/* Barra de desconto */
+.barra-desconto{
+  background: #08068D;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-top: 6px;
+  text-align: center;
+  font-weight: 500;
+}
 
   .resumo-topo {
     display: flex;
@@ -393,4 +460,348 @@
   .categoria.ativo .seta {
     transform: rotate(90deg);
   }
+
+.faixa-carrinho{
+  width:100%;
+  background-color:#08068D; /* Fundo azul do header */
+  border-radius:0 0 20px 20px;
+  padding:0;
+}
+
+
+/* Barra de ação no fundo branco */
+.bar-acao{
+  width:92%;
+  margin:10px auto 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.btn-voltar{
+  background:none;
+  border:none;
+  font-size:22px;
+  color:#08068D;
+  cursor:pointer;
+}
+
+.logo-bulbe-mini{
+  height:24px;
+}
+
+/* Card resumo */
+.card-resumo{
+  width: 90%;
+  background:#fff;
+  border:2px solid #DDE1EC;
+  border-radius:16px;
+  padding: 0; /* removemos padding total */
+  margin: 14px auto 0;
+  box-shadow:0 2px 6px rgba(0,0,0,0.03);
+  overflow:hidden; /* mantém as bordas alinhadas */
+  display:flex;
+  flex-direction:column;
+}
+
+
+/* Topo do card */
+.top-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.data-carrinho{
+  font-size:13px;
+  font-weight:600;
+  color:#2F2F2F;
+}
+
+.status-carrinho{
+  background:#E8F0FF;
+  color:#214092;
+  padding:5px 10px;
+  border-radius:10px;
+  font-size:11px;
+  font-weight:600;
+}
+
+.preco-linha{
+  font-size:13px;
+  color:#4A4A4A; /* Cinza mais escuro como no mock */
+  margin-top:4px;
+}
+
+.preco-linha .risco{
+  text-decoration:line-through;
+  color:#6A6A6A; /* tom um pouco mais escuro */
+  opacity:1;
+}
+
+/* Preço novo */
+.preco-novo{
+  font-size:26px;
+  font-weight:700;
+  color:#08068D;
+  margin:2px 0 8px;
+}
+
+/* Barra de desconto */
+.barra-desconto{
+  width: 100%;
+  background: #08068D;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0 0 16px 16px; /* mesmo do card */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-card{
+  padding: 12px 16px 10px;
+}
+
+/* Linha data + status (Maio/25 ←→ Carrinho em aberto) */
+.linha1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+/* Título do detalhamento */
+.titulo-carrinho{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.icone-titulo{
+  width: 16px;
+  opacity: 0.7;
+}
+
+.lista-carrinho h3{
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Produto */
+.produto{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  position: relative;
+  border: 1px solid #e6e8f2;
+}
+
+.produto img{
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+/* Linha de categoria */
+.linha-produto{
+  width: 4px;
+  height: 100%;
+  background: #14cc72;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.linha-rosa{
+  background: #14cc72;
+}
+
+.linha-verde{
+  background: #14cc72;
+}
+
+/* Preço antigo dentro do card */
+.preco-antigo-prod{
+  font-size: 11px;
+  text-decoration: line-through;
+  color: #8b8b8b;
+  margin: 2px 0 4px;
+}
+/* Ajuste geral dos cards */
+.conteiner-produto {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espaçamento entre cards */
+}
+
+/* Melhorando o card */
+.produto {
+  border-radius: 14px;
+  padding: 12px;
+  min-height: 90px;
+  border: 2px solid #E6E8F2;
+}
+
+/* Linha de categoria ocupando todo card */
+.linha-produto {
+  height: 100%;
+  border-radius: 14px 0 0 14px;
+}
+
+/* Nome mais forte */
+.nome {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #2C2C2C;
+}
+
+/* Remover alinhado visualmente */
+.remover {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* Preço mais alinhado */
+.preco {
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Preço antigo — menor e mais suave */
+.preco-antigo-prod {
+  margin-bottom: 2px;
+  font-size: 11.2px;
+  color: #7a7a7a;
+}
+/* Linha de categoria ocupando a altura total */
+.produto {
+  position: relative;
+  padding-left: 14px; /* espaço para a linha */
+}
+
+.produto::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  border-radius: 12px 0 0 12px;
+}
+
+/* Cores personalizadas por item */
+.produto:nth-child(1)::before {
+  background-color: #1BC1A1; /* Verde */
+}
+
+.produto:nth-child(2)::before {
+  background-color: #FF4C4C; /* Vermelho */
+}
+
+.produto:nth-child(3)::before {
+  background-color: #00AEEF; /* Azul */
+}
+
+/* Ícone remover alinhado no meio */
+.remover {
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+/* Ajuste completo dos cards da lista */
+.lista-carrinho {
+  width: 95%;
+  margin-top: 12px;
+}
+
+/* Cada produto vira um card com borda e sombra do protótipo */
+.produto {
+  background: #ffffff;
+  border: 1.5px solid #E6E8EE;
+  padding: 12px 10px 12px 16px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  position: relative;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.04);
+  margin-left: 40px;
+}
+
+/* Linha de categoria ocupando toda altura */
+
+/* Ícone remover centralizado na lateral */
+.remover {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 19px;
+  color: #A5A8B3;
+  cursor: pointer;
+}
+
+/* Fundo da área de itens */
+.lista-carrinho {
+  background: #F3F4FA;
+  border-radius: 12px;
+  padding: 12px 10px;
+}
+/* Linha acima */
+/* Linha acima */
+/* Área do título */
+.titulo-carrinho {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* título fica embaixo da linha */
+  align-items: center;
+  margin: 10px 0 18px;
+}
+
+/* Linha cinza acima do texto */
+.linha-divisoria {
+  width: 90%;
+  height: 2px;
+  background: #D9DEE7;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* Ícone + texto */
+.titulo-lista {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 0 0 12px 0; /* ✅ alinhado à esquerda */
+}
+
+
+.icon-lista {
+  width: 16px;
+  opacity: 0.7;
+}
+
+.texto-titulo-carrinho {
+  font-size: 15px;
+  font-weight: 600;
+  color: #3A3A3A;
+}
+
+
+
 }
