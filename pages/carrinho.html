@@ -17,7 +17,6 @@
       </div>
       <div class="conteiner-icones">
         <img src="../assets/img/icons/sino.png" alt="">
-        <img src="../assets/img/icons/carrinho.png" alt="">
         <img src="../assets/img/icons/user.png" alt="">
       </div>
     </div>
@@ -66,6 +65,9 @@
   </nav>
 
   <main class="carrinho-container">
+    <div class="conteiner-titulo">
+      <h1 class="titulo">Carrinho de compras</h1>
+    </div>
     <section class="resumo-topo">
       <div class="infos-preco">
         <p class="preco-antigo">De R$ <span id="valor-antigo">581,93</span> por</p>
@@ -73,72 +75,74 @@
         <div class="desconto-bulbe">Desconto Bulbe: <strong>R$ 254,18</strong></div>
       </div>
     </section>
-  
+
     <section class="lista-carrinho">
       <h3>Detalhamento do Carrinho</h3>
-  
-      <div class="produto">
-        <img src="../assets/img/produtos/lampada.png" alt="">
-        <div class="info-produto">
-          <p class="nome">Lâmpada Super Bulbo</p>
-          <div class="controle">
-            <div class="quantidade">
-              <button class="menos">-</button>
-              <div class="campo">1</div>
-              <button class="mais">+</button>
+
+      <div class="conteiner-produto">
+        <div class="produto">
+          <img src="../assets/img/produtos/lampada.png" alt="">
+          <div class="info-produto">
+            <p class="nome">Lâmpada Super Bulbo</p>
+            <div class="controle">
+              <div class="quantidade">
+                <button class="menos">-</button>
+                <div class="campo">1</div>
+                <button class="mais">+</button>
+              </div>
+              <p class="preco">R$ <span class="valor">109.50</span></p>
             </div>
-            <p class="preco">R$ <span class="valor">109.50</span></p>
           </div>
+          <button class="remover">🗑</button>
         </div>
-        <button class="remover">🗑</button>
-      </div>
-  
-      <div class="produto">
-        <img src="../assets/img/produtos/abajur.png" alt="">
-        <div class="info-produto">
-          <p class="nome">Abajour Led Para Quarto</p>
-          <div class="controle">
-            <div class="quantidade">
-              <button class="menos">-</button>
-              <div class="campo">1</div>
-              <button class="mais">+</button>
+
+        <div class="produto">
+          <img src="../assets/img/produtos/abajur.png" alt="">
+          <div class="info-produto">
+            <p class="nome">Abajour Led Para Quarto</p>
+            <div class="controle">
+              <div class="quantidade">
+                <button class="menos">-</button>
+                <div class="campo">1</div>
+                <button class="mais">+</button>
+              </div>
+              <p class="preco">R$ <span class="valor">199.50</span></p>
             </div>
-            <p class="preco">R$ <span class="valor">199.50</span></p>
           </div>
+          <button class="remover">🗑</button>
         </div>
-        <button class="remover">🗑</button>
-      </div>
-  
-      <div class="produto">
-        <img src="../assets/img/produtos/bolsa.png" alt="">
-        <div class="info-produto">
-          <p class="nome">Pilha Duracell AA</p>
-          <div class="controle">
-            <div class="quantidade">
-              <button class="menos">-</button>
-              <div class="campo">1</div>
-              <button class="mais">+</button>
+
+        <div class="produto">
+          <img src="../assets/img/produtos/bolsa.png" alt="">
+          <div class="info-produto">
+            <p class="nome">Pilha Duracell AA</p>
+            <div class="controle">
+              <div class="quantidade">
+                <button class="menos">-</button>
+                <div class="campo">1</div>
+                <button class="mais">+</button>
+              </div>
+              <p class="preco">R$ <span class="valor">18.75</span></p>
             </div>
-            <p class="preco">R$ <span class="valor">18.75</span></p>
           </div>
+          <button class="remover">🗑</button>
         </div>
-        <button class="remover">🗑</button>
       </div>
     </section>
-  
+
     <section class="resumo-final">
       <p>Frete: <span>R$ 0,00</span></p>
       <p>Subtotal: <span id="subtotal">R$ 327,75</span></p>
       <hr>
       <h3>Total: <span id="total">R$ 327,75</span></h3>
     </section>
-  
+
     <div class="botoes-carrinho">
       <button id="finalizar">Finalizar Compra</button>
       <button id="continuar">Continuar Comprando</button>
     </div>
   </main>
-  
+
   <script src="../assets/js/menu.js"></script>
   <script src="../assets/js/carrinho.js"></script>
 
