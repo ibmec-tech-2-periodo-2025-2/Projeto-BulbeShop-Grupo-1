@@ -18,10 +18,11 @@
                 <img src="./assets/img/logo.png" alt="">
             </div>
             <div class="conteiner-icones">
-                <img src="./assets/img/icons/sino.png" alt="">
+                <img src="./assets/img/icons/sino.png" alt="" onclick="window.location.href = './pages/notificacao.html'">
                 <a href="./pages/carrinho.html"><img src="./assets/img/icons/carrinho.png" alt=""></a>
-                <img src="./assets/img/icons/user.png" alt="">
+                <img src="./assets/img/icons/user.png" onclick="window.location.href = './pages/usuario.html'">
             </div>
+            
         </div>
         <div class="conteiner-pesquisa">
             <input type="search" placeholder="Pesquisa...">
@@ -59,12 +60,12 @@
                 </div>
 
                 <ul class="submenu">
-                    <li><a href="./casa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
-                    <li><a href="./eletrodomestico.html"><img src="../assets/img/icons/eletrodomestico.png"
+                    <li><a href="./pages/destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+                    <li><a href="./pages/destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
                                 alt="">Eletrodoméstico</a></li>
-                    <li><a href="./eletronico.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
+                    <li><a href="./pages/destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
                     </li>
-                    <li><a href="./ofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+                    <li><a href="./pages/destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
                 </ul>
             </li>
 
@@ -73,7 +74,7 @@
             </li>
 
             <li>
-                <a href="./minha-conta.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+                <a href="./pages/usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
             </li>
         </ul>
     </nav>
@@ -123,23 +124,20 @@
 
         <div id="div_categoria">
             <button class="categoria">
-                <img src="./assets/img/icons/casa.png" alt="">
+                <img src="./assets/img/icons/casa.png" alt="" onclick="window.location.href = './pages/destaquecasa.html'">
+            </button>
+
+
+            <button class="categoria">
+                <img src="./assets/img/icons/eletronico.png" alt="" onclick="window.location.href = './pages/destaqueseletronicos.html'">
             </button>
 
             <button class="categoria">
-                <img src="./assets/img/icons/farmacia.png" alt="">
+                <img src="./assets/img/icons/eletro.png" alt="" onclick="window.location.href = './pages/destaqueeletrodomesticos.html'">
             </button>
 
             <button class="categoria">
-                <img src="./assets/img/icons/eletronico.png" alt="">
-            </button>
-
-            <button class="categoria">
-                <img src="./assets/img/icons/eletro.png" alt="">
-            </button>
-
-            <button class="categoria">
-                <img src="./assets/img/icons/oferta.png" alt="">
+                <img src="./assets/img/icons/oferta.png" alt="" onclick="window.location.href = './pages/destaqueofertas.html'">
             </button>
         </div>
 
