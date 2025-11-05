@@ -1,173 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/css/destaqueofertas.css">
+    <link rel="stylesheet" href="../assets/css/destaqueeletrodomesticos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destaque Ofertas</title>
+    <title>Destaque Casa</title>
 </head>
 <body>
-  <header>
-    <div class="conteiner-top">
-      <div class="menu-e-logo">
-        <img src="../assets/img/icons/menu.png" alt="Menu" class="menu-toggle">
-        <img src="../assets/img/logo.png" alt="Bulbe" onclick="window.location.href = '../index.html'">
-      </div>
-      <div class="conteiner-icones">
-        <img src="../assets/img/icons/sino.png" alt="Notificações">
-        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt="Carrinho"></a>
-        <img src="../assets/img/icons/user.png" alt="Minha Conta">
-      </div>
-    </div>
-    <div class="conteiner-pesquisa">
-      <input type="search" placeholder="Pesquisa...">
-      <div><img src="../assets/img/icons/lupa.png" alt="Pesquisar"></div>
-    </div>
-    <div id="cep_completo">
-      <div id="cep">
-        <img src="../assets/img/icons/localizacao.png" alt="Localização">
-        <p>Informe seu CEP</p>
-      </div>
-      <img src="../assets/img/icons/seta.png" alt="Informar CEP">
-    </div>
-  </header>
+    <!-- HEADER COMPLETO E FUNCIONAL -->
+    <header>
+        <div class="conteiener-top">
+            <div class="menu-e-logo">
+                <img src="../assets/img/icons/menu.png" alt="Menu" class="menu-toggle">
+                <img src="../assets/img/logo.png" alt="Bulbe" onclick="window.location.href = '../index.html'">
+            </div>
+            <div class="conteiner-icones">
+                <img src="../assets/img/icons/sino.png" alt="Notificações" onclick="window.location.href = './notificacao.html'">
+                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt="Carrinho"></a>
+                <img src="../assets/img/icons/user.png" alt="Minha Conta" onclick="window.location.href = './usuario.html'">
+            </div>
+        </div>
+        <div class="conteiner-pesquisa">
+            <input type="search" placeholder="Pesquisa...">
+            <div><img src="../assets/img/icons/lupa.png" alt="Pesquisar"></div>
+        </div>
+        <div id="cep_completo">
+            <div id="cep">
+                <img src="../assets/img/icons/localizacao.png" alt="Localização">
+                <p>Informe seu CEP</p>
+            </div>
+            <img src="../assets/img/icons/seta.png" alt="Informar CEP">
+        </div>
+    </header>
 
-  <div class="propaganda"></div>
+    <!-- MENU LATERAL (IDÊNTICO AO DA PÁGINA INICIAL) -->
+    <div class="overlay"></div>
 
-  <main class="container">
+    <nav id="menu-lateral" class="menu-lateral">
+        <div class="menu-top">
+            <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+            <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+        </div>
+
+        <ul class="menu-lista">
+            <li>
+                <a href="../index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+            </li>
+
+            <li class="categoria">
+                <div class="categoria-header">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <img src="../assets/img/icons/categoria.png" alt="">
+                        <span>Categorias</span>
+                    </div>
+                    <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
+                </div>
+
+                <ul class="submenu">
+                    <li><a href="./destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+                    <li><a href="./destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png" alt="">Eletrodoméstico</a></li>
+                    <li><a href="./destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
+                    <li><a href="./destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+            </li>
+
+            <li>
+                <a href="./usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA DESTAQUE CASA -->
+    <div class="propaganda"></div>
+
+    <main class="container">
         <h2 class="titulo">
-            <img src="../assets/img/icons/lampada-amarela.png" alt="Ícone Itens Casa" class="titulo-icon">
+            <img src="../assets/img/icons/tv-02.svg" alt="Ícone Itens Casa" class="titulo-icon">
             Eletrodomésticos!
         </h2>
 
         <div class="produtos">
-
             <div class="card">
                 <img src="../assets/img/produtos/aspirador.png" alt="Cadeira 4 Pernas">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 35,80</p>
+                <p class="nome">Aspirador Philco<br></p>
+                <p class="preco">R$ 135,99</p>
                 <p class="detalhes">
-                    
                     <div class="estrela-icon"></div>
-                     +2mil vendidos
+                    +2mil vendidos
                 </p>
             </div>
 
             <div class="card">
-                <img src="../assets/img/produtos/aquecedor.png" alt="Abajur">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 15,75</p>
+                <img src="../assets/img/produtos/misteira.png" alt="Abajur">
+                <p class="nome">Misteira Oster<br></p>
+                <p class="preco">R$ 69,75</p>
                 <p class="detalhes">
                     <div class="estrela-icon"></div>
-                       +2mil vendidos
+                    +2mil vendidos
                 </p>
             </div>
 
             <div class="card">
-                <img src="../assets/img/produtos/misteira.png" alt="Mesa">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 21,90</p>
+                <img src="../assets/img/produtos/torradeira.png" alt="Mesa">
+                <p class="nome">torradeira<br>fresh Philco</p>
+                <p class="preco">R$ 221,90</p>
                 <p class="detalhes">
                     <div class="estrela-icon"></div>
-                     +2mil vendidos
+                    +2mil vendidos
                 </p>
             </div>
 
             <div class="card">
-                <img src="../assets/img/produtos/torradeira.png" alt="Cama">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 135,80</p>
+                <img src="../assets/img/produtos/mesa.png" alt="Cama">
+                <p class="nome">mesa de plástico<br></p>
+                <p class="preco">R$ 1035,80</p>
                 <p class="detalhes">
                     <div class="estrela-icon"></div>
-                       +2mil vendidos
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="../assets/img/produtos/aspirador.png" alt="Cadeira 4 Pernas">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 35,80</p>
-                <p class="detalhes">
-                    
-                    <div class="estrela-icon"></div>
-                     +2mil vendidos
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="../assets/img/produtos/aquecedor.png" alt="Abajur">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 15,75</p>
-                <p class="detalhes">
-                    <div class="estrela-icon"></div>
-                       +2mil vendidos
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="../assets/img/produtos/misteira.png" alt="Mesa">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 21,90</p>
-                <p class="detalhes">
-                    <div class="estrela-icon"></div>
-                     +2mil vendidos
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="../assets/img/produtos/torradeira.png" alt="Cama">
-                <p class="nome">Cadeira 4 Pernas<br>Forro Branco</p>
-                <p class="preco">R$ 135,80</p>
-                <p class="detalhes">
-                    <div class="estrela-icon"></div>
-                       +2mil vendidos
+                    +2mil vendidos
                 </p>
             </div>
 
         </div>
     </main>
 
+    <!-- FOOTER COMPLETO E FUNCIONAL -->
     <footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <img src="../assets/img/logo.png" alt="Bulbe" class="footer-logo">
-        <p class="footer-tagline">Iluminando sua vida com as melhores ofertas</p>
-      </div>
-      
-      <div class="footer-links">
-        <div class="footer-column">
-          <h4 onclick="window.location.href = 'usuario.html'">Minha Conta</h4>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="../assets/img/logo.png" alt="Bulbe" class="footer-logo">
+                    <p class="footer-tagline">Iluminando sua vida com as melhores ofertas</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 onclick="window.location.href = './usuario.html'">Minha Conta</h4>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 onclick="window.location.href = '../index.html'">Início</h4>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Atendimento</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <small>© 2025 Bulbe - Todos os direitos reservados</small>
+                    <small>CNPJ: 12.345.678/0001-90</small>
+                </div>
+            </div>
         </div>
-        
-        <div class="footer-column">
-          <h4 onclick="window.location.href = '../index.html'">Início</h4>
-        </div>
-        
-        <div class="footer-column">
-          <h4>Atendimento</h4>
-          
-        </div>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      
-        </div>
-        
-        <div class="security-seal">
-      </div>
-      
-      <div class="footer-copyright">
-        <small>© 2025 Bulbe - Todos os direitos reservados</small>
-        <small>CNPJ: 12.345.678/0001-90</small>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-  <script src="../assets/js/menu.js"></script>
-  <script src="../assets/js/reviews.js"></script>
+    <!-- JAVASCRIPT DO MENU -->
+    <script>
+        const menuIcon = document.querySelector('.menu-e-logo img:first-child');
+        const menuLateral = document.getElementById('menu-lateral');
+        const btnFechar = document.querySelector('.btn-fechar');
+        const overlay = document.querySelector('.overlay');
+        const categoriaHeader = document.querySelector('.categoria-header');
+        const categoria = document.querySelector('.categoria');
+
+        // Abrir menu
+        menuIcon.addEventListener('click', () => {
+            menuLateral.classList.add('ativo');
+            overlay.classList.add('ativo');
+        });
+
+        // Fechar menu
+        const fecharMenu = () => {
+            menuLateral.classList.remove('ativo');
+            overlay.classList.remove('ativo');
+            categoria.classList.remove('ativo'); // fecha submenu também
+        };
+
+        btnFechar.addEventListener('click', fecharMenu);
+        overlay.addEventListener('click', fecharMenu);
+
+        // Alternar submenu ao clicar em "Categorias"
+        categoriaHeader.addEventListener('click', () => {
+            categoria.classList.toggle('ativo');
+        });
+    </script>
 </body>
 </html>
