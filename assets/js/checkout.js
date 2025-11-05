@@ -337,50 +337,61 @@ class Checkout {
     }
 
     finalizarCompra() {
-        const metodoAtivo = document.querySelector('.metodo.ativo');
-        const envioAtivo = document.querySelector('.envio-opcao.ativo');
-        
-        if (!metodoAtivo) {
-            this.mostrarNotificacao('Selecione um método de pagamento', 'error');
-            return;
-        }
-
-        if (!envioAtivo) {
-            this.mostrarNotificacao('Selecione uma opção de envio', 'error');
-            return;
-        }
-
-        const metodoPagamento = metodoAtivo.dataset.metodo;
-        const tipoEnvio = envioAtivo.dataset.envio;
-        
-        console.log('✅ Finalizando compra:', { metodoPagamento, tipoEnvio });
-        
-        this.simularProcessamento(metodoPagamento, tipoEnvio);
+    const metodoAtivo = document.querySelector('.metodo.ativo');
+    const envioAtivo = document.querySelector('.envio-opcao.ativo');
+    
+    if (!metodoAtivo) {
+        this.mostrarNotificacao('Selecione um método de pagamento', 'error');
+        return;
     }
 
-    simularProcessamento(metodoPagamento, tipoEnvio) {
-        const btnFinalizar = document.querySelector('.finalizar-compra-btn');
-        const textoOriginal = btnFinalizar.textContent;
+    if (!envioAtivo) {
+        this.mostrarNotificacao('Selecione uma opção de envio', 'error');
+        return;
+    }
+
+    const metodoPagamento = metodoAtivo.dataset.metodo;
+    const tipoEnvio = envioAtivo.dataset.envio;
+    
+    console.log('✅ Finalizando compra:', { metodoPagamento, tipoEnvio });
+    
+    // Salvar dados da compra no localStorage para usar na página de conclusão
+    const dadosCompra = {
+        metodoPagamento: metodoPagamento,
+        tipoEnvio: tipoEnvio,
+        data: new Date().toISOString(),
+        numeroPedido: `BULBE-${Date.now().toString().slice(-6)}`
+    };
+    localStorage.setItem('ultimaCompra', JSON.stringify(dadosCompra));
+    
+    this.simularProcessamento(metodoPagamento, tipoEnvio);
+}
+
+    // checkout.js - ATUALIZADO COM REDIRECIONAMENTO
+
+simularProcessamento(metodoPagamento, tipoEnvio) {
+    const btnFinalizar = document.querySelector('.finalizar-compra-btn');
+    const textoOriginal = btnFinalizar.textContent;
+    
+    btnFinalizar.textContent = '⏳ Processando...';
+    btnFinalizar.disabled = true;
+    btnFinalizar.style.background = '#536679';
+    btnFinalizar.style.cursor = 'not-allowed';
+    
+    // Simular processamento do pagamento
+    setTimeout(() => {
+        this.mostrarNotificacao('🎊 Compra realizada com sucesso!', 'success');
         
-        btnFinalizar.textContent = '⏳ Processando...';
-        btnFinalizar.disabled = true;
-        btnFinalizar.style.background = '#536679';
-        btnFinalizar.style.cursor = 'not-allowed';
+        btnFinalizar.textContent = '✅ Redirecionando...';
+        btnFinalizar.style.background = '#26D07C';
         
+        // Redirecionar para a página de compra concluída após 2 segundos
         setTimeout(() => {
-            this.mostrarNotificacao('🎊 Compra realizada com sucesso!', 'success');
-            
-            btnFinalizar.textContent = textoOriginal;
-            btnFinalizar.disabled = false;
-            btnFinalizar.style.background = '#08068D';
-            btnFinalizar.style.cursor = 'pointer';
-            
-            setTimeout(() => {
-                this.mostrarNotificacao('Redirecionando para confirmação...', 'info');
-            }, 2000);
-            
-        }, 3000);
-    }
+            window.location.href = 'concluida.html';
+        }, 2000);
+        
+    }, 3000);
+}
 
     // MODAL PIX
     setupModalPix() {

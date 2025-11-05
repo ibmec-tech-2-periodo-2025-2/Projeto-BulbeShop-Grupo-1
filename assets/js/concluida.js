@@ -1,4 +1,4 @@
-// concluida.js - Página de Compra Concluída
+
 
 class PaginaConcluida {
     constructor() {
@@ -68,22 +68,43 @@ class PaginaConcluida {
         }
     }
 
-    gerarDadosPedido() {
-        // Gerar número do pedido único
-        const numeroPedido = `#BULBE-${Date.now().toString().slice(-6)}`;
-        const elementoNumero = document.querySelector('.info-pedido .valor');
+    // concluida.js - ATUALIZADO COM DADOS DA COMPRA
+
+gerarDadosPedido() {
+    // Tentar pegar dados da compra do localStorage
+    const dadosCompra = JSON.parse(localStorage.getItem('ultimaCompra'));
+    
+    if (dadosCompra) {
+        // Usar dados da compra real
+        const elementoNumero = document.querySelectorAll('.info-pedido .valor')[0];
+        const elementoData = document.querySelectorAll('.info-pedido .valor')[1];
+        const elementoPagamento = document.querySelectorAll('.info-pedido .valor')[2];
+        const elementoEntrega = document.querySelectorAll('.info-pedido .valor')[3];
         
-        if (elementoNumero) {
-            elementoNumero.textContent = numeroPedido;
+        if (elementoNumero) elementoNumero.textContent = `#${dadosCompra.numeroPedido}`;
+        if (elementoData) elementoData.textContent = new Date(dadosCompra.data).toLocaleDateString('pt-BR');
+        if (elementoPagamento) {
+            const metodo = dadosCompra.metodoPagamento;
+            elementoPagamento.textContent = metodo === 'pix' ? 'PIX' : 
+                                          metodo === 'cartao' ? 'Cartão de Crédito' : 
+                                          metodo === 'boleto' ? 'Boleto' : 'PIX';
         }
-
-        // Atualizar data atual
-        const dataElemento = document.querySelectorAll('.info-pedido .valor')[1];
-        if (dataElemento) {
-            dataElemento.textContent = new Date().toLocaleDateString('pt-BR');
+        if (elementoEntrega) {
+            const envio = dadosCompra.tipoEnvio;
+            elementoEntrega.textContent = envio === 'expresso' ? '1-2 dias úteis' : '5-7 dias úteis';
         }
+        
+        // Limpar dados do localStorage após usar
+        localStorage.removeItem('ultimaCompra');
+    } else {
+        // Dados padrão caso não tenha dados no localStorage
+        const numeroPedido = `#BULBE-${Date.now().toString().slice(-6)}`;
+        const elementosValor = document.querySelectorAll('.info-pedido .valor');
+        
+        if (elementosValor[0]) elementosValor[0].textContent = numeroPedido;
+        if (elementosValor[1]) elementosValor[1].textContent = new Date().toLocaleDateString('pt-BR');
     }
-
+}
     mostrarNotificacao(mensagem, tipo = 'info') {
         const notificacao = document.createElement('div');
         notificacao.className = `notificacao notificacao-${tipo}`;
