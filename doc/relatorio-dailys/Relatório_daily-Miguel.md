@@ -143,5 +143,45 @@
 
 ## 🗓️ Próximo passo
 - revisar todo o site
+- - --------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento - daily 7
+
+
+
+## 🙋 O que eu fiz desde o último relatório?
+- esto acabando de terminar e refinar a pagina com javascript
+
+## 🚧 O que estou fazendo agora?
+- o backlog ainda está a definir
+
+## 🧱 Quais dificuldades encontrei?
+- ainda estou com muita dificuldade em javascript
+
+## 🧠 O que aprendi até agora?
+- o basico do javascript
+
+## 🗓️ Próximo passo
+- a definir
+- - --------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento - daily 8
+
+
+
+## 🙋 O que eu fiz desde o último relatório?
+- esto acabando de terminar e refinar a pagina com javascript
+
+## 🚧 O que estou fazendo agora?
+- refinando os processos no backlog
+
+## 🧱 Quais dificuldades encontrei?
+- ainda estou com muita dificuldade em javascript
+
+## 🧠 O que aprendi até agora?
+- o basico do javascript
+
+## 🗓️ Próximo passo
+- a definir
 
 
