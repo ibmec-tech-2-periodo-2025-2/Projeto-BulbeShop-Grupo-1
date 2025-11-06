@@ -7,7 +7,7 @@
 - [2] Adicionar um fluxo negativo
 - [3] Criar mascara nos formularios
 - [4] Armazenar todos os dados das paginas no localstorage
-- [5] Fazer as requisições dos dados nas pagians que forem necessarias
+- [5] Fazer as requisições dos dados nas paginas que forem necessarias
 - [6] Aprimorar a pagina de pagamento usando API
 - [7] Ajustar a responsividade de acordo com o site hospedado / ajustar tudo q for necessario
 - [8] Fazer com que a pesquisa funcione
