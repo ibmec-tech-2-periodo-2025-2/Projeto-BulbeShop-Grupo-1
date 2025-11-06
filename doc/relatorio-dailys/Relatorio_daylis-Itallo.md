@@ -123,22 +123,19 @@
 ## Dayli 7:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Definição com o grupo sobre oq fazer na ultima sprint
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Pensando no que deve ser feito 
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Tentar definir as tarefas com os integrantes de acordo com o conhecimento de todo mundo 
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- nada
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Fazer os ultimos ajustes no backlog 
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 3-
@@ -146,21 +143,18 @@
 ## Dayli 8:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Fazer os ultimos ajustes no backlog 
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Fazer os ultimos ajustes no backlog 
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- nenhuma 
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- nada
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- Colocar a mão na massa 
 
 --------------------------------------------------------------------------------
