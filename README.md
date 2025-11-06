@@ -34,17 +34,20 @@ Estrutura inicial do HTML e scripts parciais.
 - PB-21 - Criar tela das categorias "casa,eletronicos,eletrodomesticos,ofertas"
 - PB-22 - Criar uma footer
 - PB-24 - Desenvolver aramazenamento dos dados
-- PB-25 - Testar
-- PB-26 - Ajustar design e fluxo com base no feedback
-- PB-27 - Preparar apresentação final
-- PB-28 -
-- PB-29 -
-- PB-30 -
-- PB-31 -
-- PB-32 -
-- PB-33 -
-- PB-34 -
-- PB-35 -
+- 
+- PB-25 - Fazer um botão funcional de colocar no carrinho 
+- PB-26 - Adicionar um fluxo negativo 
+- PB-27 - Criar mascara nos formularios 
+- PB-28 - Armazenar todos os dados das paginas no localstorage 
+- PB-29 - Fazer as requisilções dos dados nas pagians que forem necessarias 
+- PB-30 - Aprimirar a pagina de pagamento usando API 
+- PB-31 - Ajustar a responsividade de acordo com o site hospedado / ajustar tudo q for necessario 
+- PB-32 - Fazer com que a pesquisa funcione
+- PB 33 - Melhorar o fluxo e ver oq faz sentido ter e n ter na pag de cordo com o fluxo
+- PB-34 - Testar
+- PB-35 - Ajustar design e fluxo com base no feedback
+- PB-36 - Preparar apresentação final
+
 
 # Protótipos de Alta Fidelidade No Figma
 - https://www.figma.com/design/Nn1YOYvqXTQGdAcMQCtuwR/App-Bulbe-E-comerce?node-id=4-3&t=3uWgAciqVJlQCmG0-1
