@@ -133,22 +133,20 @@
 ## Daily 7:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Realizei o Direcionamento das Páginas do Projeto
+- [ ] Realizei a Footer Do Projeto
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Documentando Daily , e separando Backlog Final
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- nenhuma
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Documentar e organizar Elementos
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- A definir
 
 --------------------------------------------------------------------------------
 
