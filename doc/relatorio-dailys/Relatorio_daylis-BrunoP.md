@@ -155,21 +155,18 @@
 ## Daily 8:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Ainda Administrando Docs
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Dialogando com o grupo e organizando os a fazeres
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
+- Contato com todos os integrantes
 
 ## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
+- Aperfeiçoar minha Comunicação
 
 ## 🗓️ Próximo passo
-- Tarefa próxima
+- A definir
 
 --------------------------------------------------------------------------------
