@@ -34,7 +34,6 @@ Estrutura inicial do HTML e scripts parciais.
 - PB-21 - Criar tela das categorias "casa,eletronicos,eletrodomesticos,ofertas"
 - PB-22 - Criar uma footer
 - PB-24 - Desenvolver aramazenamento dos dados
-- 
 - PB-25 - Fazer um botão funcional de colocar no carrinho 
 - PB-26 - Adicionar um fluxo negativo 
 - PB-27 - Criar mascara nos formularios 
