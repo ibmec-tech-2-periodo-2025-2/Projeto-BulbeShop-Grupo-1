@@ -141,14 +141,16 @@
 ## Dayli 7:
 
 ## 🙋 O que eu fiz desde o último relatório?
+  - Nada
 
 ## 🚧 O que estou fazendo agora?
-
+  - Atualizando Dayli + Backlog
 ## 🧱 Quais dificuldades encontrei?
-
+  - Main sendo apertada pelo header 
 ## 🧠 O que aprendi até agora?
-
+  
 ## 🗓️ Próximo passo
+  -Implementar js main
 
 --------------------------------------------------------------------------------
 
