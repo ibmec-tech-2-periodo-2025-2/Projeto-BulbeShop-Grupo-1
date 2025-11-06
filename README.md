@@ -37,6 +37,14 @@ Estrutura inicial do HTML e scripts parciais.
 - PB-25 - Testar
 - PB-26 - Ajustar design e fluxo com base no feedback
 - PB-27 - Preparar apresentação final
+- PB-28 -
+- PB-29 -
+- PB-30 -
+- PB-31 -
+- PB-32 -
+- PB-33 -
+- PB-34 -
+- PB-35 -
 
 # Protótipos de Alta Fidelidade No Figma
 - https://www.figma.com/design/Nn1YOYvqXTQGdAcMQCtuwR/App-Bulbe-E-comerce?node-id=4-3&t=3uWgAciqVJlQCmG0-1
