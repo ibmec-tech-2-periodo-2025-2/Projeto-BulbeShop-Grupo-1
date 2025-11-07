@@ -183,5 +183,27 @@
 
 ## 🗓️ Próximo passo
 - a definir
+- - - --------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento - daily 9
+
+
+
+## 🙋 O que eu fiz desde o último relatório?
+- refinando os processos no backlog
+
+## 🚧 O que estou fazendo agora?
+- no momento, nada
+
+## 🧱 Quais dificuldades encontrei?
+- por não estar fazendo nada no momento, não tive dificuldade
+
+## 🧠 O que aprendi até agora?
+- nada de novo
+
+## 🗓️ Próximo passo
+- a definir
+- 
+
 
 
