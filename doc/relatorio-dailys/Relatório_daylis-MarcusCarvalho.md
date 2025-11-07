@@ -121,26 +121,18 @@ Nenhuma Até o Momento
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 3-4
-
+Dayli Diária
 ## Dayli 7:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Tarefa 1 Após apresentação da sprint 3, comecei a projetar nossa apresentação (apenas o planejamento do tópicos principais do nosso trabalho).
+
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
+- Tarefa atual: Vendo cada página no figma, o que pode melhorar.
 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
-
-## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
-
-## 🗓️ Próximo passo
-- Tarefa próxima
+- Dificuldade 1 - Nenhuma
 
 --------------------------------------------------------------------------------
 # 📆 Relatório de Acompanhamento - Semana 3-
