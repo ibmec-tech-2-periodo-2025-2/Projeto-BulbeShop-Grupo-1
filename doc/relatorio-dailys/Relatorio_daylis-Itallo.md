@@ -118,7 +118,7 @@
 - a definir 
 
 --------------------------------------------------------------------------------
-# 📆 Relatório de Acompanhamento - Semana 3-4
+# 📆 Relatório de Acompanhamento 
 
 ## Dayli 7:
 
@@ -138,7 +138,7 @@
 - Fazer os ultimos ajustes no backlog 
 
 --------------------------------------------------------------------------------
-# 📆 Relatório de Acompanhamento - Semana 3-
+# 📆 Relatório de Acompanhamento 
 
 ## Dayli 8:
 
@@ -147,6 +147,27 @@
 
 ## 🚧 O que estou fazendo agora?
 - Fazer os ultimos ajustes no backlog 
+
+## 🧱 Quais dificuldades encontrei?
+- nenhuma 
+
+## 🧠 O que aprendi até agora?
+- nada
+
+## 🗓️ Próximo passo
+- Fazer os últimos ajustes do design com o Daniel  
+
+--------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento 
+
+## Dayli 9:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] Fazer os últimos ajustes do design com o Daniel  
+
+## 🚧 O que estou fazendo agora?
+- Fazer os últimos ajustes do design com o Daniel  
 
 ## 🧱 Quais dificuldades encontrei?
 - nenhuma 
