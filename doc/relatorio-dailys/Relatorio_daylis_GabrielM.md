@@ -159,15 +159,51 @@
 ## Dayli 8:
 
 ## 🙋 O que eu fiz desde o último relatório?
-
+  -Estudei Cálculo 
 ## 🚧 O que estou fazendo agora?
-
+  -Estudando Cálculo 
 ## 🧱 Quais dificuldades encontrei?
-
-
 ## 🧠 O que aprendi até agora?
-
-
 ## 🗓️ Próximo passo
+  -Terminar Cálculo e começar JS Home
+  
+--------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Semana 3-4
 
+## Dayli 9:
+
+## 🙋 O que eu fiz desde o último relatório?
+  -Estudei Cálculo 
+## 🚧 O que estou fazendo agora?
+  -Estudando Cálculo 
+## 🧱 Quais dificuldades encontrei?
+## 🧠 O que aprendi até agora?
+## 🗓️ Próximo passo
+  -Terminar Cálculo e começar JS Home
+--------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Semana 3-4
+
+## Dayli 10:
+
+## 🙋 O que eu fiz desde o último relatório?
+  -Estudei Cálculo 
+## 🚧 O que estou fazendo agora?
+  -Estudando Cálculo 
+## 🧱 Quais dificuldades encontrei?
+## 🧠 O que aprendi até agora?
+## 🗓️ Próximo passo
+  -Terminar Cálculo e começar JS Home
+--------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Semana 3-4
+
+## Dayli 11:
+
+## 🙋 O que eu fiz desde o último relatório?
+  -Estudei Cálculo 
+## 🚧 O que estou fazendo agora?
+  -Estudando Cálculo 
+## 🧱 Quais dificuldades encontrei?
+## 🧠 O que aprendi até agora?
+## 🗓️ Próximo passo
+  -Terminar Cálculo e começar JS Home
 --------------------------------------------------------------------------------
