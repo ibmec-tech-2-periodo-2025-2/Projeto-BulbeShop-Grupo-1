@@ -120,7 +120,7 @@ Nenhuma Até o Momento
 - Acabar de codar o carrinho, pois devido ser uma página nova e totalmente diferente... Não deu tempo.
 
 --------------------------------------------------------------------------------
-# 📆 Relatório de Acompanhamento - Semana 3-4
+# 📆 Relatório de Acompanhamento - Dia 07/11
 Dayli Diária
 ## Dayli 7:
 
@@ -135,26 +135,16 @@ Dayli Diária
 - Dificuldade 1 - Nenhuma
 
 --------------------------------------------------------------------------------
-# 📆 Relatório de Acompanhamento - Semana 3-
-
+# 📆 Relatório de Acompanhamento - Dia 09/11
+Dayli Diária
 ## Dayli 8:
 
 ## 🙋 O que eu fiz desde o último relatório?
-- [ ] Tarefa 1
-- [ ] Tarefa 2
+- [ ] Atualização de pequenas mudanças no figma do carrinho.
 
 ## 🚧 O que estou fazendo agora?
-- Tarefa atual
-
+- Tarefa atual: Fazendo pesquisas de diferenciais que um ecomerce pode ter.
+- 
 ## 🧱 Quais dificuldades encontrei?
-- Dificuldade 1
-- Dificuldade 2
-
-## 🧠 O que aprendi até agora?
-- Aprendizado 1
-- Aprendizado 2
-
-## 🗓️ Próximo passo
-- Tarefa próxima
-
+- Dificuldade 1 - Nenhuma
 --------------------------------------------------------------------------------
