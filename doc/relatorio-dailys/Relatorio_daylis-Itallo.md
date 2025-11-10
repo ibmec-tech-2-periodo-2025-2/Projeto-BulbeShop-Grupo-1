@@ -179,3 +179,22 @@
 - Colocar a mão na massa 
 
 --------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento 
+
+## Dayli 10:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] Criação das mascaras no formulario 
+
+## 🚧 O que estou fazendo agora?
+- Criação das mascaras no formulario 
+
+## 🧱 Quais dificuldades encontrei?
+- Aprender como que faz essa bomba
+
+## 🧠 O que aprendi até agora?
+- Como que funciona
+
+## 🗓️ Próximo passo
+-  Armazenar todos os dados das paginas no localstorage
