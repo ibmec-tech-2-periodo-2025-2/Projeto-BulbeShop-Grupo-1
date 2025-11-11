@@ -170,3 +170,42 @@
 - A definir
 
 --------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Semana 4-4
+
+## Daily 9:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] Nada Até o Momento
+
+## 🚧 O que estou fazendo agora?
+- Dialogando com o grupo e organizando os a fazeres
+
+## 🧱 Quais dificuldades encontrei?
+- Contato com todos os integrantes
+
+## 🧠 O que aprendi até agora?
+- Aperfeiçoar minha Comunicação
+
+## 🗓️ Próximo passo
+- A definir
+
+- --------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Semana 4-4
+
+## Daily 10:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] Inicializando a Minha Parte Do Backlog
+
+## 🚧 O que estou fazendo agora?
+- Preparando Meus a Fazeres
+
+## 🧱 Quais dificuldades encontrei?
+- Nenhuma
+
+## 🧠 O que aprendi até agora?
+- -----
+
+## 🗓️ Próximo passo
+- A definir
+
