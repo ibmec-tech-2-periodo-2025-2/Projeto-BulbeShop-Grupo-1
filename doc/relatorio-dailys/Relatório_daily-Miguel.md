@@ -225,6 +225,27 @@
 - a definir
 - 
 
+- - - - --------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento - daily 11
+
+
+
+## 🙋 O que eu fiz desde o último relatório?
+- não continuei o projeto para estudar para as ap2
+
+## 🚧 O que estou fazendo agora?
+- estudando arquitetura de computadores(coloquei nas outras que não estava fazendo nada mas queria dizer que estou estudando, mas nada em relação ao projeto)
+
+## 🧱 Quais dificuldades encontrei?
+- por não estar fazendo nada no momento, não tive dificuldade
+
+## 🧠 O que aprendi até agora?
+- nada de novo
+
+## 🗓️ Próximo passo
+- a definir
+- 
 
 
 
