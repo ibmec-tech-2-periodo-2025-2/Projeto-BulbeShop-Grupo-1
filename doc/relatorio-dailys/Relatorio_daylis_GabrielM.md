@@ -207,3 +207,18 @@
 ## 🗓️ Próximo passo
   -Terminar Cálculo e começar JS Home
 --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Semana 4-5
+
+## Dayli 11:
+
+## 🙋 O que eu fiz desde o último relatório?
+  -Estudei Cálculo 
+  -Aprendi por cima JS de carrocel com Isaac
+## 🚧 O que estou fazendo agora?
+  -Estudando Cálculo 
+## 🧱 Quais dificuldades encontrei?
+## 🧠 O que aprendi até agora?
+## 🗓️ Próximo passo
+  -Terminar Cálculo e começar JS Home
+--------------------------------------------------------------------------------
