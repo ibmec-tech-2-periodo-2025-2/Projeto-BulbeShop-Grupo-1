@@ -197,4 +197,26 @@
 - Como que funciona
 
 ## 🗓️ Próximo passo
--  Armazenar todos os dados das paginas no localstorage
+-  Verificar quais dados devo armazenar 
+  
+
+--------------------------------------------------------------------------------
+
+# 📆 Relatório de Acompanhamento 
+
+## Dayli 10:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] Verificar quais dados devo armazenar 
+
+## 🚧 O que estou fazendo agora?
+- Verificar quais dados devo armazenar 
+
+## 🧱 Quais dificuldades encontrei?
+- Preguiça 
+
+## 🧠 O que aprendi até agora?
+- Nada
+
+## 🗓️ Próximo passo
+-  A avaliar 
