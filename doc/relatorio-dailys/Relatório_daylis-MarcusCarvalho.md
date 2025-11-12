@@ -160,3 +160,16 @@ Dayli Diária
 - 
 ## 🧱 Quais dificuldades encontrei?
 - Dificuldade 1 - Nenhuma
+--------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Dia 12/11
+Dayli Diária
+## Dayli 10:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] PLanejamento para os últimos passos antes de entregar o projeto.
+
+## 🚧 O que estou fazendo agora?
+- Tarefa atual: Revisão do código.
+- 
+## 🧱 Quais dificuldades encontrei?
+- Dificuldade 1 - Nenhuma
