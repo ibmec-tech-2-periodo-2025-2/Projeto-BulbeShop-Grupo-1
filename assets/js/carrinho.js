@@ -59,6 +59,7 @@ document.querySelectorAll(".mais").forEach(btn => {
 document.querySelectorAll(".remover").forEach(btn => {
   btn.addEventListener("click", () => {
     btn.closest(".produto").remove();
+    localStorage.clear();
     atualizarTotal();
   });
 });
@@ -66,4 +67,18 @@ document.querySelectorAll(".remover").forEach(btn => {
 // Atualiza o total ao carregar
 atualizarTotal();
 
+
+const imgProduto = document.getElementById("img");
+const nomeProduto = document.getElementById("nome");
+const valorTotal = document.getElementById("valorTotal");
+const valorFinal = document.getElementById("valorFinal");
+
+
+const compra = JSON.parse(localStorage.getItem('compra'));
+console.log(compra);
+
+imgProduto.src = compra.imgProduto;
+nomeProduto.textContent = compra.nomeProduto;
+valorTotal.textContent = compra.valorTotal;
+valorFinal.textContent = compra.valorFinal;
 
