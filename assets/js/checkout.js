@@ -1,4 +1,7 @@
+const inputCep = document.getElementById("cep");
+const dados = JSON.parse(localStorage.getItem('dadosEntrega'));
 
+inputCep.textContent = dados.cep;
 
 class Checkout {
     constructor() {
