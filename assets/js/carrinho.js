@@ -75,7 +75,6 @@ const valorFinal = document.getElementById("valorFinal");
 
 
 const compra = JSON.parse(localStorage.getItem('compra'));
-console.log(compra);
 
 imgProduto.src = compra.imgProduto;
 nomeProduto.textContent = compra.nomeProduto;
