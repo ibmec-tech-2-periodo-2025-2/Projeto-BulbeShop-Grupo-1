@@ -209,3 +209,22 @@
 ## 🗓️ Próximo passo
 - A definir
 
+- --------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Semana 4-4
+
+## Daily Final:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] Estudei pra calculo 2
+
+## 🚧 O que estou fazendo agora?
+- Preparando Meus a Fazeres
+
+## 🧱 Quais dificuldades encontrei?
+- Nenhuma
+
+## 🧠 O que aprendi até agora?
+- -----
+
+## 🗓️ Próximo passo
+- A definir
