@@ -148,3 +148,15 @@ Dayli Diária
 ## 🧱 Quais dificuldades encontrei?
 - Dificuldade 1 - Nenhuma
 --------------------------------------------------------------------------------
+# 📆 Relatório de Acompanhamento - Dia 11/11
+Dayli Diária
+## Dayli 9:
+
+## 🙋 O que eu fiz desde o último relatório?
+- [ ] Atualização de pequenas mudanças no figma todo.
+
+## 🚧 O que estou fazendo agora?
+- Tarefa atual: Continuo fazendo pesquisas de diferenciais que um ecomerce pode ter.
+- 
+## 🧱 Quais dificuldades encontrei?
+- Dificuldade 1 - Nenhuma
