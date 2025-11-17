@@ -650,3 +650,22 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
+
+
+
+
+const imgProduto = document.getElementById("img");
+const nomeProduto = document.getElementById("nomeProduto");
+const descricaoProduto = document.getElementById("descricaoProduto");
+const valorTotal = document.getElementById("valorTotal");
+const valorFinal = document.getElementById("valorFinal");
+
+const dadosProduto = localStorage.getItem("produto");
+
+const dadosProdutoJSON = JSON.parse(dadosProduto);
+
+imgProduto.src = dadosProdutoJSON.imgProduto;
+descricaoProduto.textContent = dadosProdutoJSON.descricaoProduto;
+nomeProduto.textContent = dadosProdutoJSON.nomeProduto;
+valorTotal.textContent = dadosProdutoJSON.valorTotal;
+valorFinal.textContent = dadosProdutoJSON.valorFinal;

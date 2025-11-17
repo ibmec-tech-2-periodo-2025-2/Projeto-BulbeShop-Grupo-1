@@ -94,7 +94,7 @@
         </div>
 
         <h2>Descrição Do Produto</h2>
-        <p class="description">Possuir uma boa iluminação nos espaços em que estamos influencia a maneira como nos sentimos, relaxamos, trabalhamos ou estudamos. É por isso que a lâmpada da Elgin Super Bulbo 30 W pode ser uma excelente opção se você quiser criar um ambiente agradável e funcional.</p>
+        <p class="description" id="descricao">Possuir uma boa iluminação nos espaços em que estamos influencia a maneira como nos sentimos, relaxamos, trabalhamos ou estudamos. É por isso que a lâmpada da Elgin Super Bulbo 30 W pode ser uma excelente opção se você quiser criar um ambiente agradável e funcional.</p>
 
         <div class="price-card">
           <div class="promo">Maio/25<br><small>Promoção até o dia 06/06/25</small></div>
@@ -105,14 +105,12 @@
           <div class="discount">Desconto Bulbe: <strong>R$ 182,03</strong></div>
         </div>
 
-        <a href="carrinho.html">
           <div class="cta-row">
-            <button class="primary" id="addCarrinho">Adicionar ao Carrinho</button>
-            <button class="secondary">
+            <button class="primary" id="addCarrinho" onclick="window.location.href = './carrinho.html'">Adicionar ao Carrinho</button>
+            <button class="secondary"  id="comprar" onclick="window.location.href = './lead.html'">
               <p>Comprar</p>
             </button>
           </div>
-        </a>
       </div>
     </section>
 
@@ -133,29 +131,11 @@
 
       <div class="review-card">
         <div class="review-header">
-          <span class="reviewer-name">Gabriel Manata</span>
-          <span class="review-date">Há cerca de 3 dias atrás</span>
+          <span class="reviewer-name"></span>
+          <span class="review-date"></span>
         </div>
-        <div class="review-rating">★★★★★</div>
-        <p class="review-text">Produto excelente! A lâmpada tem uma ótima iluminação e já estou usando há algumas semanas. Super recomendo!</p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-header">
-          <span class="reviewer-name">Maria Silva</span>
-          <span class="review-date">Há 1 semana atrás</span>
-        </div>
-        <div class="review-rating">★★★★☆</div>
-        <p class="review-text">Muito boa a lâmpada, porém a luz branca é mais forte do que eu esperava. Mas a qualidade é ótima.</p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-header">
-          <span class="reviewer-name">João Santos</span>
-          <span class="review-date">Há 2 semanas atrás</span>
-        </div>
-        <div class="review-rating">★★★★★</div>
-        <p class="review-text">Perfeita para meu escritório! Economiza energia e ilumina muito bem. Entrega rápida também.</p>
+        <div class="review-rating"></div>
+        <p class="review-text"></p>
       </div>
 
       <!-- Formulário de Avaliação (inicialmente oculto) -->
@@ -254,7 +234,6 @@
 </footer>
 
   <script src="../assets/js/menu.js"></script>
-  <script src="../assets/js/reviews.js"></script>
   <script src="../assets/js/produto.js"></script>
 </body>
 </html>
