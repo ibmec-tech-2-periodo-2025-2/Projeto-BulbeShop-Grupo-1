@@ -44,6 +44,7 @@ document.querySelectorAll(".menos").forEach(btn => {
       campo.textContent = valor - 1;
       atualizarTotal();
     }
+    
   });
 });
 
