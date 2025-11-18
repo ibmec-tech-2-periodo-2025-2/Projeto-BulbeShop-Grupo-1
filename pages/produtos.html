@@ -11,28 +11,14 @@
   <header>
     <div class="conteiner-top">
       <div class="menu-e-logo">
-        <img src="../assets/img/icons/menu.png" alt="Menu" class="menu-toggle">
+        <img src="../assets/img/icons/menu.png" alt="Menu" onclick="abrirMenu()">
         <img src="../assets/img/logo.png" alt="Bulbe" onclick="window.location.href = '../index.html'">
       </div>
       <div class="conteiner-icones">
         <img src="../assets/img/icons/sino.png" alt="" onclick="window.location.href = './notificacao.html'">
         <a href="./carrinho.html" style="position: relative; display: inline-block;">
             <img src="../assets/img/icons/carrinho.png" alt="">
-            <span class="contador-carrinho" style="
-                position: absolute;
-                top: -8px;
-                right: -8px;
-                background: #FF9E1B;
-                color: white;
-                border-radius: 50%;
-                width: 18px;
-                height: 18px;
-                font-size: 12px;
-                display: none;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-            ">0</span>
+            <span class="contador-carrinho">0</span>
         </a>
         <img src="../assets/img/icons/user.png" alt="" onclick="window.location.href='./usuario.html'">
       </div>
@@ -55,7 +41,7 @@
   <nav id="menu-lateral" class="menu-lateral">
         <div class="menu-top">
             <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
-            <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+            <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar" onclick="fecharMenu()">
         </div>
 
         <ul class="menu-lista">
@@ -74,10 +60,8 @@
 
                 <ul class="submenu">
                     <li><a href="./destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
-                    <li><a href="./destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
-                                alt="">Eletrodoméstico</a></li>
-                    <li><a href="./destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
-                    </li>
+                    <li><a href="./destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png" alt="">Eletrodoméstico</a></li>
+                    <li><a href="./destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
                     <li><a href="./destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
                 </ul>
             </li>
@@ -123,11 +107,11 @@
         </div>
 
           <div class="cta-row">
-            <button class="primary" id="addCarrinho" onclick="adicionarAoCarrinhoHome({
+            <button class="primary" id="addCarrinho" onclick="adicionarAoCarrinho({
                 id: 'lampada-elgin-001',
                 nome: 'Lâmpada Super Bulbo LED T 30W 6500K Elgin Bivolt Luz Branca Fria',
                 preco: 99.90,
-                imagem: '../assets/img/produtos/lampada.png'
+                imagem: './assets/img/produtos/lampada.png'
             })">Adicionar ao Carrinho</button>
             <button class="secondary" id="comprar" onclick="window.location.href = './lead.html'">
                 <p>Comprar</p>
@@ -143,47 +127,6 @@
       </div>
     </aside>
 
-    <!-- Seção de Avaliações -->
-    <section class="reviews-section">
-      <div class="reviews-header">
-        <h3 class="reviews-title">Avaliações do Produto</h3>
-        <button class="add-review-btn">+ Adicionar Avaliação</button>
-      </div>
-
-      <div class="review-card">
-        <div class="review-header">
-          <span class="reviewer-name"></span>
-          <span class="review-date"></span>
-        </div>
-        <div class="review-rating"></div>
-        <p class="review-text"></p>
-      </div>
-
-      <!-- Formulário de Avaliação (inicialmente oculto) -->
-      <div class="review-form" id="reviewForm" style="display: none;">
-        <h4>Deixe sua avaliação</h4>
-        <div class="form-group">
-          <label for="reviewerName">Seu nome</label>
-          <input type="text" id="reviewerName" placeholder="Digite seu nome">
-        </div>
-        <div class="form-group">
-          <label>Avaliação</label>
-          <div class="rating-stars">
-            <span class="star" data-rating="1">★</span>
-            <span class="star" data-rating="2">★</span>
-            <span class="star" data-rating="3">★</span>
-            <span class="star" data-rating="4">★</span>
-            <span class="star" data-rating="5">★</span>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="reviewText">Comentário</label>
-          <textarea id="reviewText" placeholder="Compartilhe sua experiência com o produto"></textarea>
-        </div>
-        <button class="submit-review">Enviar Avaliação</button>
-      </div>
-    </section>
-
     <section class="also-like">
       <h3>Você também pode gostar:</h3>
       <div class="grid">
@@ -191,21 +134,45 @@
           <img src="../assets/img/produtos/abajur.png" alt="Abajur Luxuoso">
           <div class="card-title">Abajur Luxuoso</div>
           <div class="card-price">R$ 35,80</div>
+          <button class="btn-carrinho" onclick="adicionarAoCarrinho({
+            id: 'abajur-produto-001',
+            nome: 'Abajur Luxuoso',
+            preco: 35.80,
+            imagem: './assets/img/produtos/abajur.png'
+          })">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="../assets/img/produtos/cadeira.png" alt="Cadeira 4 Pernas Forro Branco">
           <div class="card-title">Cadeira 4 Pernas Forro Branco</div>
           <div class="card-price">R$ 15,75</div>
+          <button class="btn-carrinho" onclick="adicionarAoCarrinho({
+            id: 'cadeira-produto-001',
+            nome: 'Cadeira 4 Pernas Forro Branco',
+            preco: 15.75,
+            imagem: './assets/img/produtos/cadeira.png'
+          })">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="../assets/img/produtos/shopping.webp" alt="Luminária de Mesa">
           <div class="card-title">Luminária de Mesa</div>
           <div class="card-price">R$ 42,90</div>
+          <button class="btn-carrinho" onclick="adicionarAoCarrinho({
+            id: 'luminaria-produto-001',
+            nome: 'Luminária de Mesa',
+            preco: 42.90,
+            imagem: './assets/img/produtos/shopping.webp'
+          })">Adicionar ao Carrinho</button>
         </div>
         <div class="card">
           <img src="../assets/img/produtos/shopping (1).webp" alt="Kit de Lâmpadas">
           <div class="card-title">Kit de Lâmpadas LED</div>
           <div class="card-price">R$ 67,50</div>
+          <button class="btn-carrinho" onclick="adicionarAoCarrinho({
+            id: 'kit-lampadas-produto-001',
+            nome: 'Kit de Lâmpadas LED',
+            preco: 67.50,
+            imagem: './assets/img/produtos/shopping (1).webp'
+          })">Adicionar ao Carrinho</button>
         </div>
       </div>
     </section>
@@ -234,18 +201,15 @@
         
         <div class="footer-column">
           <h4>Atendimento</h4>
-          
+          <ul>
+            <li><a href="#" onclick="abrirFluxoNegativo()">Problemas com pedido?</a></li>
+            <li><a href="./suporte.html">Central de Ajuda</a></li>
+          </ul>
         </div>
       </div>
     </div>
     
     <div class="footer-bottom">
-      
-        </div>
-        
-        <div class="security-seal">
-      </div>
-      
       <div class="footer-copyright">
         <small>© 2025 Bulbe - Todos os direitos reservados</small>
         <small>CNPJ: 12.345.678/0001-90</small>
@@ -256,7 +220,5 @@
 
   <script src="../assets/js/carrinho-completo.js"></script>
   <script src="../assets/js/menu.js"></script>
-  <script src="../assets/js/produto.js"></script>
-  
 </body>
 </html>

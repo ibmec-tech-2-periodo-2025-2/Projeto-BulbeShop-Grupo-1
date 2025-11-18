@@ -12,158 +12,117 @@
   <header>
     <div class="conteiener-top">
       <div class="menu-e-logo">
-        <img src="../assets/img/icons/menu.png" alt="">
+        <img src="../assets/img/icons/menu.png" alt="" onclick="abrirMenu()">
         <img src="../assets/img/logo.png" alt="">
       </div>
       <div class="conteiner-icones">
         <img src="../assets/img/icons/sino.png" alt="" onclick="window.location.href = './notificacao.html'">
+        <a href="./carrinho.html" style="position: relative; display: inline-block;">
+          <img src="../assets/img/icons/carrinho.png" alt="">
+          <span class="contador-carrinho">0</span>
+        </a>
         <img src="../assets/img/icons/user.png" alt="" onclick="window.location.href = './usuario.html'">
       </div>
     </div>
   </header>
 
-
   <div class="overlay"></div>
 
   <nav id="menu-lateral" class="menu-lateral">
-        <div class="menu-top">
-            <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
-            <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+    <div class="menu-top">
+      <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+      <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar" onclick="fecharMenu()">
+    </div>
+
+    <ul class="menu-lista">
+      <li>
+        <a href="../index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+      </li>
+
+      <li class="categoria">
+        <div class="categoria-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="../assets/img/icons/categoria.png" alt="">
+            <span>Categorias</span>
+          </div>
+          <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
         </div>
 
-        <ul class="menu-lista">
-            <li>
-                <a href="../index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
-            </li>
-
-            <li class="categoria">
-                <div class="categoria-header">
-                    <div style="display: flex; align-items: center; gap: 8px;">
-                        <img src="../assets/img/icons/categoria.png" alt="">
-                        <span>Categorias</span>
-                    </div>
-                    <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
-                </div>
-
-                <ul class="submenu">
-                    <li><a href="./destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
-                    <li><a href="./destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
-                                alt="">Eletrodoméstico</a></li>
-                    <li><a href="./destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
-                    </li>
-                    <li><a href="./destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
-            </li>
-
-            <li>
-                <a href="./usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
-            </li>
+        <ul class="submenu">
+          <li><a href="./destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+          <li><a href="./destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png" alt="">Eletrodoméstico</a></li>
+          <li><a href="./destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
+          <li><a href="./destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
         </ul>
-    </nav>
+      </li>
+
+      <li>
+        <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+      </li>
+
+      <li>
+        <a href="./usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+      </li>
+    </ul>
+  </nav>
 
   <main class="carrinho-container">
-    <!-- FAIXA ROXA + AÇÃO (voltar / logo) + CARD -->
-<!-- 🔹Topo da região do carrinho -->
-<section class="faixa-carrinho">
-  <div class="conteiner-titulo">
-    <h1 class="titulo">Carrinho de Compras</h1>
-  </div>
-</section>
+    <section class="faixa-carrinho">
+      <div class="conteiner-titulo">
+        <h1 class="titulo">Carrinho de Compras</h1>
+      </div>
+    </section>
 
-<!-- 🔹Barra com botão voltar e logo no fundo branco -->
-<div class="bar-acao">
-  <button class="btn-voltar" aria-label="Voltar" onclick="window.location.href = 'produtos.html'">
-    ←
-  </button>
-
-  <img class="logo-bulbe-mini" src="../assets/img/logo.png" alt="Bulbe">
-</div>
-
-<!-- 🔹Card Resumo -->
-<section class="card-resumo">
-
-  <div class="conteudo-card">
-
-    <div class="linha1">
-      <p class="data-carrinho">Maio/25</p>
-      <span class="status-carrinho">Carrinho em aberto</span>
+    <div class="bar-acao">
+      <button class="btn-voltar" aria-label="Voltar" onclick="window.location.href = '../index.html'">
+        ←
+      </button>
+      <img class="logo-bulbe-mini" src="../assets/img/logo.png" alt="Bulbe">
     </div>
 
-    <p class="preco-linha">De <span class="risco">R$ 581,93</span> por</p>
+    <section class="card-resumo">
+      <div class="conteudo-card">
+        <div class="linha1">
+          <p class="data-carrinho" id="data-atual">Maio/25</p>
+          <span class="status-carrinho">Carrinho em aberto</span>
+        </div>
+        <p class="preco-linha">De <span class="risco" id="preco-antigo-total">R$ 0,00</span> por</p>
+        <h2 class="preco-novo">R$ <span id="valor-novo">0,00</span></h2>
+      </div>
+      <div class="barra-desconto">
+        Desconto Bulbe: <strong id="total-desconto">R$ 0,00</strong>
+      </div>
+    </section>
 
-    <h2 class="preco-novo">R$ <span id="valor-novo">327,75</span></h2>
-
-  </div> <!-- fim do conteúdo interno -->
-
-  <div class="barra-desconto">
-    Desconto Bulbe: <strong>R$ 254,18</strong>
-  </div>
-
-</section>
-
-
-<section class="lista-carrinho">
-
- <!-- TÍTULO + LINHA ACIMA (ESTILO FIGMA) -->
-<div class="titulo-carrinho">
-  <div class="linha-divisoria"></div>
-
-  <div class="titulo-lista">
-    <img src="../assets/img/icons/lista.png" class="icon-lista" alt="">
-    <span class="texto-titulo-carrinho">Detalhamento do Carrinho</span>
-  </div>
-</div>
-
-
-  </div>
-
-  <div class="conteiner-produto">
-
-    <!-- PRODUTO 1 -->
-    <div class="produto">
-      <div class="linha-produto"></div>
-      <img src="" id="img">
-      <div class="info-produto">
-        <p class="nome" id="nome"></p>
-        <p class="preco-antigo-prod" id="valorTotal"></p>
-        <div class="controle">
-          <div class="quantidade">
-            <button class="menos">-</button>
-            <div class="campo">1</div>
-            <button class="mais">+</button>
-          </div>
-          <p class="preco">R$ <span class="valor" id="valorFinal"></span></p>
+    <section class="lista-carrinho">
+      <div class="titulo-carrinho">
+        <div class="linha-divisoria"></div>
+        <div class="titulo-lista">
+          <img src="../assets/img/icons/lista.png" class="icon-lista" alt="">
+          <span class="texto-titulo-carrinho">Detalhamento do Carrinho</span>
         </div>
       </div>
-      <button class="remover">🗑</button>
-    </div>
 
-    
-  </div>
-
-</section>
-
+      <div class="conteiner-produto">
+        <!-- Os produtos serão carregados dinamicamente via JavaScript -->
+      </div>
+    </section>
 
     <section class="resumo-final">
       <p>Frete: <span>R$ 0,00</span></p>
-      <p>Subtotal: <span id="subtotal">R$ 327,75</span></p>
+      <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
       <hr>
-      <h3>Total: <span id="total">R$ 327,75</span></h3>
+      <h3>Total: <span id="total">R$ 0,00</span></h3>
     </section>
 
     <div class="botoes-carrinho">
-      <button id="finalizar" onclick="window.location.href = './lead.html'">Finalizar Compra</button>
+      <button id="finalizar">Finalizar Compra</button>
       <button id="continuar" onclick="window.location.href = '../index.html'">Continuar Comprando</button>
     </div>
   </main>
 
+  <script src="../assets/js/carrinho-completo.js"></script>
   <script src="../assets/js/menu.js"></script>
   <script src="../assets/js/carrinho.js"></script>
-
 </body>
-
 </html>
