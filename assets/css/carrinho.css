@@ -151,24 +151,7 @@
     .remover:hover{
         color:#e74c3c
     }
-    .resumo-final{
-        width:90%;
-        background:#f1f1ff;
-        padding:12px;
-        border-radius:12px;
-        font-size:14px
-    }
-    .resumo-final p{
-        display:flex;
-        justify-content:space-between;
-        margin:5px 0
-    }
-    .resumo-final h3{
-        display:flex;
-        justify-content:space-between;
-        color:var(--azul);
-        font-size:17px
-    }
+   
     .botoes-carrinho{
         display:flex;
         flex-direction:column;
@@ -193,11 +176,12 @@
         background:0 0;
         border:1px solid #ccc;
         padding:12px;
+        margin-bottom: 50px;
         border-radius:10px;
         font-weight:600;
         cursor:pointer;
         font-size:15px;
-        width:90%
+        width:90%;
     }
     .menu-lateral{
         position:fixed;
@@ -495,4 +479,119 @@
         font-weight:600;
         color:#3a3a3a
     }
+
+        /* BLOCO RESUMO DO CÁLCULO (título + card) */
+    .bloco-resumo{
+        width:100%;
+        margin-top:16px;
+    }
+
+    .cabecalho-resumo{
+        width:90%;
+        margin:0 auto 8px;
+        display:flex;
+        align-items:center;
+        gap:6px;
+        font-size:14px;
+        color:#4b4b4b;
+        font-weight:600;
+    }
+
+    .icone-resumo{
+        font-size:14px;
+    }
+
+    .texto-cabecalho{
+        font-size:14px;
+        font-weight:600;
+    }
+
+    /* Card branco com borda cinza clara, fundo da cor do body */
+    .resumo-final{
+        width:90%;
+        margin:0 auto 20px;
+        background-color:#f5f6fa;          /* mesma cor do body */
+        border:1px solid #dde1ec;          /* borda cinza clara */
+        border-radius:12px;
+        padding:10px 14px 12px;
+        box-shadow:0 2px 4px rgba(0,0,0,.03);
+        font-size:13px;
+    }
+
+    .linha-resumo{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:6px;
+    }
+
+    .info-resumo{
+        display:flex;
+        align-items:center;
+        gap:6px;
+        color:#555;
+    }
+
+    .marcador{
+        width:6px;
+        height:16px;
+        border-radius:4px;
+    }
+
+    .marcador.frete{
+        background:#f4a629;    /* laranja */
+    }
+
+    .marcador.subtotal{
+        background:#2ecc71;    /* verde */
+    }
+
+    .marcador.desconto{
+        background:#0043ff;    /* azul escuro */
+    }
+
+    .valor-resumo{
+        font-weight:500;
+        color:#333;
+    }
+
+    .resumo-final hr{
+        border:none;
+        border-top:1px solid #dde1ec;
+        margin:8px 0;
+    }
+
+    .valor-total-linha{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:8px;
+}
+
+.label-total{
+    font-size:16px;
+    font-weight:700;
+    color:#434b54; /* igual ao print */
+}
+
+.valores-lado{
+    display:flex;
+    align-items:center;
+    gap:10px; /* espaço entre os dois valores */
+}
+
+.total-antigo{
+    font-size:13px;
+    color:#7d8692;
+    text-decoration: line-through;
+}
+
+.total-novo{
+    gap: 5px;
+    font-size:18px;
+    font-weight:700;
+    color:#08068d; /* azul Bulbe */
+}
+
+
 }

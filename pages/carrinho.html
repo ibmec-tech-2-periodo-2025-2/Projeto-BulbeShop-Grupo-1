@@ -142,12 +142,68 @@
 </section>
 
 
-    <section class="resumo-final">
-      <p>Frete: <span>R$ 0,00</span></p>
-      <p>Subtotal: <span id="subtotal">R$ 327,75</span></p>
-      <hr>
-      <h3>Total: <span id="total">R$ 327,75</span></h3>
-    </section>
+  <!-- BLOCO: RESUMO DO CÁLCULO -->
+<section class="bloco-resumo">
+
+  <!-- Título “Resumo do cálculo” -->
+  <div class="cabecalho-resumo">
+    <!-- se quiser, depois troca esse span por um ícone -->
+    <span class="icone-resumo">☑</span>
+    <span class="texto-cabecalho">Resumo do cálculo</span>
+  </div>
+
+  <!-- Card branco com borda cinza clara -->
+  <div class="resumo-final">
+
+    <!-- Linha: Frete -->
+    <div class="linha-resumo">
+      <div class="info-resumo">
+        <span class="marcador frete"></span>
+        <span>Frete</span>
+      </div>
+      <span class="valor-resumo" id="frete">R$ 0,00</span>
+    </div>
+
+    <!-- Linha: Subtotal -->
+    <div class="linha-resumo">
+      <div class="info-resumo">
+        <span class="marcador subtotal"></span>
+        <span>Subtotal</span>
+      </div>
+      <span class="valor-resumo" id="subtotal">R$ 581,93</span>
+    </div>
+
+    <!-- Linha: Desconto Bulbe -->
+    <div class="linha-resumo">
+      <div class="info-resumo">
+        <span class="marcador desconto"></span>
+        <span>Desconto Bulbe</span>
+      </div>
+      <span class="valor-resumo" id="desconto">R$ 254,18</span>
+    </div>
+
+    <hr>
+
+    <!-- Valor total
+    <div class="valor-total-linha">
+      <span class="label-total">Valor total</span>
+
+      <div class="valores-total">
+        <span class="total-antigo">R$ 581,93</span>
+        <span class="total-novo" id="total">R$ 327,75</span>
+      </div>
+    </div> -->
+    <div class="valor-total-linha">
+  <span class="label-total">Valor total</span>
+
+  <div class="valores-lado">
+    <span class="total-antigo" id="total-antigo">R$ 581,93</span>
+    <span class="total-novo" id="total">R$ 327,75</span>
+  </div>
+</div>
+
+  </div>
+</section>
 
     <div class="botoes-carrinho">
       <button id="finalizar" onclick="window.location.href = './lead.html'">Finalizar Compra</button>
