@@ -289,23 +289,39 @@
         border-radius:0 0 20px 20px;
         padding:0
     }
-    .bar-acao{
-        width:92%;
-        margin:10px auto 0;
-        display:flex;
-        align-items:center;
-        justify-content:space-between
-    }
-    .btn-voltar{
-        background:0 0;
-        border:none;
-        font-size:22px;
-        color:#08068d;
-        cursor:pointer
-    }
+
     .logo-bulbe-mini{
-        height:24px
-    }
+    height: 26px;     /* deixe parecido com o Figma */
+    width: auto;
+    margin-right: 10px;
+}
+
+    .btn-voltar{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+   .btn-voltar img{
+    width: 22px;
+    height: auto;
+    opacity: 0.85; /* igual ao layout */
+}
+
+
+    .bar-acao{
+    width: 92%;
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;     /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Um na esquerda e outro na direita */
+    padding: 8px 0; /* Ajuste fino pra altura ficar idêntica ao layout */
+}
+
     .card-resumo{
         width:90%;
         background:#fff;
