@@ -81,3 +81,5 @@ nomeProduto.textContent = compra.nomeProduto;
 valorTotal.textContent = compra.valorTotal;
 valorFinal.textContent = compra.valorFinal;
 
+
+
