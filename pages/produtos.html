@@ -16,8 +16,25 @@
       </div>
       <div class="conteiner-icones">
         <img src="../assets/img/icons/sino.png" alt="" onclick="window.location.href = './notificacao.html'">
-                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
-                <img src="../assets/img/icons/user.png" alt="" onclick="window.location.href = './usuario.html'">
+        <a href="./carrinho.html" style="position: relative; display: inline-block;">
+            <img src="../assets/img/icons/carrinho.png" alt="">
+            <span class="contador-carrinho" style="
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                background: #FF9E1B;
+                color: white;
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                font-size: 12px;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+            ">0</span>
+        </a>
+        <img src="../assets/img/icons/user.png" alt="" onclick="window.location.href='./usuario.html'">
       </div>
     </div>
     <div class="conteiner-pesquisa">
@@ -106,12 +123,16 @@
         </div>
 
           <div class="cta-row">
-            <button class="primary" id="addCarrinho" onclick="window.location.href = './carrinho.html'">Adicionar ao Carrinho</button>
-            <button class="secondary"  id="comprar" onclick="window.location.href = './lead.html'">
-              <p>Comprar</p>
+            <button class="primary" id="addCarrinho" onclick="adicionarAoCarrinhoHome({
+                id: 'lampada-elgin-001',
+                nome: 'Lâmpada Super Bulbo LED T 30W 6500K Elgin Bivolt Luz Branca Fria',
+                preco: 99.90,
+                imagem: '../assets/img/produtos/lampada.png'
+            })">Adicionar ao Carrinho</button>
+            <button class="secondary" id="comprar" onclick="window.location.href = './lead.html'">
+                <p>Comprar</p>
             </button>
           </div>
-      </div>
     </section>
 
     <aside class="promo-card">
@@ -233,7 +254,9 @@
   </div>
 </footer>
 
+  <script src="../assets/js/carrinho-completo.js"></script>
   <script src="../assets/js/menu.js"></script>
   <script src="../assets/js/produto.js"></script>
+  
 </body>
 </html>

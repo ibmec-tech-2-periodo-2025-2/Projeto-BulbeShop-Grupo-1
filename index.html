@@ -19,10 +19,12 @@
             </div>
             <div class="conteiner-icones">
                 <img src="./assets/img/icons/sino.png" alt="" onclick="window.location.href = './pages/notificacao.html'">
-                <a href="./pages/carrinho.html"><img src="./assets/img/icons/carrinho.png" alt=""></a>
+                <a href="./pages/carrinho.html" style="position: relative; display: inline-block;">
+                    <img src="./assets/img/icons/carrinho.png" alt="">
+                    <span class="contador-carrinho">0</span>
+                </a>
                 <img src="./assets/img/icons/user.png" onclick="window.location.href = './pages/usuario.html'">
             </div>
-            
         </div>
         <div class="conteiner-pesquisa">
             <input type="search" placeholder="Pesquisa...">
@@ -41,40 +43,34 @@
 
     <nav id="menu-lateral" class="menu-lateral">
         <div class="menu-top">
-            <img src="../assets/img/logo-azul.png" alt="Logo" class="logo-menu">
-            <img src="../assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+            <img src="./assets/img/logo-azul.png" alt="Logo" class="logo-menu">
+            <img src="./assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
         </div>
 
         <ul class="menu-lista">
             <li>
-                <a href="./index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+                <a href="./index.html"><img src="./assets/img/icons/home.png" alt="">Home</a>
             </li>
-
             <li class="categoria">
                 <div class="categoria-header">
                     <div style="display: flex; align-items: center; gap: 8px;">
-                        <img src="../assets/img/icons/categoria.png" alt="">
+                        <img src="./assets/img/icons/categoria.png" alt="">
                         <span>Categorias</span>
                     </div>
-                    <img src="../assets/img/icons/seta-direita.png" alt="" class="seta">
+                    <img src="./assets/img/icons/seta-direita.png" alt="" class="seta">
                 </div>
-
                 <ul class="submenu">
-                    <li><a href="./pages/destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
-                    <li><a href="./pages/destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
-                                alt="">Eletrodoméstico</a></li>
-                    <li><a href="./pages/destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
-                    </li>
-                    <li><a href="./pages/destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+                    <li><a href="./pages/destaquecasa.html"><img src="./assets/img/icons/casa2.png" alt="">Casa</a></li>
+                    <li><a href="./pages/destaqueeletrodomesticos.html"><img src="./assets/img/icons/eletrodomestico.png" alt="">Eletrodoméstico</a></li>
+                    <li><a href="./pages/destaqueseletronicos.html"><img src="./assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
+                    <li><a href="./pages/destaqueofertas.html"><img src="./assets/img/icons/oferta2.png" alt="">Oferta</a></li>
                 </ul>
             </li>
-
             <li>
-                <a href="./pages/carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+                <a href="./pages/carrinho.html"><img src="./assets/img/icons/carrinho2.png" alt="">Carrinho</a>
             </li>
-
             <li>
-                <a href="./pages/usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+                <a href="./pages/usuario.html"><img src="./assets/img/icons/user2.png" alt="">Minha conta</a>
             </li>
         </ul>
     </nav>
@@ -85,15 +81,21 @@
         <div class="destaques" id="Top_vendas">
             <p>Campeões de vendas:</p>
             <div class="parte_dos_prod">
-                <div class="prod_destaque" id="Celular">
+                <div class="prod_destaque">
                     <div class="cupom"> 
                         <p>Desconto na fatura</p>
                     </div>
                     <img class="img_pequenas" src="./assets/img/produtos/celular.png" alt="Celular">
                     <p>Smartphone Samsung Galaxy A22 128GB</p>
                     <h3>R$599,99</h3>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'celular-001',
+                        nome: 'Smartphone Samsung Galaxy A22 128GB',
+                        preco: 599.99,
+                        imagem: './assets/img/produtos/celular.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>      
-                <div class="prod_destaque" id="Lampada" onclick="window.location.href = './pages/produtos.html';">
+                <div class="prod_destaque" onclick="window.location.href = './pages/produtos.html';">
                     <img class="img_pequenas" src="./assets/img/produtos/lampada4.png" alt="Lampada">
                     <p>Lâmpada Bulbe Extra Durável</p>
                     <h3>R$599,99</h3>
@@ -105,9 +107,15 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="event.stopPropagation(); adicionarAoCarrinhoHome({
+                        id: 'lampada-001',
+                        nome: 'Lâmpada Bulbe Extra Durável',
+                        preco: 599.99,
+                        imagem: './assets/img/produtos/lampada4.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
-                <div class="prod_destaque" id="Mochila">
-                    <img src="./assets/img/produtos/mesa.png" alt="Mochila">
+                <div class="prod_destaque">
+                    <img src="./assets/img/produtos/mesa.png" alt="Mesa">
                     <p>Mesa de Truco Preta Ultra Resistente</p>
                     <h3>R$ 21,90</h3>
                     <div class="estrelas">
@@ -118,6 +126,12 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'mesa-001',
+                        nome: 'Mesa de Truco Preta Ultra Resistente',
+                        preco: 21.90,
+                        imagem: './assets/img/produtos/mesa.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
@@ -126,21 +140,16 @@
             <button class="categoria">
                 <img src="./assets/img/icons/casa.png" alt="" onclick="window.location.href = './pages/destaquecasa.html'">
             </button>
-
-
             <button class="categoria">
                 <img src="./assets/img/icons/eletronico.png" alt="" onclick="window.location.href = './pages/destaqueseletronicos.html'">
             </button>
-
             <button class="categoria">
                 <img src="./assets/img/icons/eletro.png" alt="" onclick="window.location.href = './pages/destaqueeletrodomesticos.html'">
             </button>
-
             <button class="categoria">
                 <img src="./assets/img/icons/oferta.png" alt="" onclick="window.location.href = './pages/destaqueofertas.html'">
             </button>
         </div>
-
 
         <div class="produtos_finais">
             <div class="nome">
@@ -160,6 +169,12 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'cadeira-001',
+                        nome: 'Cadeira 4 Pernas Forro Branco',
+                        preco: 35.80,
+                        imagem: './assets/img/produtos/cadeira.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod">
                     <img src="./assets/img/produtos/abajur.png" alt="">
@@ -173,6 +188,12 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'abajur-001',
+                        nome: 'Abajour Base de Cobre Luxo Puro',
+                        preco: 15.75,
+                        imagem: './assets/img/produtos/abajur.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod">
                     <img src="./assets/img/produtos/mesa.png" alt="">
@@ -186,9 +207,15 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'mesa-002',
+                        nome: 'Mesa de Truco Preta Ultra Resistente',
+                        preco: 21.90,
+                        imagem: './assets/img/produtos/mesa.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
-                <div class="prod" id="Cama">
-                    <img class= "img_pequenas" src="./assets/img/produtos/cama.png">
+                <div class="prod">
+                    <img class="img_pequenas" src="./assets/img/produtos/cama.png" alt="Cama">
                     <p>Cama King Size Ultra Conforto</p>
                     <h3>R$ 135,80</h3>
                     <div class="estrelas">
@@ -199,9 +226,15 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'cama-001',
+                        nome: 'Cama King Size Ultra Conforto',
+                        preco: 135.80,
+                        imagem: './assets/img/produtos/cama.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
-                <div class="prod" id="Cama">
-                    <img class= "img_pequenas" src="./assets/img/produtos/aspirador.png">
+                <div class="prod">
+                    <img class="img_pequenas" src="./assets/img/produtos/aspirador.png" alt="Aspirador">
                     <p>Aspirador de casa Ultra Potente</p>
                     <h3>R$ 235,80</h3>
                     <div class="estrelas">
@@ -212,9 +245,15 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'aspirador-001',
+                        nome: 'Aspirador de casa Ultra Potente',
+                        preco: 235.80,
+                        imagem: './assets/img/produtos/aspirador.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
-                <div class="prod" id="Cama">
-                    <img class= "img_pequenas" src="./assets/img/produtos/aquecedor.png">
+                <div class="prod">
+                    <img class="img_pequenas" src="./assets/img/produtos/aquecedor.png" alt="Aquecedor">
                     <p>Aquecedor Smart Hot</p>
                     <h3>R$ 85,90</h3>
                     <div class="estrelas">
@@ -225,19 +264,26 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'aquecedor-001',
+                        nome: 'Aquecedor Smart Hot',
+                        preco: 85.90,
+                        imagem: './assets/img/produtos/aquecedor.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
+
         <div class="produtos_finais">
             <div class="nome" id="eletro">
                 <img src="./assets/img/icons/eletronico.png" alt="">
-                <p>Eletônicos:</p>
+                <p>Eletrônicos:</p>
             </div>
             <div class="box_produtos">
                 <div class="prod">
                     <img src="./assets/img/produtos/monitor.png" alt="">
-                    <p>Monitor Gamer 144Hrtz</p>
-                    <h3>R$ 1335,80</h3>
+                    <p>Monitor Gamer 144Hz</p>
+                    <h3>R$ 1.335,80</h3>
                     <div class="estrelas">
                         <img src="./assets/img/icons/estrela-cheia.png" alt="">
                         <img src="./assets/img/icons/estrela-cheia.png" alt="">
@@ -246,6 +292,12 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'monitor-001',
+                        nome: 'Monitor Gamer 144Hz',
+                        preco: 1335.80,
+                        imagem: './assets/img/produtos/monitor.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod">
                     <img src="./assets/img/produtos/teclado.png" alt="">
@@ -259,25 +311,43 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'teclado-001',
+                        nome: 'Teclado Mecânico RGB',
+                        preco: 355.90,
+                        imagem: './assets/img/produtos/teclado.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod">
                     <div class="cupom">
                         <p>Desconto na fatura</p>
                     </div>
-                    <img class= "img_pequenas" src="./assets/img/produtos/mouse.png" alt="">
+                    <img class="img_pequenas" src="./assets/img/produtos/mouse.png" alt="">
                     <p>Mouse Gamer 6 Botões</p>
-                    <h3 id="valor_mouse">R$ 35,90</h3>
+                    <h3>R$ 35,90</h3>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'mouse-001',
+                        nome: 'Mouse Gamer 6 Botões',
+                        preco: 35.90,
+                        imagem: './assets/img/produtos/mouse.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
-                <div class="prod" id="laptop">
+                <div class="prod">
                     <div class="cupom">
                         <p>Desconto na fatura</p>
                     </div>
-                    <img class= "img_pequenas" src="./assets/img/produtos/notbook.png">
-                    <p>LapTop Intel Core i7 16GB RAM</p>
-                    <h3>R$ 1570,99</h3>
+                    <img class="img_pequenas" src="./assets/img/produtos/notbook.png" alt="Notebook">
+                    <p>Laptop Intel Core i7 16GB RAM</p>
+                    <h3>R$ 1.570,99</h3>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'laptop-001',
+                        nome: 'Laptop Intel Core i7 16GB RAM',
+                        preco: 1570.99,
+                        imagem: './assets/img/produtos/notbook.png'
+                    })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod">
-                    <img class="img_prod" src="./assets/img/produtos/aplleWatch.jpg" alt="">
+                    <img class="img_prod" src="./assets/img/produtos/aplleWatch.jpg" alt="Apple Watch">
                     <p>Relógio digital Apple Watch</p>
                     <h3>R$ 755,90</h3>
                     <div class="estrelas">
@@ -288,9 +358,15 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'applewatch-001',
+                        nome: 'Relógio digital Apple Watch',
+                        preco: 755.90,
+                        imagem: './assets/img/produtos/aplleWatch.jpg'
+                    })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod">
-                    <img class="img_prod" src="./assets/img/produtos/kindle.jpg" alt="">
+                    <img class="img_prod" src="./assets/img/produtos/kindle.jpg" alt="Kindle">
                     <p>Leitor de livros Kindle</p>
                     <h3>R$ 280,90</h3>
                     <div class="estrelas">
@@ -301,50 +377,50 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                        id: 'kindle-001',
+                        nome: 'Leitor de livros Kindle',
+                        preco: 280.90,
+                        imagem: './assets/img/produtos/kindle.jpg'
+                    })">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
     </main>
+
     <footer class="site-footer">
         <div class="footer-container">
-          <div class="footer-main">
-            <div class="footer-brand">
-              <img src="../assets/img/logo.png" alt="Bulbe" class="footer-logo">
-              <p class="footer-tagline">Iluminando sua vida com as melhores ofertas</p>
-            </div>
-            
-            <div class="footer-links">
-                <div class="footer-column">
-                  <h4 onclick="window.location.href = './pages/usuario.html'">Minha Conta</h4>
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="./assets/img/logo.png" alt="Bulbe" class="footer-logo">
+                    <p class="footer-tagline">Iluminando sua vida com as melhores ofertas</p>
                 </div>
-                
-                <div class="footer-column">
-                  <h4 onclick="window.location.href = '../index.html'">Início</h4>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 onclick="window.location.href = './pages/usuario.html'">Minha Conta</h4>
+                    </div>
+                    <div class="footer-column">
+                        <h4 onclick="window.location.href = './index.html'">Início</h4>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Atendimento</h4>
+                        <ul>
+                            <li><a href="#" onclick="abrirFluxoNegativo()">Problemas com pedido?</a></li>
+                            <li><a href="./pages/suporte.html">Central de Ajuda</a></li>
+                        </ul>
+                    </div>
                 </div>
-              
-              <div class="footer-column">
-                <h4>Atendimento</h4>
-                
-              </div>
             </div>
-          </div>
-          
-          <div class="footer-bottom">
-            
-              </div>
-              
-              <div class="security-seal">
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <small>© 2025 Bulbe - Todos os direitos reservados</small>
+                    <small>CNPJ: 12.345.678/0001-90</small>
+                </div>
             </div>
-            
-            <div class="footer-copyright">
-              <small>© 2025 Bulbe - Todos os direitos reservados</small>
-              <small>CNPJ: 12.345.678/0001-90</small>
-            </div>
-          </div>
         </div>
-      </footer>
-      
+    </footer>
+
+    <script src="./assets/js/carrinho-completo.js"></script>
     <script src="./assets/js/menu.js"></script>
 </body>
-
 </html>
