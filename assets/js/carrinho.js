@@ -1,3 +1,17 @@
+const imgProduto = document.getElementById("img");
+const nomeProduto = document.getElementById("nome");
+const valorTotal = document.getElementById("valorTotal");
+const valorFinal = document.getElementById("valorFinal");
+
+
+const compra = JSON.parse(localStorage.getItem('compra'));
+
+imgProduto.src = compra.imgProduto;
+nomeProduto.textContent = compra.nomeProduto;
+valorTotal.textContent = compra.valorTotal;
+valorFinal.textContent = compra.valorFinal;
+
+
 const menos = document.querySelectorAll("#menos");
 const mais = document.querySelectorAll("#mais");
 const campos = document.querySelectorAll("#campo");
@@ -27,13 +41,18 @@ const subtotalEl = document.getElementById("subtotal");
 function atualizarTotal() {
   let total = 0;
   document.querySelectorAll(".produto").forEach(prod => {
-    const preco = parseFloat(prod.querySelector(".valor").textContent);
+    const preco = parseFloat(
+      prod.querySelector(".valor").textContent.replace(",", ".")
+    );
     const qtd = parseInt(prod.querySelector(".campo").textContent);
+
     total += preco * qtd;
   });
-  totalEl.textContent = `R$ ${total.toFixed(2)}`;
-  subtotalEl.textContent = `R$ ${total.toFixed(2)}`;
+
+  totalEl.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
+  subtotalEl.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
 }
+
 
 // Controles de quantidade
 document.querySelectorAll(".menos").forEach(btn => {
@@ -66,18 +85,3 @@ document.querySelectorAll(".remover").forEach(btn => {
 
 // Atualiza o total ao carregar
 atualizarTotal();
-
-
-const imgProduto = document.getElementById("img");
-const nomeProduto = document.getElementById("nome");
-const valorTotal = document.getElementById("valorTotal");
-const valorFinal = document.getElementById("valorFinal");
-
-
-const compra = JSON.parse(localStorage.getItem('compra'));
-
-imgProduto.src = compra.imgProduto;
-nomeProduto.textContent = compra.nomeProduto;
-valorTotal.textContent = compra.valorTotal;
-valorFinal.textContent = compra.valorFinal;
-

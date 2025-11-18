@@ -94,15 +94,21 @@ header {
 }
 
 #cep {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
 }
 
-#cep p {
-    color: var(--cor_fundo);
-    font-size: small;
+#cep input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid white 2px;
+    color: white;
+    border-radius: 2px;
+    padding: 8px;
 }
 
 /* MAIN */
