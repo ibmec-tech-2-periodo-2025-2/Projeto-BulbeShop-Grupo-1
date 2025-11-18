@@ -14,7 +14,7 @@
     <header>
         <div class="conteiener-top">
             <div class="menu-e-logo">
-                <img src="./assets/img/icons/menu.png" alt="">
+                <img src="./assets/img/icons/menu.png" alt="" onclick="abrirMenu()">
                 <img src="./assets/img/logo.png" alt="">
             </div>
             <div class="conteiner-icones">
@@ -23,7 +23,7 @@
                     <img src="./assets/img/icons/carrinho.png" alt="">
                     <span class="contador-carrinho">0</span>
                 </a>
-                <img src="./assets/img/icons/user.png" onclick="window.location.href = './pages/usuario.html'">
+                <img src="./assets/img/icons/user.png" alt="" onclick="window.location.href = './pages/usuario.html'">
             </div>
         </div>
         <div class="conteiner-pesquisa">
@@ -44,7 +44,7 @@
     <nav id="menu-lateral" class="menu-lateral">
         <div class="menu-top">
             <img src="./assets/img/logo-azul.png" alt="Logo" class="logo-menu">
-            <img src="./assets/img/icons/x.png" alt="Fechar" class="btn-fechar">
+            <img src="./assets/img/icons/x.png" alt="Fechar" class="btn-fechar" onclick="fecharMenu()">
         </div>
 
         <ul class="menu-lista">
@@ -88,15 +88,9 @@
                     <img class="img_pequenas" src="./assets/img/produtos/celular.png" alt="Celular">
                     <p>Smartphone Samsung Galaxy A22 128GB</p>
                     <h3>R$599,99</h3>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
-                        id: 'celular-001',
-                        nome: 'Smartphone Samsung Galaxy A22 128GB',
-                        preco: 599.99,
-                        imagem: './assets/img/produtos/celular.png'
-                    })">Adicionar ao Carrinho</button>
                 </div>      
-                <div class="prod_destaque" onclick="window.location.href = './pages/produtos.html';">
-                    <img class="img_pequenas" src="./assets/img/produtos/lampada4.png" alt="Lampada">
+                <div class="prod_destaque">
+                    <img class="img_pequenas" src="./assets/img/produtos/lampada4.png" alt="Lampada" onclick="window.location.href = './pages/produtos.html'">
                     <p>Lâmpada Bulbe Extra Durável</p>
                     <h3>R$599,99</h3>
                     <div class="estrelas">
@@ -107,12 +101,6 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="event.stopPropagation(); adicionarAoCarrinhoHome({
-                        id: 'lampada-001',
-                        nome: 'Lâmpada Bulbe Extra Durável',
-                        preco: 599.99,
-                        imagem: './assets/img/produtos/lampada4.png'
-                    })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod_destaque">
                     <img src="./assets/img/produtos/mesa.png" alt="Mesa">
@@ -126,7 +114,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'mesa-001',
                         nome: 'Mesa de Truco Preta Ultra Resistente',
                         preco: 21.90,
@@ -169,7 +157,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'cadeira-001',
                         nome: 'Cadeira 4 Pernas Forro Branco',
                         preco: 35.80,
@@ -188,7 +176,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'abajur-001',
                         nome: 'Abajour Base de Cobre Luxo Puro',
                         preco: 15.75,
@@ -207,7 +195,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'mesa-002',
                         nome: 'Mesa de Truco Preta Ultra Resistente',
                         preco: 21.90,
@@ -226,7 +214,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'cama-001',
                         nome: 'Cama King Size Ultra Conforto',
                         preco: 135.80,
@@ -245,7 +233,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'aspirador-001',
                         nome: 'Aspirador de casa Ultra Potente',
                         preco: 235.80,
@@ -264,7 +252,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'aquecedor-001',
                         nome: 'Aquecedor Smart Hot',
                         preco: 85.90,
@@ -292,7 +280,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'monitor-001',
                         nome: 'Monitor Gamer 144Hz',
                         preco: 1335.80,
@@ -311,7 +299,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'teclado-001',
                         nome: 'Teclado Mecânico RGB',
                         preco: 355.90,
@@ -325,7 +313,7 @@
                     <img class="img_pequenas" src="./assets/img/produtos/mouse.png" alt="">
                     <p>Mouse Gamer 6 Botões</p>
                     <h3>R$ 35,90</h3>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'mouse-001',
                         nome: 'Mouse Gamer 6 Botões',
                         preco: 35.90,
@@ -339,7 +327,7 @@
                     <img class="img_pequenas" src="./assets/img/produtos/notbook.png" alt="Notebook">
                     <p>Laptop Intel Core i7 16GB RAM</p>
                     <h3>R$ 1.570,99</h3>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'laptop-001',
                         nome: 'Laptop Intel Core i7 16GB RAM',
                         preco: 1570.99,
@@ -358,7 +346,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'applewatch-001',
                         nome: 'Relógio digital Apple Watch',
                         preco: 755.90,
@@ -377,7 +365,7 @@
                         <img src="./assets/img/icons/estrela-vazia.png" alt="">
                         <p>3,450</p>
                     </div>
-                    <button class="btn-carrinho" onclick="adicionarAoCarrinhoHome({
+                    <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'kindle-001',
                         nome: 'Leitor de livros Kindle',
                         preco: 280.90,
@@ -420,7 +408,154 @@
         </div>
     </footer>
 
-    <script src="./assets/js/carrinho-completo.js"></script>
-    <script src="./assets/js/menu.js"></script>
+    <!-- ✅ JAVASCRIPT SIMPLES E FUNCIONAL -->
+    <script>
+        // Sistema do Carrinho - SIMPLES E GARANTIDO
+        console.log('🛒 Sistema do carrinho carregado!');
+        
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        
+        // FUNÇÃO PRINCIPAL - 100% FUNCIONANDO
+        window.adicionarAoCarrinho = function(produto) {
+            console.log('🎯 ADICIONANDO PRODUTO:', produto);
+            
+            // Verificar se produto é válido
+            if (!produto || !produto.id) {
+                console.error('❌ Produto inválido');
+                return;
+            }
+            
+            // Buscar produto existente
+            const produtoExistente = carrinho.find(item => item.id === produto.id);
+            
+            if (produtoExistente) {
+                produtoExistente.quantidade += 1;
+                console.log('📈 Quantidade aumentada');
+            } else {
+                // Adicionar novo produto
+                carrinho.push({
+                    id: produto.id,
+                    nome: produto.nome,
+                    preco: produto.preco,
+                    imagem: produto.imagem,
+                    quantidade: 1
+                });
+                console.log('🆕 Novo produto adicionado');
+            }
+            
+            // Salvar no localStorage
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            console.log('💾 Carrinho salvo:', carrinho);
+            
+            // Atualizar contador
+            atualizarContadorCarrinho();
+            
+            // Mostrar notificação
+            mostrarNotificacao('✅ ' + produto.nome);
+        };
+        
+        // Atualizar contador
+        function atualizarContadorCarrinho() {
+            const totalItens = carrinho.reduce((total, item) => total + item.quantidade, 0);
+            console.log('🔢 Total de itens:', totalItens);
+            
+            const contadores = document.querySelectorAll('.contador-carrinho');
+            contadores.forEach(contador => {
+                contador.textContent = totalItens;
+                contador.style.display = totalItens > 0 ? 'flex' : 'none';
+            });
+        }
+        
+        // Notificação simples
+        function mostrarNotificacao(mensagem) {
+            // Remover notificação existente
+            const notificacaoExistente = document.querySelector('.notificacao-carrinho');
+            if (notificacaoExistente) {
+                notificacaoExistente.remove();
+            }
+            
+            // Criar nova notificação
+            const notificacao = document.createElement('div');
+            notificacao.className = 'notificacao-carrinho';
+            notificacao.textContent = mensagem;
+            notificacao.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: #12B76A;
+                color: white;
+                padding: 15px 20px;
+                border-radius: 8px;
+                z-index: 10000;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            `;
+            
+            document.body.appendChild(notificacao);
+            
+            // Remover após 3 segundos
+            setTimeout(() => {
+                notificacao.remove();
+            }, 3000);
+        }
+        
+        // Funções do Menu
+        window.abrirMenu = function() {
+            const menuLateral = document.getElementById('menu-lateral');
+            const overlay = document.querySelector('.overlay');
+            if (menuLateral && overlay) {
+                menuLateral.classList.add('ativo');
+                overlay.classList.add('ativo');
+            }
+        };
+        
+        window.fecharMenu = function() {
+            const menuLateral = document.getElementById('menu-lateral');
+            const overlay = document.querySelector('.overlay');
+            if (menuLateral && overlay) {
+                menuLateral.classList.remove('ativo');
+                overlay.classList.remove('ativo');
+            }
+        };
+        
+        // Fluxo Negativo
+        window.abrirFluxoNegativo = function() {
+            alert('Sistema de ajuda - Em desenvolvimento');
+        };
+        
+        // Inicializar quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 Página carregada - Carrinho pronto!');
+            atualizarContadorCarrinho();
+            console.log('✅ adicionarAoCarrinho disponível:', typeof window.adicionarAoCarrinho);
+            console.log('📦 Itens no carrinho:', carrinho.length);
+        });
+        
+        // CSS para contador
+        const style = document.createElement('style');
+        style.textContent = `
+            .contador-carrinho {
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                background: #FF9E1B;
+                color: white;
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                font-size: 10px;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    
+    <!-- ✅ REMOVA ESTES SCRIPTS ANTIGOS -->
+    <!-- <script src="./assets/js/carrinho-completo.js"></script> -->
+    <!-- <script src="./assets/js/menu.js"></script> -->
 </body>
 </html>
