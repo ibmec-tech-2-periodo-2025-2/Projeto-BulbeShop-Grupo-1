@@ -551,11 +551,11 @@
     .marcador{
         width:6px;
         height:16px;
-        border-radius:4px;
+        border-radius:4px; 
     }
 
     .marcador.frete{
-        background:#f4a629;    /* laranja */
+        background:#f4a629;    /* laranja ergrhbsftbb*/
     }
 
     .marcador.subtotal{
