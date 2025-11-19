@@ -16,23 +16,22 @@
     --escrita_prod: #757575;
 }
 
-
 header {
     width: 100%;
-    height: 26vh;
     background-color: #08068D;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 12px 0; /* <- substitui 26vh */
 }
 
 .conteiener-top {
     width: 100%;
-    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0; /* <- substitui 8vh */
 }
 
 .menu-e-logo {
@@ -41,7 +40,6 @@ header {
     align-items: center;
     gap: 20px;
     width: 45%;
-    height: 100%;
 }
 
 .conteiner-icones {
@@ -50,15 +48,14 @@ header {
     align-items: center;
     gap: 20px;
     width: 45%;
-    height: 100%;
 }
 
 .conteiner-pesquisa {
     width: 100%;
-    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0; /* <- substitui 8vh */
 }
 
 .conteiner-pesquisa input {
@@ -67,7 +64,7 @@ header {
     padding: 10px;
     left: 5%;
     width: 97%;
-    height: 89%;
+    height: 45px; /* <- substitui 89% */
     border-radius: 8px;
     font-weight: 300;
     font-size: 16px;
@@ -77,7 +74,7 @@ header {
     position: relative;
     right: 5.2%;
     width: 12%;
-    height: 89%;
+    height: 45px;  /* <- substitui 89% */
     border-radius: 8px;
     background-color: #FF9E1B;
     display: flex;
@@ -88,6 +85,7 @@ header {
 #cep_completo {
     width: 90%;
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,31 +105,40 @@ header {
 
 /* MAIN */
 main {
-
     background-color: var(--cor_fundo);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
     position: relative;
     bottom: 7px;
 }
 
-
 #banner {
     width: 95.6%;
-    height: 25vh;
+    height: 200px; /* <- substitui 25vh */
     border-radius: 10px;
     margin-top: 14px;
-    background-image: url("../img/banner/economize2.jpeg");
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
     margin-bottom: 18px;
-
+    position: relative;
+    background-position: center; 
+    background-size: cover;
 }
 
+#banner .slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+}
+
+#banner .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
 
 .destaques {
     width: 95.6%;
@@ -150,21 +157,21 @@ main {
     width: 95.6%;
     height: auto;
 }
+
 .parte_dos_prod {
     display: flex;
     margin-top: 10px;
     gap: 10px;
     height: auto;
-    overflow-x: auto; /* ativa a rolagem lateral */
+    overflow-x: auto;
     scroll-behavior: smooth;
     padding-bottom: 10px;
 }
 
-
 .prod_destaque {
-    flex: 0 0 auto; /* impede o redimensionamento automático */
-    width: 47.82%; /* mesmo tamanho dos produtos gerais (.prod) */
-    height: 33vh; /* igual aos produtos da seção geral */
+    flex: 0 0 auto;
+    width: 47.82%;
+    height: 260px; /* substitui 33vh */
     border: 1px solid var(--borda_produtos);
     background-color: var(--fundo_produtos);
     border-radius: 10px;
@@ -181,10 +188,12 @@ main {
     color: var(--escrita_prod);
     margin-left: 15px;
 }
+
 .img_pequenas{ 
     width: 113px;
     height: 113px;
 }
+
 .cupom {
     width: 23vw;
     height: 20px;
@@ -194,7 +203,6 @@ main {
     border-radius: 6px;
     background-color: var(--fundo_cupom);
 }
-
 
 .cupom p {
     margin-top: -2.5px;
@@ -209,7 +217,6 @@ main {
 .estrelas p {
     margin-left: 2px;
 }
-
 
 #div_categoria {
     height: 51px;
@@ -269,7 +276,7 @@ main {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: column;
-    grid-auto-columns: 190px;         
+    grid-auto-columns: 190px;
     scroll-behavior: smooth;
     overflow-x: auto;
     margin-bottom: 25px;
@@ -279,7 +286,7 @@ main {
     border: 1px solid var(--borda_produtos);
     background-color: var(--fundo_produtos);
     border-radius: 10px;
-    height: 33vh;
+    height: 260px; /* substitui 33vh */
     width: 45.2vw;
     margin-bottom: 10px;
     margin-right: -50px;
@@ -296,8 +303,6 @@ main {
     color: var(--escrita_prod);
     margin-left: 2px;
 }
-
-
 
 .cupom {
     display: flex;
