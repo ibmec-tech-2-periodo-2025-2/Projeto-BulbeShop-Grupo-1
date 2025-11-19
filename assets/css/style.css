@@ -82,7 +82,7 @@ header {
     align-items: center;
 }
   #cep_completo {
-    width: 100%;
+    width: 89%;
     display: flex;
     align-items: center;
     justify-content: space-between;
