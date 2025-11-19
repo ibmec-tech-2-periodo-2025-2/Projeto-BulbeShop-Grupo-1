@@ -2,28 +2,28 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/css/destaqueeletrodomesticos.css">
+    <link rel="stylesheet" href="../assets/css/destaquecasa.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destaque Casa</title>
 </head>
 <body>
-    <!-- HEADER COMPLETO E FUNCIONAL -->
     <header>
         <div class="conteiener-top">
             <div class="menu-e-logo">
-                <img src="../assets/img/icons/menu.png" alt="Menu" class="menu-toggle">
-                <img src="../assets/img/logo.png" alt="Bulbe" onclick="window.location.href = '../index.html'">
+                <img src="../assets/img/icons/menu.png" alt="">
+                <img src="../assets/img/logo.png" alt="">
             </div>
             <div class="conteiner-icones">
-                <img src="../assets/img/icons/sino.png" alt="Notificações" onclick="window.location.href = './notificacao.html'">
-                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho.png" alt="Carrinho"></a>
-                <img src="../assets/img/icons/user.png" alt="Minha Conta" onclick="window.location.href = './usuario.html'">
+                <img src="../assets/img/icons/sino.png" alt="" onclick="window.location.href = './pages/notificacao.html'">
+                <a href="../pages/carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
+                <img src="../assets/img/icons/user.png" onclick="window.location.href = './pages/usuario.html'">
             </div>
+            
         </div>
         <div class="conteiner-pesquisa">
             <input type="search" placeholder="Pesquisa...">
-            <div><img src="../assets/img/icons/lupa.png" alt="Pesquisar"></div>
+            <div><img src="../assets/img/icons/lupa.png" alt=""></div>
         </div>
         <div id="cep_completo">
             <div id="cep">
@@ -32,8 +32,6 @@
             </div>
         </div>
     </header>
-
-    <!-- MENU LATERAL (IDÊNTICO AO DA PÁGINA INICIAL) -->
     <div class="overlay"></div>
 
     <nav id="menu-lateral" class="menu-lateral">
@@ -44,7 +42,7 @@
 
         <ul class="menu-lista">
             <li>
-                <a href="../index.html"><img src="../assets/img/icons/home.png" alt="">Home</a>
+                <a href="./index.html"><img src="../assets/img/icons/casa2.png" alt="">Home</a>
             </li>
 
             <li class="categoria">
@@ -57,138 +55,216 @@
                 </div>
 
                 <ul class="submenu">
-                    <li><a href="./destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
-                    <li><a href="./destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png" alt="">Eletrodoméstico</a></li>
-                    <li><a href="./destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a></li>
-                    <li><a href="./destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+                    <li><a href="./pages/destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+                    <li><a href="./pages/destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
+                                alt="">Eletrodoméstico</a></li>
+                    <li><a href="./pages/destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
+                    </li>
+                    <li><a href="./pages/destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
                 </ul>
             </li>
 
             <li>
-                <a href="./carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+                <a href="./pages/carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
             </li>
 
             <li>
-                <a href="./usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+                <a href="./pages/usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
             </li>
         </ul>
     </nav>
 
-    <!-- CONTEÚDO DA PÁGINA DESTAQUE CASA -->
-    <div class="propaganda"></div>
-
-    <main class="container">
-        <h2 class="titulo">
-            <img src="../assets/img/icons/tv-02.svg" alt="Ícone Itens Casa" class="titulo-icon">
-            Eletrodomésticos!
-        </h2>
-
-        <div class="produtos">
-            <div class="card">
-                <img src="../assets/img/produtos/aspirador.png" alt="Cadeira 4 Pernas">
-                <p class="nome">Aspirador Philco<br></p>
-                <p class="preco">R$ 135,99</p>
-                <p class="detalhes">
-                    <div class="estrela-icon"></div>
-                    +2mil vendidos
-                </p>
+    <main>
+        <div id="banner"></div>
+        <div class="produtos_finais">
+            <div class="nome">
+                <div class="nome_logo">
+                    <img src="../assets/img/icons/lampada-amarela.png" alt="">
+                    <p>Eletrodomésticos:</p>
+                </div>
             </div>
-
-            <div class="card">
-                <img src="../assets/img/produtos/misteira.png" alt="Abajur">
-                <p class="nome">Misteira Oster<br></p>
-                <p class="preco">R$ 69,75</p>
-                <p class="detalhes">
-                    <div class="estrela-icon"></div>
-                    +2mil vendidos
-                </p>
+            <div class="box_produtos">
+                <div class="prod">
+                    <img src="../assets/img/produtos/aspirador.png" alt="">
+                    <p>Aspirador Phillips Aspira Tudo</p>
+                    <h3>R$ 679,80</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img src="../assets/img/produtos/misteira.png" alt="">
+                    <p>Misteira Britânia</p>
+                    <h3>R$ 179,75</h3>
+                    <div class="cupom"> 
+                        <p>Desconto na fatura</p>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img src="../assets/img/produtos/aquecedor.png" alt="">
+                    <p>Aquecedor de Mesa Ultrapotente</p>
+                    <h3>R$ 312,90</h3>
+                    <div class="cupom"> 
+                        <p>Desconto na fatura</p>
+                    </div>
+                </div>
+                <div class="prod" id="Cama">
+                    <img class= "img_pequenas" src="../assets/img/produtos/torradeira.png">
+                    <p>Torradeira Fresh Toast Philco</p>
+                    <h3>R$ 359,80</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
+                <div class="prod" id="Cama">
+                    <img class= "img_pequenas" src="../assets/img/produtos/lavadora.png">
+                    <p>Máquina de Lavar Sansung Smart</p>
+                    <h3>R$ 3599,80</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
+                <div class="prod" id="Cama">
+                    <img class= "img_pequenas" src="../assets/img/produtos/lavalouca.png">
+                    <p>Aquecedor Smart Hot</p>
+                    <h3>R$ 85,90</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="card">
-                <img src="../assets/img/produtos/torradeira.png" alt="Mesa">
-                <p class="nome">torradeira<br>fresh Philco</p>
-                <p class="preco">R$ 221,90</p>
-                <p class="detalhes">
-                    <div class="estrela-icon"></div>
-                    +2mil vendidos
-                </p>
+            <div class="box_produtos" id="Box2">
+                <div class="prod">
+                    <img src="../assets/img/produtos/lavaloca.png" alt="">
+                    <p>Lava Louça Sansung</p>
+                    <h3>R$ 3599,80</h3>
+                    <div class="cupom"> 
+                        <p>Desconto na fatura</p>
+                    </div>
+                        
+                </div>
+                <div class="prod">
+                    <img src="../assets/img/produtos/cafeteira.png" alt="">
+                    <p>Cafeteira Oster</p>
+                    <h3>R$ 499,75</h3>
+                    <div class="cupom"> 
+                        <p>Desconto na fatura</p>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img src="../assets/img/produtos/lavadora.png" alt="">
+                    <p>Máquina de Lavar Eletrolux</p>
+                    <h3>R$ 2199,90</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
+                <div class="prod" id="Cama">
+                    <img class= "img_pequenas" src="../assets/img/produtos/sacadora.png">
+                    <p>Secadora Eletrolux Seca Rápido</p>
+                    <h3>R$ 2999,80</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
+                <div class="prod" id="Cama">
+                    <img class= "img_pequenas" src="../assets/img/produtos/aspirador.png">
+                    <p>Aspirador de casa Ultra Potente</p>
+                    <h3>R$ 235,80</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
+                <div class="prod" id="Cama">
+                    <img class= "img_pequenas" src="./assets/img/produtos/aquecedor.png">
+                    <p>Aquecedor Smart Hot</p>
+                    <h3>R$ 85,90</h3>
+                    <div class="estrelas">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-cheia.png" alt="">
+                        <img src="../assets/img/icons/estrela-vazia.png" alt="">
+                        <p>3,450</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="card">
-                <img src="../assets/img/produtos/mesa.png" alt="Cama">
-                <p class="nome">mesa de plástico<br></p>
-                <p class="preco">R$ 1035,80</p>
-                <p class="detalhes">
-                    <div class="estrela-icon"></div>
-                    +2mil vendidos
-                </p>
-            </div>
-
         </div>
     </main>
 
-    <!-- FOOTER COMPLETO E FUNCIONAL -->
     <footer class="site-footer">
         <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <img src="../assets/img/logo.png" alt="Bulbe" class="footer-logo">
-                    <p class="footer-tagline">Iluminando sua vida com as melhores ofertas</p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 onclick="window.location.href = './usuario.html'">Minha Conta</h4>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4 onclick="window.location.href = '../index.html'">Início</h4>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Atendimento</h4>
-                    </div>
-                </div>
+          <div class="footer-main">
+            <div class="footer-brand">
+              <img src="../assets/img/logo.png" alt="Bulbe" class="footer-logo">
+              <p class="footer-tagline">Iluminando sua vida com as melhores ofertas</p>
             </div>
             
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <small>© 2025 Bulbe - Todos os direitos reservados</small>
-                    <small>CNPJ: 12.345.678/0001-90</small>
+            <div class="footer-links">
+                <div class="footer-column">
+                  <h4 onclick="window.location.href = './pages/usuario.html'">Minha Conta</h4>
                 </div>
+                
+                <div class="footer-column">
+                  <h4 onclick="window.location.href = '../index.html'">Início</h4>
+                </div>
+              
+              <div class="footer-column">
+                <h4>Atendimento</h4>
+                
+              </div>
             </div>
+          </div>
+          
+          <div class="footer-bottom">
+            
+              </div>
+              
+              <div class="security-seal">
+            </div>
+            
+            <div class="footer-copyright">
+              <small>© 2025 Bulbe - Todos os direitos reservados</small>
+              <small>CNPJ: 12.345.678/0001-90</small>
+            </div>
+          </div>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT DO MENU -->
-    <script>
-        const menuIcon = document.querySelector('.menu-e-logo img:first-child');
-        const menuLateral = document.getElementById('menu-lateral');
-        const btnFechar = document.querySelector('.btn-fechar');
-        const overlay = document.querySelector('.overlay');
-        const categoriaHeader = document.querySelector('.categoria-header');
-        const categoria = document.querySelector('.categoria');
-
-        // Abrir menu
-        menuIcon.addEventListener('click', () => {
-            menuLateral.classList.add('ativo');
-            overlay.classList.add('ativo');
-        });
-
-        // Fechar menu
-        const fecharMenu = () => {
-            menuLateral.classList.remove('ativo');
-            overlay.classList.remove('ativo');
-            categoria.classList.remove('ativo'); // fecha submenu também
-        };
-
-        btnFechar.addEventListener('click', fecharMenu);
-        overlay.addEventListener('click', fecharMenu);
-
-        // Alternar submenu ao clicar em "Categorias"
-        categoriaHeader.addEventListener('click', () => {
-            categoria.classList.toggle('ativo');
-        });
-    </script>
 </body>
 </html>
