@@ -1,7 +1,9 @@
 const inputCep = document.getElementById("cep");
 const dados = JSON.parse(localStorage.getItem('dadosEntrega'));
 
-inputCep.textContent = dados.cep;
+if (inputCep && dados) {
+    inputCep.textContent = dados.cep;
+}
 
 class Checkout {
     constructor() {
@@ -9,7 +11,7 @@ class Checkout {
         this.codigoCupomAtual = '';
         this.descontoAtual = 0;
         this.freteAtual = 0;
-        this.subtotal = 93.90;
+        this.subtotal = 93.90; // VAI SER ATUALIZADO PELO CARRINHO
         this.tempoRestante = 900;
         this.timerInterval = null;
         this.init();
@@ -17,6 +19,7 @@ class Checkout {
 
     init() {
         console.log('🎯 Iniciando sistema de checkout...');
+        this.carregarProdutosDoCarrinho(); // SÓ ISSO QUE ADICIONEI
         this.setupOpcoesEnvio();
         this.setupMetodosPagamento();
         this.setupCupom();
@@ -26,6 +29,74 @@ class Checkout {
         this.selecionarPrimeiraOpcaoEnvio();
         this.atualizarResumo();
     }
+
+    // SÓ ADICIONEI ESTA FUNÇÃO - CARREGA PRODUTOS DO CARRINHO
+    carregarProdutosDoCarrinho() {
+        const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+        console.log('🛒 Produtos no carrinho:', carrinho);
+        
+        if (carrinho.length > 0) {
+            // CALCULA SUBTOTAL CORRETO
+            this.subtotal = carrinho.reduce((total, produto) => {
+                return total + (produto.preco * produto.quantidade);
+            }, 0);
+            
+            console.log('💰 Subtotal calculado:', this.subtotal);
+            
+            // MOSTRA OS PRODUTOS
+            this.mostrarProdutosNoCheckout(carrinho);
+        }
+    }
+
+    // SÓ ADICIONEI ESTA FUNÇÃO - MOSTRA PRODUTOS NA TELA
+    mostrarProdutosNoCheckout(carrinho) {
+        const produtoSection = document.querySelector('.produto-section');
+        if (!produtoSection) return;
+
+        produtoSection.innerHTML = '';
+
+        carrinho.forEach((produto, index) => {
+            const precoTotal = produto.preco * produto.quantidade;
+            
+            // CORRIGE CAMINHO DA IMAGEM
+            let imagemCorrigida = produto.imagem;
+            if (imagemCorrigida && imagemCorrigida.startsWith('./')) {
+                imagemCorrigida = '..' + imagemCorrigida.substring(1);
+            }
+            
+            const produtoElement = document.createElement('div');
+            produtoElement.className = 'produto-completo';
+            produtoElement.innerHTML = `
+                <div class="produto-imagem">
+                    <img src="${imagemCorrigida}" alt="${produto.nome}" class="foto-produto" 
+                         onerror="this.src='../assets/img/produtos/sem-imagem.jpg'">
+                </div>
+                <div class="produto-info">
+                    <div class="produto-header">
+                        <h1>${produto.nome}</h1>
+                        <p class="produto-descricao">Quantidade: ${produto.quantidade}</p>
+                        <div class="produto-preco-marca">
+                            <span class="preco-atual">R$ ${precoTotal.toFixed(2)}</span>
+                            <span class="marca-produto">(R$ ${produto.preco.toFixed(2)} cada)</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            produtoSection.appendChild(produtoElement);
+            
+            if (index < carrinho.length - 1) {
+                const divisor = document.createElement('div');
+                divisor.className = 'divisor';
+                produtoSection.appendChild(divisor);
+            }
+        });
+    }
+
+    // ----------------------------
+    // DAQUI PRA BAIXO É TUDO IGUAL 
+    // NÃO MEXI EM NADA!
+    // ----------------------------
 
     // SELETOR DE CEP
     setupSeletorCep() {
@@ -650,22 +721,3 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 });
-
-
-
-
-const imgProduto = document.getElementById("img");
-const nomeProduto = document.getElementById("nomeProduto");
-const descricaoProduto = document.getElementById("descricaoProduto");
-const valorTotal = document.getElementById("valorTotal");
-const valorFinal = document.getElementById("valorFinal");
-
-const dadosProduto = localStorage.getItem("produto");
-
-const dadosProdutoJSON = JSON.parse(dadosProduto);
-
-imgProduto.src = dadosProdutoJSON.imgProduto;
-descricaoProduto.textContent = dadosProdutoJSON.descricaoProduto;
-nomeProduto.textContent = dadosProdutoJSON.nomeProduto;
-valorTotal.textContent = dadosProdutoJSON.valorTotal;
-valorFinal.textContent = dadosProdutoJSON.valorFinal;

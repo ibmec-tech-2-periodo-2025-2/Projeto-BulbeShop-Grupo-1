@@ -745,6 +745,95 @@
     border-bottom: 1px solid #f0f0f0;
     background-color: #fff;
   }
+
+  /* ESTILOS GERAIS DOS BOTÕES */
+.btn-carrinho {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito hover */
+.btn-carrinho:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #004494 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Efeito quando clicado */
+.btn-carrinho:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estado focado para acessibilidade */
+.btn-carrinho:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Versão alternativa para produtos em destaque */
+.btn-carrinho.destaque {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+}
+
+.btn-carrinho.destaque:hover {
+    background: linear-gradient(135deg, #1e7e34 0%, #186027 100%);
+}
+
+/* Para botões desabilitados */
+.btn-carrinho:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-carrinho:disabled:hover {
+    background: #cccccc;
+    transform: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Efeito de loading (opcional) */
+.btn-carrinho.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.btn-carrinho.loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-right-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
   
   .logo-menu {
     width: 90px;
