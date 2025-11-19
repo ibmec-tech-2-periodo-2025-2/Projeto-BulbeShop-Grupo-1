@@ -81,27 +81,36 @@ header {
     justify-content: center;
     align-items: center;
 }
-
-#cep_completo {
-    width: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  #cep_completo {
+    width: 89%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#cep {
+    padding: 8px 0;
+  }
+  
+  #cep {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
 }
 
-#cep p {
-    color: var(--cor_fundo);
-    font-size: small;
+#cep input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid white 2px;
+    color: white;
+    border-radius: 2px;
+    padding: 8px;
 }
+  
+  #cep_completo img:last-child {
+    width: 16px;
+    height: 16px;
+  }
 
 /* MAIN */
 main {
@@ -257,18 +266,26 @@ main {
 .nome {
     display: flex;
     align-items: center;
-    gap: 3px;
     margin-bottom: 10px;
+    justify-content: space-between;
 }
 
-.nome p {
+.nome_logo{
+    display: flex;
+    gap: 3px;
+}
+.nome_logo p {
     margin-bottom: -5px;
     font-size: large;
     color: var(--escrita_prod);
 }
-
-#eletro {
-    margin-bottom: 20px;
+.nome a{
+    margin-bottom: -5px;
+    font-size: large;
+    color: var(--escrita_prod);
+    text-decoration: none;
+    position: relative;
+    right: 10px;
 }
 
 .box_produtos {
@@ -476,7 +493,6 @@ main {
     background: #07185c;
     color: white;
     padding: 30px 16px 20px;
-    margin-top: 40px;
   }
   
   .footer-container {
