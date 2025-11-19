@@ -357,7 +357,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 6px;
-    margin: 30px 0 12px 0;
+    margin: 30px 13px 12px 0;
     color: 3E4D5B;
   }
 
@@ -557,6 +557,7 @@
     margin: 0 auto 8px;
     display: flex;
     align-items: center;
+    margin-right: 10px;
     gap: 6px;
     font-size: 14px;
     color: #4b4b4b;
@@ -568,9 +569,12 @@
   }
 
   .texto-cabecalho{
-    font-size: 14px;
-    font-weight: 600;
-  }
+    font-size: 15px;      /* mesmo tamanho */
+    font-weight: 500;     /* mesma espessura */
+    color: #3E4D5B;
+          /* mesma cor */
+}
+
 
 .resumo-final{
     width: calc(90% - 20px); /* 🔥 diminui 10px de cada lado */
