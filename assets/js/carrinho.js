@@ -35,14 +35,38 @@ function atualizarTotal() {
   subtotalEl.textContent = `R$ ${total.toFixed(2)}`;
 }
 
-// Controles de quantidade
-document.querySelectorAll(".menos").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const campo = btn.parentElement.querySelector(".campo");
-    let valor = parseInt(campo.textContent);
-    if (valor > 1) {
-      campo.textContent = valor - 1;
-      atualizarTotal();
+
+// Alterar quantidade
+function alterarQuantidade(index, mudanca) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    
+    if (carrinho[index]) {
+        carrinho[index].quantidade += mudanca;
+        
+        if (carrinho[index].quantidade <= 0) {
+            carrinho.splice(index, 1);
+        }
+        
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        carregarCarrinho();
+        
+        // CORREÇÃO: Atualizar contador global após alteração
+        if (typeof atualizarContadorGlobal === 'function') {
+            atualizarContadorGlobal();
+        }
+    }
+}
+
+// Remover produto
+function removerProduto(index) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    carrinho.splice(index, 1);
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    carregarCarrinho();
+    
+    // CORREÇÃO: Atualizar contador global após remoção
+    if (typeof atualizarContadorGlobal === 'function') {
+        atualizarContadorGlobal();
     }
   });
 });

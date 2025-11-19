@@ -15,12 +15,8 @@
 
   header {
     width: 430px;
-    height: 18vh;
+    height: 15vh;
     background-color: #08068D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .conteiener-top {
@@ -31,24 +27,28 @@
     align-items: center;
   }
 
-  .menu-e-logo {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-    width: 45%;
-    height: 100%;
+
+  #btn-cancelar-compra{
+    width: 90%;
+    margin-top: 10px;
+    border: solid #08068D 2px;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: 400;
+    background: #ffff;
+    color: #08068D;
+    cursor: pointer;
+    font-size: 18px;
   }
 
-  .conteiner-icones {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 20px;
-    width: 45%;
+  .conteiner-img{
+    margin-top: 20px;
+    width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
 
   main {
     position: relative;
@@ -153,147 +153,6 @@
     font-size: 18px;
   }
 
-
-  .menu-lateral {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 270px;
-    height: 100vh;
-    background: #fff;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
-    transition: left 0.3s ease;
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-  }
-
- 
-  .menu-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 18px;
-    border-bottom: 1px solid #f0f0f0;
-    background-color: #fff;
-  }
-
-  .logo-menu {
-    width: 90px;
-    height: auto;
-  }
-
-  .btn-fechar {
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-
-  .btn-fechar:hover {
-    transform: rotate(90deg);
-  }
-
-
-  .menu-lateral.ativo {
-    left: 0;
-  }
-
-  .menu-lista {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0 15px;
-    gap: 4px;
-  }
-
-  
-  .menu-lista>li {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .menu-lista>li>a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #000;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-
-  .menu-lista>li>a:hover {
-    background-color: #e8e8ff;
-    color: #08068D;
-  }
-
-
-  .categoria-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .categoria-header:hover {
-    background-color: #08068D;
-    color: #fff;
-  }
-
-  .categoria.ativo>.categoria-header {
-    background-color: #08068D;
-    color: #fff;
-  }
-
-
-  .submenu {
-    display: none;
-    flex-direction: column;
-    background-color: #f3f2ff;
-    margin: 5px 0 0 20px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .categoria.ativo .submenu {
-    display: flex;
-  }
-
-
-  .submenu li {
-    padding: 8px 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .submenu li a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #000;
-    text-decoration: none;
-  }
-
-  .submenu li:hover {
-    background-color: #dfdcff;
-  }
-
-
-  .seta {
-    width: 14px;
-    transition: transform 0.3s ease;
-  }
-
-  .categoria.ativo .seta {
-    transform: rotate(90deg);
-  }
 
   .barra-progresso {
         width: 430px;

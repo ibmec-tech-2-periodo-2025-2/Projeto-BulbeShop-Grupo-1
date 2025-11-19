@@ -121,18 +121,22 @@ header {
 }
 
 /* CEP */
-#cep_completo {
+#cep {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: white;
-    font-size: 14px;
+    justify-content: center;
+    gap: 6px;
 }
 
-#cep {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+#cep input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid white 2px;
+    color: white;
+    border-radius: 2px;
+    padding: 8px;
 }
 
 /* MAIN */
