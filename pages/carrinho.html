@@ -82,7 +82,7 @@
   </button>
 
 
-  <img class="logo-bulbe-mini" src="../assets/img/produtos/logo-base.jpg" alt="Bulbe">
+  <img class="logo-bulbe-mini" src="../assets/img/produtos/logo-base.png" alt="Bulbe">
 </div>
 
 <!-- 🔹Card Resumo -->
@@ -91,19 +91,22 @@
   <div class="conteudo-card">
 
     <div class="linha1">
-      <p class="data-carrinho">Maio/25</p>
+      <p class="data-carrinho">19/ Novembro</p>
       <span class="status-carrinho">Carrinho em aberto</span>
     </div>
 
-    <p class="preco-linha">De <span class="risco">R$ 581,93</span> por</p>
+<p class="preco-linha">
+  De <span class="risco" id="total-sem-desconto">R$ 0,00</span> por
+</p>
 
     <h2 class="preco-novo">R$ <span id="valor-novo">327,75</span></h2>
 
   </div> <!-- fim do conteúdo interno -->
 
   <div class="barra-desconto">
-    Desconto Bulbe: <strong>R$ 254,18</strong>
-  </div>
+    Desconto Bulbe: <strong id="desconto-topo">R$ 0,00</strong>
+</div>
+
 
 </section>
 
@@ -112,11 +115,13 @@
   <div class="titulo-carrinho">
     <div class="linha-divisoria"></div>
 
-    <div class="titulo-lista">
-      <img src="../assets/img/icons/lista.png" class="icon-lista" alt="">
-      <span class="texto-titulo-carrinho">Detalhamento do Carrinho</span>
-    </div>
-  </div>
+   <div class="titulo-lista">
+  <img src="../assets/img/produtos/Icon.png" class="icon-detalhe-trash" alt="">
+  <span class="texto-titulo-carrinho">Detalhamento do Carrinho</span>
+
+  <!-- ÍCONE NOVO -->
+</div>
+
 
   <div class="conteiner-produto">
 
@@ -135,7 +140,14 @@
           <p class="preco">R$ <span class="valor" id="valorFinal"></span></p>
         </div>
       </div>
-      <button class="remover">🗑</button>
+     <div class="coluna-direita">
+    <button class="remover">
+        <img src="../assets/img/produtos/trash-01.png" alt="" class="">
+    </button>
+    <p class="preco">R$ 00,00</p>
+</div>
+
+
     </div>
 
     
@@ -213,7 +225,7 @@
     </div>
   </main>
 
-  
+  <script src="../assets/js/carrinho-completo.js"></script>
   <script src="../assets/js/menu.js"></script>
   <script src="../assets/js/carrinho.js"></script>
 </body>
