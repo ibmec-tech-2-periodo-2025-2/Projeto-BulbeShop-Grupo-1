@@ -127,6 +127,65 @@
       </div>
     </aside>
 
+     <!-- Seção de Avaliações -->
+    <section class="reviews-section">
+      <div class="reviews-header">
+        <h3 class="reviews-title">Avaliações do Produto</h3>
+        <button class="add-review-btn">+ Adicionar Avaliação</button>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="reviewer-name">Gabriel Manata</span>
+          <span class="review-date">Há cerca de 3 dias atrás</span>
+        </div>
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">Produto excelente! A lâmpada tem uma ótima iluminação e já estou usando há algumas semanas. Super recomendo!</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="reviewer-name">Maria Silva</span>
+          <span class="review-date">Há 1 semana atrás</span>
+        </div>
+        <div class="review-rating">★★★★☆</div>
+        <p class="review-text">Muito boa a lâmpada, porém a luz branca é mais forte do que eu esperava. Mas a qualidade é ótima.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <span class="reviewer-name">João Santos</span>
+          <span class="review-date">Há 2 semanas atrás</span>
+        </div>
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">Perfeita para meu escritório! Economiza energia e ilumina muito bem. Entrega rápida também.</p>
+      </div>
+
+      <!-- Formulário de Avaliação (inicialmente oculto) -->
+      <div class="review-form" id="reviewForm" style="display: none;">
+        <h4>Deixe sua avaliação</h4>
+        <div class="form-group">
+          <label for="reviewerName">Seu nome</label>
+          <input type="text" id="reviewerName" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group">
+          <label>Avaliação</label>
+          <div class="rating-stars">
+            <span class="star" data-rating="1">★</span>
+            <span class="star" data-rating="2">★</span>
+            <span class="star" data-rating="3">★</span>
+            <span class="star" data-rating="4">★</span>
+            <span class="star" data-rating="5">★</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reviewText">Comentário</label>
+          <textarea id="reviewText" placeholder="Compartilhe sua experiência com o produto"></textarea>
+        </div>
+        <button class="submit-review">Enviar Avaliação</button>
+      </div>
+    </section>
+
     <section class="also-like">
       <h3>Você também pode gostar:</h3>
       <div class="grid">

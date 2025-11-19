@@ -721,6 +721,49 @@
   .submit-review:hover {
     background: var(--blue-dark);
   }
+
+  /* BOTÃO CARRINHO CORRIGIDO */
+.btn-carrinho {
+    background: #08068D;
+    color: white;
+    border: none;
+    padding: 8px 6px;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    width: 95%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.btn-carrinho:hover {
+    background: #06056a;
+    transform: translateY(-1px);
+}
+
+.btn-carrinho:active {
+    transform: translateY(0);
+}
+
+.contador-carrinho {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #FF9E1B;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
   
   /* Menu Lateral */
   .menu-lateral {
