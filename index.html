@@ -48,6 +48,7 @@
 
         <ul class="menu-lista">
             <li>
+                <a href="./index.html"><img src="../assets/img/icons/casa2.png" alt="">Home</a>
                 <a href="./index.html"><img src="./assets/img/icons/home.png" alt="">Home</a>
             </li>
             <li class="categoria">
@@ -80,6 +81,7 @@
         <div class="destaques" id="Top_vendas">
             <p>Campeões de vendas:</p>
             <div class="parte_dos_prod">
+                <div class="prod_destaque" id="Celular">
                 <div class="prod_destaque">
                     <div class="cupom"> 
                         <p>Desconto na fatura</p>
@@ -87,6 +89,9 @@
                     <img class="img_pequenas" src="./assets/img/produtos/celular.png" alt="Celular">
                     <p>Smartphone Samsung Galaxy A22 128GB</p>
                     <h3>R$599,99</h3>
+                    <div class="cupom"> 
+                        <p>Desconto na fatura</p>
+                    </div>
                 </div>      
                 <div class="prod_destaque">
                     <img class="img_pequenas" src="./assets/img/produtos/lampada4.png" alt="Lampada" onclick="window.location.href = './pages/produtos.html'">
@@ -128,7 +133,7 @@
                 <img src="./assets/img/icons/casa.png" alt="" onclick="window.location.href = './pages/destaquecasa.html'">
             </button>
             <button class="categoria">
-                <img src="./assets/img/icons/eletronico.png" alt="" onclick="window.location.href = './pages/destaqueseletronicos.html'">
+                <img src="./assets/img/icons/EletroBranco.png" alt="" onclick="window.location.href = './pages/destaqueseletronicos.html'">
             </button>
             <button class="categoria">
                 <img src="./assets/img/icons/eletro.png" alt="" onclick="window.location.href = './pages/destaqueeletrodomesticos.html'">
@@ -140,7 +145,7 @@
 
         <div class="produtos_finais">
             <div class="nome">
-                <img src="./assets/img/icons/casa2.png" alt="">
+                <img src="../assets/img/icons/casa-amarela.png" alt="">
                 <p>Casa:</p>
             </div>
             <div class="box_produtos">
@@ -167,13 +172,8 @@
                     <img src="./assets/img/produtos/abajur.png" alt="">
                     <p>Abajour Base de Cobre Luxo Puro</p>
                     <h3>R$ 15,75</h3>
-                    <div class="estrelas">
-                        <img src="./assets/img/icons/estrela-cheia.png" alt="">
-                        <img src="./assets/img/icons/estrela-cheia.png" alt="">
-                        <img src="./assets/img/icons/estrela-cheia.png" alt="">
-                        <img src="./assets/img/icons/estrela-cheia.png" alt="">
-                        <img src="./assets/img/icons/estrela-vazia.png" alt="">
-                        <p>3,450</p>
+                    <div class="cupom"> 
+                        <p>Desconto na fatura</p>
                     </div>
                     <button class="btn-carrinho" onclick="adicionarAoCarrinho({
                         id: 'abajur-001',
@@ -306,6 +306,20 @@
                     })">Adicionar ao Carrinho</button>
                 </div>
                 <div class="prod">
+                    <img class= "img_pequenas" src="./assets/img/produtos/mouse.png" alt="">
+                    <p>Mouse Gamer 6 Botões</p>
+                    <h3 id="valor_mouse">R$ 35,90</h3>
+                    <div class="cupom">
+                        <p>Desconto na fatura</p>
+                    </div>
+                </div>
+                <div class="prod" id="laptop">
+                    <img class= "img_pequenas" src="./assets/img/produtos/notbook.png">
+                    <p>LapTop Intel Core i7 16GB RAM</p>
+                    <h3>R$ 1570,99</h3>
+                    <div class="cupom">
+                        <p>Desconto na fatura</p>
+                    </div>
                     <div class="cupom">
                         <p>Desconto na fatura</p>
                     </div>
@@ -405,6 +419,11 @@
                 </div>
             </div>
         </div>
+      </footer>
+      
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/banner.js"></script>
+</body>
     </footer>
 
     <!-- ✅ JAVASCRIPT SIMPLES E FUNCIONAL -->
