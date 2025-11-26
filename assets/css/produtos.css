@@ -147,7 +147,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 0;
+    /* padding: 8px 0; */
   }
   
   #cep {
@@ -156,6 +156,7 @@
     align-items: center;
     justify-content: center;
     gap: 6px;
+    margin-bottom: 5px;
 }
 
 #cep input {
@@ -188,8 +189,8 @@
   
   .container {
     max-width: 430px;
-    margin: 16px auto;
-    padding: 0 16px 80px;
+    /* margin: 16px auto;
+    padding: 0 16px 80px; */
   }
   
   .product-card {
@@ -576,11 +577,10 @@
   
   .site-footer {
     text-align: center;
-    padding: 24px 10px;
+    /* padding: 24px 10px; */
     color: var(--text-lighter);
     font-size: 14px;
     background: var(--muted);
-    margin-top: 30px;
   }
   
   /* Seção de Avaliações */
@@ -750,7 +750,7 @@
 .btn-carrinho {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    background: linear-gradient(135deg, #0056b3 0%, var(--azul) 100%);
     color: white;
     text-decoration: none;
     border: none;
@@ -1050,7 +1050,6 @@
   background: var(--blue-dark);
   color: white;
   padding: 30px 16px 20px;
-  margin-top: 40px;
 }
 
 .footer-container {
