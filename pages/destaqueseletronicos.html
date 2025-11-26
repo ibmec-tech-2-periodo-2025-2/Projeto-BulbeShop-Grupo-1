@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/css/destaquecasa.css">
+    <link rel="stylesheet" href="../assets/css/destaqueeletronicos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destaque Casa</title>
@@ -15,15 +15,17 @@
                 <img src="../assets/img/logo.png" alt="">
             </div>
             <div class="conteiner-icones">
-                <img src="../assets/img/icons/sino.png" alt="" onclick="window.location.href = './pages/notificacao.html'">
+                <img src="../assets/img/icons/sino.png" alt="" onclick="window.location.href = '../pages/notificacao.html'">
                 <a href="../pages/carrinho.html"><img src="../assets/img/icons/carrinho.png" alt=""></a>
-                <img src="../assets/img/icons/user.png" onclick="window.location.href = './pages/usuario.html'">
+                <img src="../assets/img/icons/user.png" onclick="window.location.href = '../pages/usuario.html'">
             </div>
             
         </div>
         <div class="conteiner-pesquisa">
             <input type="search" placeholder="Pesquisa...">
-            <div><img src="../assets/img/icons/lupa.png" alt=""></div>
+            <div class="lupa"><img src="../assets/img/icons/lupa.png" alt=""></div>
+
+            <aside class="dropdown-pesquisa"></aside>
         </div>
         <div id="cep_completo">
             <div id="cep">
@@ -42,7 +44,7 @@
 
         <ul class="menu-lista">
             <li>
-                <a href="./index.html"><img src="../assets/img/icons/casa2.png" alt="">Home</a>
+                <a href="../index.html"><img src="../assets/img/icons/casa2.png" alt="">Home</a>
             </li>
 
             <li class="categoria">
@@ -55,21 +57,21 @@
                 </div>
 
                 <ul class="submenu">
-                    <li><a href="./pages/destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
-                    <li><a href="./pages/destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
+                    <li><a href="../pages/destaquecasa.html"><img src="../assets/img/icons/casa2.png" alt="">Casa</a></li>
+                    <li><a href="../pages/destaqueeletrodomesticos.html"><img src="../assets/img/icons/eletrodomestico.png"
                                 alt="">Eletrodoméstico</a></li>
-                    <li><a href="./pages/destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
+                    <li><a href="../pages/destaqueseletronicos.html"><img src="../assets/img/icons/eletronico2.png" alt="">Eletrônico</a>
                     </li>
-                    <li><a href="./pages/destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
+                    <li><a href="../pages/destaqueofertas.html"><img src="../assets/img/icons/oferta2.png" alt="">Oferta</a></li>
                 </ul>
             </li>
 
             <li>
-                <a href="./pages/carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
+                <a href="../pages/carrinho.html"><img src="../assets/img/icons/carrinho2.png" alt="">Carrinho</a>
             </li>
 
             <li>
-                <a href="./pages/usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
+                <a href="../pages/usuario.html"><img src="../assets/img/icons/user2.png" alt="">Minha conta</a>
             </li>
         </ul>
     </nav>
@@ -265,6 +267,9 @@
           </div>
         </div>
     </footer>
+
+    <script src="../assets/js/menu.js"></script>
+    <script src="./assets/js/barrapesquisa.js"></script>
 
 </body>
 </html>
